@@ -1,0 +1,63 @@
+Aim 1 CHARLS development -> CLHLS external validation
+Run time: 2026-07-29 19:56:18 
+Project root: D:\AI_project\project3 
+ package available
+   arrow      TRUE
+    mice      TRUE
+    pROC      TRUE
+ dcurves      TRUE
+ ggplot2      TRUE
+Input dimensions:
+              dataset  rows columns
+ charls_person_period 64792      13
+            charls_fi 17705      51
+             clhls_fi  9765      50
+        clhls_outcome  9765      16
+CHARLS FI -> person-period ID overlap: 17705 of 17705 
+CLHLS FI -> outcome ID overlap: 9765 of 9765 
+Period distribution:
+
+    1     2     3     4 
+17705 16713 15802 14572 
+Person-period event distribution:
+
+    0     1 
+62352  2440 
+CLHLS outcome distribution:
+
+   0    1 <NA> 
+3987 3502 2276 
+CLHLS prebaseline distribution:
+
+   0    1 
+9720   45 
+Education is absent from the harmonised parquet inputs; this is the preliminary age + female version. 
+CHARLS rows before/after complete cases: 14561 / 14551 
+CHARLS persons/events: 7546 / 771 
+CHARLS FI median: 0.1964286 
+ variable     n missing missing_pct
+    event 14561       0   0.0000000
+  fi_full 14561       0   0.0000000
+      age 14561       0   0.0000000
+   female 14561      10   0.0686766
+   period 14561       0   0.0000000
+
+=== Final results ===
+                metric CHARLS_internal CLHLS_external
+             n_persons    7.546000e+03   7095.0000000
+              n_events    7.710000e+02   3282.0000000
+            event_rate    5.298605e-02      0.4625793
+               C_index    7.705247e-01      0.8389379
+       C_index_95CI_lo              NA      0.8301459
+       C_index_95CI_hi              NA      0.8480761
+              OE_ratio              NA      1.2472514
+ calibration_intercept              NA      0.5976415
+     calibration_slope              NA      0.9392709
+           brier_score    4.640757e-02      0.1750866
+                   IPA              NA      0.2957087
+    delta_C_FI_vs_base    3.506200e-02             NA
+          edu_adjusted    0.000000e+00      0.0000000
+CLHLS predicted risk:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.01463 0.10324 0.28303 0.37088 0.61901 0.99140 
+DCA: completed  
