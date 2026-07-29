@@ -1,0 +1,4 @@
+"cohort","wave","source_file","source_rows","source_unique_ids","baseline_2011_overlap","died_1_n","died_0_n","interview_date_complete_n","crosssection_1_n"
+"CHARLS",2015,"Charls/2015/Sample_Infor.dta",21789,21789,15139,689,21100,21789,20284
+"CHARLS",2018,"Charls/2018/Sample_Infor.dta",20813,20813,14395,997,19816,20813,17970
+"CHARLS",2020,"Charls/2020/Sample_Infor.dta",20180,20180,13734,785,19395,20180,17364

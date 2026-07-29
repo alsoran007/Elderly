@@ -1,0 +1,7 @@
+"cohort","source_file","baseline_rule","age_field","raw_rows","unique_id_n","age_valid_n","age_missing_n","age_missing_pct","age60_n","age60_pct_of_age_valid","sensitivity_label","sensitivity_age60_n","expected_age60_n","assert_age60"
+"CHARLS","D:/AI_project/sql/Charls/2011/demographic_background.dta","2011 demographic_background rows; valid birth year 1890-2000","2011 - ba002_1",17705,17705,17651,54,0.003049985879695,7669,0.43447963288199,,,7669,"PASS"
+"CLHLS","D:/AI_project/sql/CLHLS/CLHLS_dataset_2008-2018_SPSS/clhls_2011_2018_longitudinal_dataset_released_version1.sav","2011-2018 longitudinal file; all rows with valid trueage","trueage",9765,9765,9765,0,0,9749,0.998361495135689,,,9749,"PASS"
+"KLoSA","D:/AI_project/sql/KLOSA/KLoSA 1-9th wave (STATA)/w04_e.dta","2012 wave w04 rows; valid direct age","w04A002_age",7486,7486,7486,0,0,5289,0.706518835158963,,,5289,"PASS"
+"HRS","D:/AI_project/sql/HRS Products/RAND HRS Products(原始)/2012 RAND HRS Fat File/h12f3a.dta","2012 RAND Fat File rows; valid na019","na019",20554,20554,20554,0,0,13867,0.674661866303396,,,13867,"PASS"
+"SHARE","D:/AI_project/sql/SHARE/sharew4_rel9-0-0_ALL_datasets_stata/sharew4_rel9-0-0_cv_r.dta","waveid==42 (2011 wave 4); valid age2011","age2011",17356,17356,16485,871,0.050184374279788,12722,0.771731877464362,"interview==1 among waveid==42",11778,12722,"PASS"
+"MHAS","D:/AI_project/sql/MHAS/H_MHAS_c2.dta","2012 wave r3; all rows with valid r3agey","r3agey",26839,26839,15716,11123,0.414434218860613,10176,0.647493000763553,,,10176,"PASS"

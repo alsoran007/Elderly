@@ -1,0 +1,42 @@
+"stem","domain","source_vars","status","coding_note","review_note","n_source_complete","n_age60_source_complete"
+"hibpe","comorbidity","w04C006","verified_candidate","1=yes; 5=no; -8/-9 missing","",4739,2952
+"diabe","comorbidity","w04C011","verified_candidate","1=yes; 5=no; -8/-9 missing","",6345,4311
+"cancre","comorbidity","w04C016","verified_candidate","1=yes; 5=no; -8/-9 missing","",7205,5065
+"lunge","comorbidity","w04C023","verified_candidate","1=yes; 5=no; -8/-9 missing","",7285,5113
+"hearte","comorbidity","w04C033","verified_candidate","1=yes; 5=no; -8/-9 missing","",6960,4817
+"stroke","comorbidity","w04C038","semantic_review","1=yes; 5=no; -8 missing","Code 3 is suspected stroke/TIA and must be decided before FI construction",7143,4981
+"psyche","comorbidity","w04C043","verified_candidate","1=yes; 5=no; -8/-9 missing","",7232,5087
+"arthre","comorbidity","w04C048","verified_candidate","1=yes; 5=no; -8/-9 missing","",5763,3744
+"dyslipe","comorbidity","","not_found","No direct dyslipidemia/lipid diagnosis label found","",,
+"livere","comorbidity","w04C028","verified_candidate","1=yes; 5=no; -8/-9 missing","",7315,5165
+"kidneye","comorbidity","","not_found","w04C004m06 is kidney dysfunction disability, not a general kidney disease diagnosis","",,
+"digeste","comorbidity","","not_found","No direct digestive/stomach diagnosis label found","",,
+"asthmae","comorbidity","","not_found","No direct asthma diagnosis label found; chronic lung disease is mapped separately","",,
+"dressa","adl","w04C201","verified_candidate","1=no help; 3=some help; 5=full help","",7486,5289
+"batha","adl","w04C203","verified_candidate","1=no help; 3=some help; 5=full help","",7486,5289
+"eata","adl","w04C204","verified_candidate","1=no help; 3=some help; 5=full help","",7486,5289
+"beda","adl","w04C205","verified_candidate","1=no help; 3=some help; 5=full help","",7486,5289
+"toilta","adl","w04C206","verified_candidate","1=no help; 3=some help; 5=full help","",7486,5289
+"urina","adl","w04C068","verified_candidate","1=yes; 5=no; past-year urinary incontinence","",3127,2071
+"housewka","iadl","w04C209","verified_candidate","1=no help; 3=some help; 5=full help","",7486,5289
+"mealsa","iadl","w04C210","verified_candidate","1=no help; 3=some help; 5=full help","",7486,5289
+"shopa","iadl","w04C214","verified_candidate","1=no help; 3=some help; 5=full help","",7486,5289
+"moneya","iadl","w04C215","verified_candidate","1=no help; 3=some help; 5=full help","",7485,5289
+"medsa","iadl","w04C217","verified_candidate","1=no help; 3=some help; 5=full help","",7486,5289
+"walk100a","mobility","","not_found","No direct population-level mobility performance item found in wave-4 labels","Job-demand fields are not valid substitutes",,
+"walk1kma","mobility","","not_found","No direct population-level mobility performance item found in wave-4 labels","Job-demand fields are not valid substitutes",,
+"joga","mobility","","not_found","No direct population-level mobility performance item found in wave-4 labels","Job-demand fields are not valid substitutes",,
+"climsa","mobility","","not_found","No direct population-level mobility performance item found in wave-4 labels","Job-demand fields are not valid substitutes",,
+"chaira","mobility","","not_found","No direct population-level mobility performance item found in wave-4 labels","Job-demand fields are not valid substitutes",,
+"stoopa","mobility","","not_found","No direct population-level mobility performance item found in wave-4 labels","Job-demand fields are not valid substitutes",,
+"armsa","mobility","","not_found","No direct population-level mobility performance item found in wave-4 labels","Job-demand fields are not valid substitutes",,
+"lifta","mobility","","not_found","No direct population-level mobility performance item found in wave-4 labels","Job-demand fields are not valid substitutes",,
+"dimea","mobility","","not_found","No direct population-level mobility performance item found in wave-4 labels","Job-demand fields are not valid substitutes",,
+"dsight","sensory","w04C075","verified_candidate","1=very good to 5=very bad","",7456,5265
+"nsight","sensory","w04C076","verified_candidate","Far-vision rating; 1=very good to 5=very bad","",7456,5265
+"hearing","sensory","w04C083","verified_candidate","1=very good to 5=very bad","",7486,5289
+"shlt","general","w04C001","verified_candidate","1=excellent to 5=poor","",7486,5289
+"painfr","general","w04C102","semantic_review","1=daily activity difficulty from body pain; 5=no","This is pain-related activity difficulty, not a direct chronic-pain frequency item",4704,3658
+"fall","general","w04C056","verified_candidate","1=yes; 5=no; fall injury in latest 2 years","",7486,5289
+"slfmem","cognition","","not_found","No direct self-rated memory label found in wave-4 file","",,
+"mbmi","general","w04C105;w04C107","derived_candidate","Weight kg and height cm; BMI=weight/(height/100)^2","Apply source missing-code and plausibility checks before BMI deficit",7230,5055

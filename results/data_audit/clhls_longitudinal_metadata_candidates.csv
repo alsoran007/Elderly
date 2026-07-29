@@ -1,0 +1,9 @@
+﻿source_file,exists,read_status,rows,columns,candidate_variables,read_error
+CLHLS/CLHLS_2018_cross_sectional_dataset_15874/clhls_2018_cross_sectional_dataset_15874.sav,True,pyreadstat_unavailable,,,,
+CLHLS/CLHLS_dataset_1998-2005_SPSS/clhls_1998_2018_longitudinal_dataset_released_version1.sav,True,pyreadstat_unavailable,,,,
+CLHLS/CLHLS_dataset_1998-2005_SPSS/clhls_2000_2018_longitudinal_dataset_released_version1.sav,True,pyreadstat_unavailable,,,,
+CLHLS/CLHLS_dataset_1998-2005_SPSS/clhls_2002_2018_longitudinal_dataset_released_version1.sav,True,pyreadstat_unavailable,,,,
+CLHLS/CLHLS_dataset_1998-2005_SPSS/clhls_2005_2018_longitudinal_dataset_released_version1.sav,True,pyreadstat_unavailable,,,,
+CLHLS/CLHLS_dataset_2008-2018_SPSS/clhls_2008_2018_longitudinal_dataset_released_version1.sav,True,pyreadstat_unavailable,,,,
+CLHLS/CLHLS_dataset_2008-2018_SPSS/clhls_2011_2018_longitudinal_dataset_released_version1.sav,True,pyreadstat_unavailable,,,,
+CLHLS/CLHLS_dataset_2008-2018_SPSS/clhls_2014_2018_longitudinal_dataset_released_version1.sav,True,pyreadstat_unavailable,,,,

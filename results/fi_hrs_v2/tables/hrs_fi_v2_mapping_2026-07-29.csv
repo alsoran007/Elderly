@@ -1,0 +1,42 @@
+"stem","domain","source_vars","status","coding_note","review_note","n_nonmissing","deficit_rate"
+"hibpe","comorbidity","nc005","direct",,"",20241,0.614594140605701
+"diabe","comorbidity","nc010","direct",,"",20340,0.242477876106195
+"cancre","comorbidity","nc018","direct",,"",20470,0.148021494870542
+"lunge","comorbidity","nc030","direct",,"",20403,0.103906288290938
+"hearte","comorbidity","nc036","direct",,"",20364,0.243567079159301
+"stroke","comorbidity","nc053","direct",,"",20396,0.0757991763090802
+"psyche","comorbidity","nc065","direct",,"",20323,0.190965900703636
+"arthre","comorbidity","nc070","direct",,"",20252,0.576190005925341
+"kidneye","comorbidity","nc017","documented_substitute",,"Kidney trouble due to diabetes substitutes unavailable general kidney disease.",4720,0.125
+"dizzy","comorbidity","nc145","documented_substitute",,"Ever dizzy substitutes unavailable symptom/mobility slot.",20503,0.137248207579379
+"fatigue","comorbidity","nc148","documented_substitute",,"Severe fatigue substitutes unavailable symptom slot.",20480,0.210791015625
+"depressed_yr","comorbidity","nc150","documented_substitute",,"Felt depressed in past year is a documented substitute.",19359,0.149129603801849
+"ever_depression","comorbidity","nc271","documented_substitute",,"Ever had depression is a separate lifetime depression substitute.",20417,0.232257432531714
+"dressa","adl","ng014","direct",,"",13267,0.173136353357956
+"batha","adl","ng021","direct",,"",10302,0.172587847019996
+"eata","adl","ng023","direct",,"",10296,0.0865384615384615
+"beda","adl","ng025","direct",,"",10284,0.158012446518864
+"toilta","adl","ng030","direct",,"",10291,0.139247886502769
+"urina","adl","nc087","direct",,"",20494,0.245876842002537
+"housewka","iadl","ng058","direct",,"",20029,0.227270457836138
+"mealsa","iadl","ng041","direct",,"",20523,0.0667056473225162
+"shopa","iadl","ng044","direct",,"",20520,0.0881578947368421
+"moneya","iadl","ng059","direct",,"",20523,0.0649027919894752
+"medsa","iadl","ng050","direct",,"",20526,0.0469648250998733
+"walk100a","mobility","ng003","direct",,"",6560,0.523323170731707
+"walk1kma","mobility","ng001","direct",,"",20332,0.3183159551446
+"joga","mobility","ng002","direct",,"",11497,0.563886231190745
+"climsa","mobility","ng007","direct",,"",9755,0.419169656586366
+"chaira","mobility","ng005","direct",,"",20483,0.391397744471025
+"stoopa","mobility","ng008","direct",,"",20312,0.461205198897204
+"armsa","mobility","ng009","direct",,"",20480,0.18076171875
+"lifta","mobility","ng011","direct",,"",20166,0.265149261132599
+"dimea","mobility","ng012","direct",,"",20496,0.0784543325526932
+"dsight","sensory","nc096","direct",,"",20433,0.402045710370479
+"nsight","sensory","nc097","direct",,"",20430,0.455567792462066
+"hearing","sensory","nc103","direct",,"",20540,0.417806718597858
+"shlt","general","nc001","direct",,"",20533,0.473944382213997
+"painfr","general","nc104","direct",,"",20486,0.360197207849263
+"fall","general","nc079","direct",,"",10705,0.36851938346567
+"mbmi","general","nc139;nc141;nc142","direct",,"",9246,0.360696517412935
+"slfmem","cognition","nd101","direct",,"",19389,0.498762184743927

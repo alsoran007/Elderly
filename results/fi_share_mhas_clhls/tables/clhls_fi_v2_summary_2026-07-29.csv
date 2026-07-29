@@ -1,0 +1,11 @@
+"metric","value"
+"raw_rows",9765
+"age60_rows",9749
+"fi_eligible_all",9222
+"fi_eligible_age60",9207
+"fi_median_all",0.166666666666667
+"fi_median_age60",0.16875
+"fi_min",0
+"fi_max",0.770833333333333
+"item_count",41
+"threshold",33

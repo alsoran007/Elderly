@@ -1,0 +1,7 @@
+"wave","field_role","field_name","field_label","expected_from_program"
+"w08","death_year","w08x_a010Y","The date of his/her death (unit: yyyy)","PASS"
+"w08","death_month","w08x_a010M","The date of his/her death (unit: mm)","PASS"
+"w08","death_day","w08x_a010D","The date of his/her death (unit: day)","PASS"
+"w09","death_year","w09X_A010Y","The date of his/her death (unit: yyyy)","PASS"
+"w09","death_month","w09X_A010M","The date of his/her death (unit: mm)","PASS"
+"w09","death_day","w09X_A010D","The date of his/her death (unit: day)","PASS"

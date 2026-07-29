@@ -1,0 +1,151 @@
+=== R Package Installation Log ===
+Start: 2026-07-27 17:04:11 
+
+
+>>> Installing ranger ...
+package 'ranger' successfully unpacked and MD5 sums checked
+[OK] ranger installed
+
+>>> Installing xgboost ...
+also installing the dependencies 'visNetwork', 'V8', 'DiagrammeR', 'DiagrammeRsvg', 'rsvg', 'Ckmeans.1d.dp', 'vcd', 'igraph', 'float', 'titanic', 'RhpcBLASctl'
+
+
+  There are binary versions available but the source versions are later:
+              binary source needs_compilation
+DiagrammeR    1.0.11 1.0.12             FALSE
+Ckmeans.1d.dp  4.3.5  4.3.6              TRUE
+igraph         2.3.0  2.3.3              TRUE
+
+package 'visNetwork' successfully unpacked and MD5 sums checked
+package 'V8' successfully unpacked and MD5 sums checked
+package 'DiagrammeRsvg' successfully unpacked and MD5 sums checked
+package 'rsvg' successfully unpacked and MD5 sums checked
+package 'vcd' successfully unpacked and MD5 sums checked
+package 'float' successfully unpacked and MD5 sums checked
+package 'titanic' successfully unpacked and MD5 sums checked
+package 'RhpcBLASctl' successfully unpacked and MD5 sums checked
+package 'xgboost' successfully unpacked and MD5 sums checked
+installing the source packages 'DiagrammeR', 'Ckmeans.1d.dp', 'igraph'
+
+[OK] xgboost installed
+
+>>> Installing timeROC ...
+also installing the dependencies 'listenv', 'parallelly', 'future', 'diagram', 'doParallel', 'mets', 'plotrix', 'Publish', 'future.apply', 'progressr', 'SQUAREM', 'prodlim', 'riskRegression', 'lava', 'pec', 'timereg'
+
+
+  There are binary versions available but the source versions are later:
+           binary source needs_compilation
+listenv    0.10.1  1.0.0             FALSE
+parallelly 1.47.0 1.48.0              TRUE
+future     1.70.0 1.75.0             FALSE
+mets        1.3.9 1.3.11              TRUE
+progressr  0.19.0  1.0.0             FALSE
+lava        1.9.0  1.9.2             FALSE
+
+package 'diagram' successfully unpacked and MD5 sums checked
+package 'doParallel' successfully unpacked and MD5 sums checked
+package 'plotrix' successfully unpacked and MD5 sums checked
+package 'Publish' successfully unpacked and MD5 sums checked
+package 'future.apply' successfully unpacked and MD5 sums checked
+package 'SQUAREM' successfully unpacked and MD5 sums checked
+package 'prodlim' successfully unpacked and MD5 sums checked
+package 'riskRegression' successfully unpacked and MD5 sums checked
+package 'pec' successfully unpacked and MD5 sums checked
+package 'timereg' successfully unpacked and MD5 sums checked
+package 'timeROC' successfully unpacked and MD5 sums checked
+installing the source packages 'listenv', 'parallelly', 'future', 'mets', 'progressr', 'lava'
+
+[OK] timeROC installed
+
+>>> Installing dcurves ...
+also installing the dependencies 'commonmark', 'xfun', 'vctrs', 'litedown', 'reactR', 'dplyr', 'bigD', 'juicyjuice', 'markdown', 'reactable', 'cards', 'cardx', 'gt', 'hunspell', 'broom.helpers', 'gtsummary', 'spelling'
+
+
+  There are binary versions available but the source versions are later:
+          binary source needs_compilation
+xfun        0.57   0.60              TRUE
+litedown     0.9   0.10             FALSE
+cards      0.7.1  0.8.1             FALSE
+cardx      0.3.2  0.3.4             FALSE
+gtsummary  2.5.0  2.5.1             FALSE
+
+package 'commonmark' successfully unpacked and MD5 sums checked
+package 'vctrs' successfully unpacked and MD5 sums checked
+package 'reactR' successfully unpacked and MD5 sums checked
+package 'dplyr' successfully unpacked and MD5 sums checked
+package 'bigD' successfully unpacked and MD5 sums checked
+package 'juicyjuice' successfully unpacked and MD5 sums checked
+package 'markdown' successfully unpacked and MD5 sums checked
+package 'reactable' successfully unpacked and MD5 sums checked
+package 'gt' successfully unpacked and MD5 sums checked
+package 'hunspell' successfully unpacked and MD5 sums checked
+package 'broom.helpers' successfully unpacked and MD5 sums checked
+package 'spelling' successfully unpacked and MD5 sums checked
+package 'dcurves' successfully unpacked and MD5 sums checked
+installing the source packages 'xfun', 'litedown', 'cards', 'cardx', 'gtsummary'
+
+[OK] dcurves installed
+[SKIP] pec already installed
+
+>>> Installing riskRegression ...
+also installing the dependencies 'enrichwith', 'libcoin', 'ROCR', 'VGAM', 'abind', 'brglm2', 'assertthat', 'deSolve', 'muhaz', 'rstpm2', 'statmod', 'origami', 'modeltools', 'strucchange', 'coin', 'data.tree', 'gam', 'cvAUC', 'R.methodsS3', 'R.oo', 'R.utils', 'R.cache', 'smcfcs', 'casebase', 'gbm', 'flexsurv', 'grpreg', 'hal9001', 'mstate', 'nnls', 'party', 'penalized', 'randomForest', 'randomForestSRC', 'scam', 'SuperLearner', 'R.rsp'
+
+
+  There are binary versions available but the source versions are later:
+           binary source needs_compilation
+enrichwith  0.4.0  0.5.0             FALSE
+libcoin    1.0-12 1.0-13              TRUE
+brglm2      1.0.1  1.1.0              TRUE
+statmod     1.5.1  1.5.2              TRUE
+origami     1.0.7  1.0.8             FALSE
+coin        1.4-3  1.4-5              TRUE
+smcfcs      2.0.1  2.0.2             FALSE
+gbm         2.2.3  2.3.1              TRUE
+party      1.3-20 1.3-21              TRUE
+
+package 'ROCR' successfully unpacked and MD5 sums checked
+package 'VGAM' successfully unpacked and MD5 sums checked
+package 'abind' successfully unpacked and MD5 sums checked
+package 'assertthat' successfully unpacked and MD5 sums checked
+package 'deSolve' successfully unpacked and MD5 sums checked
+package 'muhaz' successfully unpacked and MD5 sums checked
+package 'rstpm2' successfully unpacked and MD5 sums checked
+package 'modeltools' successfully unpacked and MD5 sums checked
+package 'strucchange' successfully unpacked and MD5 sums checked
+package 'data.tree' successfully unpacked and MD5 sums checked
+package 'gam' successfully unpacked and MD5 sums checked
+package 'cvAUC' successfully unpacked and MD5 sums checked
+package 'R.methodsS3' successfully unpacked and MD5 sums checked
+package 'R.oo' successfully unpacked and MD5 sums checked
+package 'R.utils' successfully unpacked and MD5 sums checked
+package 'R.cache' successfully unpacked and MD5 sums checked
+package 'casebase' successfully unpacked and MD5 sums checked
+package 'flexsurv' successfully unpacked and MD5 sums checked
+package 'grpreg' successfully unpacked and MD5 sums checked
+package 'hal9001' successfully unpacked and MD5 sums checked
+package 'mstate' successfully unpacked and MD5 sums checked
+package 'nnls' successfully unpacked and MD5 sums checked
+package 'penalized' successfully unpacked and MD5 sums checked
+package 'randomForest' successfully unpacked and MD5 sums checked
+package 'randomForestSRC' successfully unpacked and MD5 sums checked
+package 'scam' successfully unpacked and MD5 sums checked
+package 'SuperLearner' successfully unpacked and MD5 sums checked
+package 'R.rsp' successfully unpacked and MD5 sums checked
+package 'riskRegression' successfully unpacked and MD5 sums checked
+installing the source packages 'enrichwith', 'libcoin', 'brglm2', 'statmod', 'origami', 'coin', 'smcfcs', 'gbm', 'party'
+
+[OK] riskRegression installed
+Warning messages:
+1: package 'pec' was built under R version 4.4.3 
+2: package 'prodlim' was built under R version 4.4.3 
+3: package 'riskRegression' was built under R version 4.4.3 
+
+=== Final Status ===
+ranger             OK v0.18.0
+xgboost            OK v3.2.1.1
+timeROC            OK v0.4.1
+dcurves            OK v0.5.1
+pec                OK v2025.6.24
+riskRegression     OK v2026.3.11
+
+End: 2026-07-27 17:21:20 

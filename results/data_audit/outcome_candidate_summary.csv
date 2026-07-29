@@ -1,0 +1,7 @@
+"cohort","source_files","candidate_rows","unique_person_ids","duplicate_person_id_rows","year_present_n","month_present_n","day_present_n","day_precision_n","month_precision_n","year_precision_n","missing_date_n","min_year","max_year"
+"CHARLS",2,1201,1201,0,531,527,107,107,419,5,670,2011,2020
+"CLHLS",1,4650,4650,0,4650,4650,4585,4585,65,0,0,2011,2019
+"ELSA",1,983,983,0,980,0,0,0,0,980,3,2002,2012
+"KLoSA",7,3075,3075,0,3029,2958,2720,2720,236,73,46,2006,2022
+"MHAS",1,5623,5623,0,5554,5450,0,0,5436,118,69,2001,2018
+"SHARE",1,21098,21098,0,20753,20666,0,0,20455,298,345,2004,2022

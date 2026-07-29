@@ -1,0 +1,6 @@
+"cohort","wave","source_file","source_rows","source_unique_ids","rand2012_baseline_overlap_n","exit_record_n","death_date_month_year_n","death_date_year_only_n","death_date_unknown_or_invalid_n","death_date_month_only_invalid_year_n","death_date_unresolved_n","death_date_missing_n","interview_date_complete_n","death_month_98_n","death_year_9998_n"
+"HRS",2012,"HRS Products/HRS Exit/2012/x12da/X12A_R.da",1187,1187,0,1187,1160,11,6,3,9,7,1187,15,8
+"HRS",2014,"HRS Products/HRS Exit/2014/x14da/X14A_R.da",1242,1242,1125,1242,1232,7,2,1,3,0,1242,9,3
+"HRS",2016,"HRS Products/HRS Exit/2016/x16da/X16A_R.da",1310,1310,1256,1310,1293,10,4,3,7,0,1310,14,7
+"HRS",2018,"HRS Products/HRS Exit/2018/x18sta/X18A_R.dta",980,980,895,980,964,5,2,3,5,6,980,7,5
+"HRS",2020,"HRS Products/HRS Exit/2020/x20sta/X20A_R.dta",1266,1266,1169,1266,1245,14,5,2,7,0,1266,19,7

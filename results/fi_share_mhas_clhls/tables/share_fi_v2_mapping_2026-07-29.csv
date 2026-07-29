@@ -1,0 +1,42 @@
+"cohort","stem","domain","source_var","source_label","status","coding","review_note","n_nonmissing","deficit_rate"
+"SHARE","hibpe","comorbidity","r4hibpe","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54262,0.422155467914931
+"SHARE","dyslipe","comorbidity","r4hchole","ever had high cholesterol","documented_substitute","1=deficit, 0=no","No r4dyslipe exists; high cholesterol is the closest labelled dyslipidemia proxy.",54260,0.269517139697752
+"SHARE","diabe","comorbidity","r4diabe","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54253,0.131974268704035
+"SHARE","cancre","comorbidity","r4cancre","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54250,0.0734562211981567
+"SHARE","lunge","comorbidity","r4lunge","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54249,0.0769415104425888
+"SHARE","livere","comorbidity","r4ulcere","ever had ulcer","cross_domain_substitute","1=deficit, 0=no","No liver disease field was found; ulcer is not equivalent and is retained only as a flagged sensitivity item.",54250,0.0736774193548387
+"SHARE","hearte","comorbidity","r4hearte","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54257,0.156864552039368
+"SHARE","stroke","comorbidity","r4stroke","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54249,0.0539549116112739
+"SHARE","psyche","comorbidity","r4psyche","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",53911,0.109792064699227
+"SHARE","arthre","comorbidity","r4arthre","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54261,0.278100293028142
+"SHARE","kidneye","comorbidity","","No verified baseline kidney field","unsupported","NA","Must not be filled from unrelated symptoms.",0,
+"SHARE","digeste","comorbidity","","No verified baseline digestive field","unsupported","NA","Must not be filled from unrelated symptoms.",0,
+"SHARE","asthmae","comorbidity","r4respe","chronic lung disease or asthma","documented_substitute","1=deficit, 0=no","Respiratory disease including asthma replaces the unavailable asthma-only field.",14197,0.346552088469395
+"SHARE","dressa","adl","r4dressa","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54247,0.082087488709053
+"SHARE","batha","adl","r4batha","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54247,0.0599664497575903
+"SHARE","eata","adl","r4eata","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54247,0.019282172286025
+"SHARE","beda","adl","r4beda","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54247,0.0420668424060317
+"SHARE","toilta","adl","r4toilta","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54247,0.0254576289933084
+"SHARE","urina","adl","r4urina","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54240,0.0622234513274336
+"SHARE","housewka","iadl","r4housewka","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54247,0.122808634578871
+"SHARE","mealsa","iadl","r4mealsa","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54247,0.0408133168654488
+"SHARE","shopa","iadl","r4shopa","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54247,0.0681512341696315
+"SHARE","moneya","iadl","r4moneya","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54247,0.0455324718417608
+"SHARE","medsa","iadl","r4medsa","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54247,0.0207753424152488
+"SHARE","walk100a","mobility","r4walk100a","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54252,0.119387303693873
+"SHARE","walk1kma","mobility","r4walk1kma","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54247,0.0236142090806865
+"SHARE","joga","mobility","","No verified SHARE wave-4 jogging field","unsupported","NA","No r4joga exists; retained as NA rather than duplicating another mobility field.",0,
+"SHARE","climsa","mobility","r4climsa","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54252,0.293132050431321
+"SHARE","chaira","mobility","r4chaira","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54252,0.199052569490526
+"SHARE","stoopa","mobility","r4stoopa","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54252,0.310329573103296
+"SHARE","armsa","mobility","r4armsa","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54252,0.102355673523557
+"SHARE","lifta","mobility","r4lifta","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54252,0.223623092236231
+"SHARE","dimea","mobility","r4dimea","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54252,0.0431320504313205
+"SHARE","dsight","sensory","r4dsight","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54203,0.391311366529528
+"SHARE","nsight","sensory","r4nsight","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54191,0.468957022383791
+"SHARE","hearing","sensory","r4hearing","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54243,0.418851280349538
+"SHARE","shlt","general","r4shlt","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54259,0.554774323153763
+"SHARE","painfr","general","r4painfr","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54240,0.570962389380531
+"SHARE","fall","general","r4fall","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",54240,0.0511246312684366
+"SHARE","slfmem","cognition","r4slfmem","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",53491,0.500401936774411
+"SHARE","mbmi","anthropometry","r4mbmi","SHARE harmonised wave-4 field","direct","Binary 1=deficit; ordinal/rating5=(x-1)/4; BMI WHO <18.5 or >=30","",52366,0.226578314173319

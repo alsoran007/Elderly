@@ -1,0 +1,7 @@
+"cohort","role","baseline","denominator_rule","raw_baseline_n","age60_n","four_year_window","verified_current_event_n","prior_reported_event_n","event_status","source"
+"CHARLS","development","2011","2011 - ba002_1 >= 60",17705,7669,"2011-2015",785,785,"VERIFIED_CURRENT","person_period_report periods 1+2"
+"CLHLS","external_validation","2011/2012","trueage >= 60",9765,9749,"baseline to <=1461 days",3502,3502,"VERIFIED_CURRENT","clhls_outcome_v2_report and raw SAV audit"
+"KLoSA","Asian_validation","2012","w04A002_age >= 60",7486,5289,"2012-2016",585,918,"VERIFIED_CURRENT","current_four_year_event_audit/klosa_four_year_event_audit_2026-07-28.csv; historical D-013 value retained"
+"SHARE","European_validation","2011","wave-4 r4iwy == 2011 and age >= 60",54550,36604,"2011-2015",3689,6287,"VERIFIED_CURRENT","current_four_year_event_audit/share_four_year_event_audit_2026-07-28.csv; D-021 applied"
+"MHAS","American_validation","2012","r3agey or rabyear/r3iwy derived age >= 60",15716,10174,"2012-2016",1404,1735,"VERIFIED_CURRENT","current_four_year_event_audit/mhas_four_year_event_audit_2026-07-28.csv; D-022 applied"
+"HRS","American_validation","2012","2012 na019 >= 60",20554,13867,"2012-2016",2352,2352,"VERIFIED_CURRENT","hrs_event_count_report"

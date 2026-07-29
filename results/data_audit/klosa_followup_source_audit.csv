@@ -1,0 +1,6 @@
+"cohort","source_role","rel_path","exists","read_status","rows","unique_pid","notes"
+"KLoSA","w01_main","KLOSA/KLoSA 1-9th wave (STATA)/w01_e.dta",TRUE,"ok",10254,10254,"w01 main file establishes respondent coverage and interview date."
+"KLoSA","w02_main","KLOSA/KLoSA 1-9th wave (STATA)/w02_e.dta",TRUE,"ok",8688,8688,"w02 main file establishes respondent coverage and interview date only."
+"KLoSA","w02_exit","KLOSA/w02_exit_e.dta",TRUE,"ok",187,187,"w02 EXIT file supplies death date fields and is linked by pid; this is a mortality-source candidate, not a final event."
+"KLoSA","w03_exit","KLOSA/w03_exit_e.dta",TRUE,"ok",309,309,"Available mortality-date source; linkable by pid."
+"KLoSA","harmonization_script","KLOSA/bukpmcwp.do",TRUE,"text_inspected",,,"wstat: 1 alive, 4 nonresponse alive, 5 died this wave, 6 died previous wave, 7 dropped, 9 unknown."

@@ -1,0 +1,42 @@
+"cohort","stem","domain","source_var","source_label","status","coding","review_note","n_nonmissing","deficit_rate"
+"CLHLS","hibpe","comorbidity","g15a1","hypertension","direct","See script coding functions and report","",9325,0.295120643431635
+"CLHLS","dyslipe","comorbidity","g15q1","suffering from cholecystitis or gallstone disease","cross_domain_substitute","1=deficit, 2=no","No dyslipidemia field in 2011/2012; gallbladder disease is a flagged non-equivalent disease proxy.",6898,0.0439257755871267
+"CLHLS","diabe","comorbidity","g15b1","diabetes","direct","See script coding functions and report","",9239,0.0432947288667605
+"CLHLS","cancre","comorbidity","g15i1","cancer","direct","See script coding functions and report","",9190,0.00903155603917302
+"CLHLS","lunge","comorbidity","g15e1","bronchitis/emphysema/pneumonia/asthma","direct","See script coding functions and report","",9330,0.121650589496249
+"CLHLS","livere","comorbidity","g15v1","hepatitis","direct","See script coding functions and report","",6888,0.00595238095238095
+"CLHLS","hearte","comorbidity","g15c1","heart disease","direct","See script coding functions and report","",9262,0.12686244871518
+"CLHLS","stroke","comorbidity","g15d1","stroke/CVD","direct","See script coding functions and report","",9299,0.0862458328852565
+"CLHLS","psyche","comorbidity","b28","depression symptom","direct","See script coding functions and report","",8084,0.15004948045522
+"CLHLS","arthre","comorbidity","g15n1","arthritis","direct","See script coding functions and report","",9314,0.143547348078162
+"CLHLS","kidneye","comorbidity","g15s1","chronic nephritis","direct","See script coding functions and report","",9190,0.00859630032644178
+"CLHLS","digeste","comorbidity","g15k1","gastric/duodenal ulcer","direct","See script coding functions and report","",6881,0.0553698590321174
+"CLHLS","asthmae","comorbidity","g15f1","suffering from tuberculosis","cross_domain_substitute","1=deficit, 2=no","No asthma-only field after lunge uses g15e1; respiratory disease substitute is non-equivalent.",9287,0.0109830946484333
+"CLHLS","dressa","adl","e2","dressing","direct","See script coding functions and report","",9646,0.130416753058263
+"CLHLS","batha","adl","e1","bathing","direct","See script coding functions and report","",9664,0.239445364238411
+"CLHLS","eata","adl","e6","feeding","direct","See script coding functions and report","",9598,0.0859554073765368
+"CLHLS","beda","adl","e4","indoor transferring","direct","See script coding functions and report","",9638,0.114442830462752
+"CLHLS","toilta","adl","e3","toileting","direct","See script coding functions and report","",9672,0.132754342431762
+"CLHLS","urina","adl","e5","continence","direct","See script coding functions and report","",9677,0.0659295236126899
+"CLHLS","housewka","iadl","d11a","house work","direct","See script coding functions and report","",9690,0.562125902992776
+"CLHLS","mealsa","iadl","e9","make food","direct","See script coding functions and report","",9689,0.370729693466818
+"CLHLS","shopa","iadl","e8","shopping","direct","See script coding functions and report","",9694,0.368991128533113
+"CLHLS","moneya","iadl","f340","financial spending decisions","direct","See script coding functions and report","",8875,0.238760563380282
+"CLHLS","medsa","iadl","e10","wash clothes","direct","See script coding functions and report","",9688,0.350639966969447
+"CLHLS","walk100a","mobility","e7","visit neighbors/outside","direct","See script coding functions and report","",9693,0.256061075002579
+"CLHLS","walk1kma","mobility","e11","walk one kilometer","direct","See script coding functions and report","",9695,0.475812274368231
+"CLHLS","joga","mobility","e14","public transportation","direct","See script coding functions and report","",9681,0.529697345315567
+"CLHLS","climsa","mobility","e13","crouch and stand","direct","See script coding functions and report","",9693,0.519447023625297
+"CLHLS","chaira","mobility","g9","stand from chair","direct","See script coding functions and report","",9675,0.309974160206718
+"CLHLS","stoopa","mobility","g11","pick up book from floor","direct","See script coding functions and report","",9604,0.127342773844232
+"CLHLS","armsa","mobility","g83","hold-up arms","direct","See script coding functions and report","",9679,0.0613699762372146
+"CLHLS","lifta","mobility","e12","carry 5kg","direct","See script coding functions and report","",9692,0.452228642179117
+"CLHLS","dimea","mobility","","No verified 2011/2012 baseline field","unsupported","NA","Do not use d14/d18 mortality or follow-up fields.",0,
+"CLHLS","dsight","sensory","g1","visual function: see break in circle","direct","1=deficit if unable; 2=not deficit","Vision field is a functional test, not a 1-5 self-rating.",9558,0.243460975099393
+"CLHLS","nsight","sensory","g15g1","suffering from cataract","documented_substitute","1=deficit, 2=no","Vision disease proxy for unavailable near-vision rating.",9244,0.125054089138901
+"CLHLS","hearing","sensory","g106","difficulty with hearing","direct","1=deficit, 2=no deficit","Baseline self-report.",9710,0.474562306900103
+"CLHLS","shlt","general","b12","self-rated health","direct","See script coding functions and report","",8999,0.408295366151795
+"CLHLS","painfr","general","g24a","pain severity 1-10","documented_substitute",">=4 deficit; 1-3 no deficit","Threshold is an operational proxy and must be sensitivity-tested.",1360,0.620588235294118
+"CLHLS","fall","general","e0","limited in activities because of health problem","cross_domain_substitute","1/2=deficit, 3=no","No baseline fall field exists; health-related activity limitation is a flagged fall-risk proxy. Do not use d14/d18 follow-up fields.",9691,0.379630585078939
+"CLHLS","slfmem","cognition","g15o1","suffering from dementia","documented_substitute","1=deficit, 2=no","Dementia diagnosis proxy for unavailable baseline self-rated memory.",9337,0.0337367462782478
+"CLHLS","mbmi","anthropometry","g101;g1021","weight kg and directly measured height","direct","WHO BMI <18.5 or >=30","Height is measured cm; implausible values become missing.",9172,0.297426951591801

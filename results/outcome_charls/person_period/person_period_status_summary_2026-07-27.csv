@@ -1,0 +1,5 @@
+period,period_start,period_end,rows,events,intermittent_missing_rows,final_lost_rows
+1,2011,2013,17705,408,1534,584
+2,2013,2015,16713,563,1226,348
+3,2015,2018,15802,829,1006,401
+4,2018,2020,14572,640,0,838

@@ -1,0 +1,7 @@
+stage,field_name,field_label,status_field,status_label,interpretation
+r4_2011_baseline,r4iwy,r4iwy:w4 r interview year,r4iwstat,"1.resp, alive",Completed respondent interview year; month field r4iwm.
+r4_2011_baseline,r4iwm,r4iwm:w4 r interview month,r4iwstat,"1.resp, alive",Completed respondent interview month; year field r4iwy.
+r6_2015_followup,r6iwy,r6iwy:w6 r interview year,r6iwstat,"1.resp, alive",Completed respondent interview year; month field r6iwm.
+r6_2015_followup,r6iwm,r6iwm:w6 r interview month,r6iwstat,"1.resp, alive",Completed respondent interview month; year field r6iwy.
+both,country,Country identifier,,,SHARE country identifier with value labels.
+both,isocountry,UN numerical country code,,,Country cross-check only; country is the grouping field.

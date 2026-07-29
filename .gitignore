@@ -1,0 +1,44 @@
+# ===================================================
+# .gitignore — project3 aging mortality prediction
+# ===================================================
+
+# ── 原始数据（绝对不提交）──────────────────────
+data_organized/
+*.dta
+*.sav
+*.sas7bdat
+*.por
+*.zsav
+
+# ── 文献 PDF（大型二进制，不版本管理）──────────
+literature/pdf/
+
+# ── R ──────────────────────────────────────────
+.Rhistory
+.RData
+.Rproj.user/
+renv/library/
+renv/staging/
+*.Rproj
+
+# ── Python ─────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
+
+# ── Node.js（文献提取工具产物）──────────────────
+node_modules/
+results/literature_extract/xlsx_build/
+
+# ── 构建日志（运行时产物，非代码）──────────────
+logs/*.log
+
+# ── 系统 / 编辑器 ───────────────────────────────
+.DS_Store
+Thumbs.db
+*.tmp
+*~
+desktop.ini

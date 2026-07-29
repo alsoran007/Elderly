@@ -1,0 +1,581 @@
+"cohort","role","rel_path","variable","variable_label","type","nonmissing_n","nonmissing_pct","unique_n"
+"CHARLS","exit","Charls/2013/Exit_Interview.dta","ID","Individual ID","character",431,100,431
+"CHARLS","exit","Charls/2013/Exit_Interview.dta","householdID","Household ID","character",431,100,426
+"CHARLS","exit","Charls/2013/Exit_Interview.dta","communityID","Community ID","character",431,100,260
+"CHARLS","exit","Charls/2013/Exit_Interview.dta","exb003","R'S Death Place","haven_labelled",429,99.54,3
+"CHARLS","exit","Charls/2013/Exit_Interview.dta","exb007","R Have the Death Certificate","haven_labelled",401,93.04,2
+"CHARLS","exit","Charls/2013/Exit_Interview.dta","exb008","Where Did R'S Death Certificate Filed","haven_labelled",192,44.55,3
+"CHARLS","exit","Charls/2013/Exit_Interview.dta","exb009","Death Was Expected","haven_labelled",422,97.91,3
+"CHARLS","exit","Charls/2013/Exit_Interview.dta","exb010","How Long Was It between the Illness and the Death","haven_labelled",425,98.61,6
+"CHARLS","exit","Charls/2013/Exit_Interview.dta","exc003","Number of Dead Children","numeric",154,35.73,4
+"CHARLS","exit","Charls/2013/Exit_Interview.dta","exeg000_w2","Death in Hospital","haven_labelled",426,98.84,2
+"CHARLS","exit","Charls/2013/Exit_Interview.dta","exeg003_w2","In Hospital One Month Before Death","haven_labelled",70,16.24,2
+"CHARLS","exit","Charls/2013/Exit_Interview.dta","exeg004_w2","In Hospital One Year Before Death","haven_labelled",425,98.61,2
+"CHARLS","exit","Charls/2013/Exit_Interview.dta","exf017","Life Insurance Pay Upon the Death (Yuan)","numeric",9,2.09,5
+"CHARLS","exit","Charls/2013/Exit_Interview.dta","exg001","Own the House Before Death","haven_labelled",156,36.19,3
+"CHARLS","exit","Charls/2013/Exit_Interview.dta","exg010_1_","Own the House Before Death","haven_labelled",10,2.32,3
+"CHARLS","exit","Charls/2013/Exit_Interview.dta","exg010_2_","Own the House Before Death","haven_labelled",1,0.23,1
+"CHARLS","exit","Charls/2013/Exit_Interview.dta","exg021","Have Will Before Death","haven_labelled",416,96.52,2
+"CHARLS","exit","Charls/2020/Exit_Module.dta","ID","Individual ID","character",770,100,770
+"CHARLS","exit","Charls/2020/Exit_Module.dta","householdID","Household ID","character",770,100,752
+"CHARLS","exit","Charls/2020/Exit_Module.dta","communityID","Community ID","character",770,100,349
+"CHARLS","exit","Charls/2020/Exit_Module.dta","versionID","Version ID","character",770,100,1
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exb001_1","Year of Death","numeric",107,13.9,8
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exb001_2","Month of Death","numeric",107,13.9,12
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exb001_3","Day of Death","numeric",107,13.9,25
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exb003","Residence, Before Death","haven_labelled",769,99.87,1
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exb004","Type of Residence, Before Death","haven_labelled",768,99.74,5
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exb005","Address of Death","haven_labelled",768,99.74,2
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exb006","Type of Address of Death","haven_labelled",768,99.74,7
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exb007","Was the Death Expected at About the Time It Occurred?","haven_labelled",768,99.74,3
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exb008","How Long Is the Time Between the Start of the Final Illness and Death?","haven_labelled",768,99.74,6
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exb011","Death Certificate","haven_labelled",767,99.61,2
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exb012","Where Did R's Death Certificate Filed","haven_labelled",486,63.12,3
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exda006_s1","Treatments for Cancer Two Years Before Death","haven_labelled",189,24.55,2
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exda006_s2","Treatments for Cancer Two Years Before Death","haven_labelled",189,24.55,2
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exda006_s3","Treatments for Cancer Two Years Before Death","haven_labelled",189,24.55,2
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exda006_s4","Treatments for Cancer Two Years Before Death","haven_labelled",189,24.55,2
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exda006_s5","Treatments for Cancer Two Years Before Death","haven_labelled",189,24.55,2
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exda006_s6","Treatments for Cancer Two Years Before Death","haven_labelled",189,24.55,2
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exda006_s7","Treatments for Cancer Two Years Before Death","haven_labelled",189,24.55,2
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exef001","Take Any Purchased Medicine in the Month before Death","haven_labelled",760,98.7,2
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exeg000","Dead in Hospital","numeric",760,98.7,2
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exeg001","How Long Been A Patient in that Hospital before Death","numeric",138,17.92,4
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exeg003","In Addition to that Hospital Stay, in the One Month before His/Her Death Had He/","numeric",138,17.92,2
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exeg004","In the One Year before His/Her Death Had He/She Been A Patient in A Hospital Ove","numeric",760,98.7,2
+"CHARLS","exit","Charls/2020/Exit_Module.dta","exf011","How Much Did the Life Insurance Pay Upon the Death of R","numeric",18,2.34,11
+"KLoSA","exit","KLOSA/w03_exit_e.dta","pid","Personal ID.","numeric",309,100,309
+"KLoSA","exit","KLOSA/w03_exit_e.dta","hhid","Household ID.","numeric",309,100,302
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xa006","Expectancy of the person's death","haven_labelled",309,100,3
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xa007","The main cause of the person's death according to the death certificate","character",309,100,128
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xa008","The type of his/her death","haven_labelled",309,100,3
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xa009","The type of his/her violent death","haven_labelled",14,4.53,5
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xa010y","The date of his/her death (unit: yyyy)","haven_labelled",309,100,5
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xa010m","The date of his/her death (unit: mm)","haven_labelled",309,100,13
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xa010d","The date of his/her death (unit: day)","haven_labelled",309,100,32
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xa011","The place of the peron's death","haven_labelled",309,100,5
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc101m01","The chronic disease that the person suffered until 1 week before death_ Stroke/","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc101m02","The chronic disease that the person suffered until 1 week before death_High bloo","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc101m03","The chronic disease that the person suffered until 1 week before death_Diabetes/","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc101m04","The chronic disease that the person suffered until 1 week before death_Cancer","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc101m05","The chronic disease that the person suffered until 1 week before death_Lung dise","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc101m06","The chronic disease that the person suffered until 1 week before death_Heart dis","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc101m07","The chronic disease that the person suffered until 1 week before death_Liver dis","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc101m08","The chronic disease that the person suffered until 1 week before death_ Dementia","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc101m09","The chronic disease that the person suffered until 1 week before death_Psychiatr","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc101m10","The chronic disease that the person suffered until 1 week before death_Fracture","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc101m11","The chronic disease that the person suffered until 1 week before death_ Arthriti","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc101m12","The chronic disease that the person suffered until 1 week before death_Others","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc201","Whether or not had any memory problems as of one month before death","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc205","Memory function during one month before death","haven_labelled",309,100,6
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc206","Problem behavior as of 2 years before death_(1) He/she has ever got lost in a fa","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc207","Problem behavior as of 2 years before death_(2) He/she has ever wandered off the","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc208","Problem behavior as of 2 years before death_(3) He/she could not be left alone a","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc209","Problem behavior as of 2 years before death_(4) He/she has ever seen or heard th","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc210","Cognitive function problem as of 2 years before death_(1) He/she was confused ab","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc211","Cognitive function problem as of 2 years before death_(2) He/she was confused ab","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc212","Cognitive function problem as of 2 years before death_(3) He/she was not good at","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc213","Cognitive function problem as of 2 years before death_(4) He/she couldn¡¯t remem","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc214","Cognitive function problem as of 2 years before death_(5) He/she couldn¡¯t recal","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc215","Cognitive function problem as of 2 years before death_(6) He/she could not use f","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc216","Cognitive function problem as of 2 years before death_(7) It was impossible for","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc217","Cognitive function problem as of 2 years before death_(8) He/she couldn¡¯t follo","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc306","Whether or not suffered from any pain during the one year before death","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc310","Any change in the weight during the two years before death","haven_labelled",309,100,4
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc311","The condition during the one month before death_(1) difficulty in breathing","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc312","The condition during the one month before death_(2) no appetite","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc313","The condition during the one month before death_(3) frequent vomit","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc314","The condition during the one month before death_(4) difficulty in controlling ar","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc315","The condition during the one month before death_(5) depression","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc316","The condition during the one month before death_(6) periodic confusion","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc317","The condition during the one month before death_(7) severe fatigue or exhaustion","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc318","The condition during the one month before death_(8) loss of consciousness","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc319","The condition during the one month before death_(9) persistent coughing","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc320","The condition during the one month before death_(10) difficulty in controlling f","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc321","The condition during the one month before death_(11) loss of control of bowel or","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc402","The help required for everyday activities during the last 3 months before death_","numeric",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc403","The help required for everyday activities during the last 3 months before death_","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc404","The help required for everyday activities during the last 3 months before death_","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc405","The help required for everyday activities during the last 3 months before death_","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc406","The help required for everyday activities during the last 3 months before death_","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc407","The help required for everyday activities during the last 3 months before death_","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc408","The help required for everyday activities during the last 3 months before death_","haven_labelled",309,100,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc506","The type of medical aid during the last 1 month before death","haven_labelled",46,14.89,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc519","The hours of hospitalization on the last day before death (unit: hours)","numeric",4,1.29,3
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc529","If not died in the elderly care facility, where to stay until death","haven_labelled",44,14.24,5
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xc539","If not died in the elderly care facility, where to stay until death","haven_labelled",8,2.59,4
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xd002","(Unemployed in the previous interview) whether or not employed before death","haven_labelled",274,88.67,1
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xf023","Whether or not there is Inheritance_(4) Compensation upon death","haven_labelled",78,25.24,2
+"KLoSA","exit","KLOSA/w03_exit_e.dta","w03Xf024","The value of inheritance_(4) Compensation upon death (unit: 10,000 won)","haven_labelled",3,0.97,1
+"KLoSA","exit","KLOSA/w04_exit_e.dta","pid","Personal ID.","numeric",327,100,327
+"KLoSA","exit","KLOSA/w04_exit_e.dta","hhid","Household ID.","numeric",327,100,312
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xa006","Expectancy of the person's death","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xa007","The main cause of the person's death according to the death certificate","character",327,100,83
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xa008","The type of his/her death","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xa009","The type of his/her violent death","haven_labelled",17,5.2,4
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xa010y","The date of his/her death (unit: yyyy)","haven_labelled",327,100,7
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xa010m","The date of his/her death (unit: mm)","haven_labelled",327,100,13
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xa010d","The date of his/her death (unit: day)","haven_labelled",327,100,32
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xa011","The place of the peron's death","haven_labelled",327,100,6
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc101m01","The chronic disease that the person suffered until 1 week before death_ Stroke/","haven_labelled",325,99.39,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc101m02","The chronic disease that the person suffered until 1 week before death_High bloo","haven_labelled",325,99.39,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc101m03","The chronic disease that the person suffered until 1 week before death_Diabetes/","haven_labelled",325,99.39,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc101m04","The chronic disease that the person suffered until 1 week before death_Cancer","haven_labelled",325,99.39,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc101m05","The chronic disease that the person suffered until 1 week before death_Lung dise","haven_labelled",325,99.39,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc101m06","The chronic disease that the person suffered until 1 week before death_Heart dis","haven_labelled",325,99.39,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc101m07","The chronic disease that the person suffered until 1 week before death_Liver dis","haven_labelled",325,99.39,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc101m08","The chronic disease that the person suffered until 1 week before death_ Dementia","haven_labelled",325,99.39,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc101m09","The chronic disease that the person suffered until 1 week before death_Psychiatr","haven_labelled",325,99.39,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc101m10","The chronic disease that the person suffered until 1 week before death_Fracture","haven_labelled",325,99.39,2
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc101m11","The chronic disease that the person suffered until 1 week before death_ Arthriti","haven_labelled",325,99.39,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc101m12","The chronic disease that the person suffered until 1 week before death_Others","haven_labelled",325,99.39,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc201","Whether or not had any memory problems as of one month before death","haven_labelled",327,100,2
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc205","Memory function during one month before death","haven_labelled",327,100,6
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc206","Problem behavior as of 2 years before death_(1) He/she has ever got lost in a fa","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc207","Problem behavior as of 2 years before death_(2) He/she has ever wandered off the","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc208","Problem behavior as of 2 years before death_(3) He/she could not be left alone a","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc209","Problem behavior as of 2 years before death_(4) He/she has ever seen or heard th","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc210","Cognitive function problem as of 2 years before death_(1) He/she was confused ab","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc211","Cognitive function problem as of 2 years before death_(2) He/she was confused ab","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc212","Cognitive function problem as of 2 years before death_(3) He/she was not good at","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc213","Cognitive function problem as of 2 years before death_(4) He/she couldn¡¯t remem","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc214","Cognitive function problem as of 2 years before death_(5) He/she couldn¡¯t recal","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc215","Cognitive function problem as of 2 years before death_(6) He/she could not use f","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc216","Cognitive function problem as of 2 years before death_(7) It was impossible for","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc217","Cognitive function problem as of 2 years before death_(8) He/she couldn¡¯t follo","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc306","Whether or not suffered from any pain during the one year before death","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc310","Any change in the weight during the two years before death","haven_labelled",327,100,4
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc311","The condition during the one month before death_(1) difficulty in breathing","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc312","The condition during the one month before death_(2) no appetite","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc313","The condition during the one month before death_(3) frequent vomit","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc314","The condition during the one month before death_(4) difficulty in controlling ar","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc315","The condition during the one month before death_(5) depression","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc316","The condition during the one month before death_(6) periodic confusion","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc317","The condition during the one month before death_(7) severe fatigue or exhaustion","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc318","The condition during the one month before death_(8) loss of consciousness","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc319","The condition during the one month before death_(9) persistent coughing","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc320","The condition during the one month before death_(10) difficulty in controlling f","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc321","The condition during the one month before death_(11) loss of control of bowel or","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc402","The help required for everyday activities during the last 3 months before death_","haven_labelled",327,100,2
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc403","The help required for everyday activities during the last 3 months before death_","haven_labelled",327,100,2
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc404","The help required for everyday activities during the last 3 months before death_","haven_labelled",327,100,2
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc405","The help required for everyday activities during the last 3 months before death_","haven_labelled",327,100,3
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc406","The help required for everyday activities during the last 3 months before death_","haven_labelled",327,100,2
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc407","The help required for everyday activities during the last 3 months before death_","haven_labelled",327,100,2
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc408","The help required for everyday activities during the last 3 months before death_","haven_labelled",327,100,2
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc506","The type of medical aid during the last 1 month before death","haven_labelled",35,10.7,2
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc519","The hours of hospitalization on the last day before death (unit: hours)","numeric",4,1.22,4
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc529","If not died in the elderly care facility, where to stay until death","haven_labelled",26,7.95,4
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xc539","If not died in the elderly care facility, where to stay until death","haven_labelled",5,1.53,4
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xd002","(Unemployed in the previous interview) whether or not employed before death","haven_labelled",293,89.6,1
+"KLoSA","exit","KLOSA/w04_exit_e.dta","w04Xf023","Whether or not there is Inheritance_(4) Compensation upon death","haven_labelled",81,24.77,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","pid","Personal ID.","numeric",438,100,438
+"KLoSA","exit","KLOSA/w05_exit_e.dta","hhid","Household ID.","numeric",438,100,411
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xA006","Expectancy of the person's death","haven_labelled",438,100,3
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xA007","The main cause of the person's death according to the death certificate","character",438,100,129
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XA008","The type of his/her death","haven_labelled",438,100,4
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XA009","The type of his/her violent death","haven_labelled",28,6.39,4
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xA010Y","The date of his/her death (unit: yyyy)","haven_labelled",438,100,11
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xA010M","The date of his/her death (unit: mm)","haven_labelled",438,100,14
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xA010D","The date of his/her death (unit: day)","haven_labelled",438,100,33
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xA011","The place of the peron's death","haven_labelled",438,100,5
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xC101m01","The chronic disease that the person suffered until 1 week before death_ Stroke/","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xC101m02","The chronic disease that the person suffered until 1 week before death_High bloo","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xC101m03","The chronic disease that the person suffered until 1 week before death_Diabetes/","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xC101m04","The chronic disease that the person suffered until 1 week before death_Cancer","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xC101m05","The chronic disease that the person suffered until 1 week before death_Lung dise","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xC101m06","The chronic disease that the person suffered until 1 week before death_Heart dis","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xC101m07","The chronic disease that the person suffered until 1 week before death_Liver dis","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xC101m08","The chronic disease that the person suffered until 1 week before death_ Dementia","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xC101m09","The chronic disease that the person suffered until 1 week before death_Psychiatr","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xC101m10","The chronic disease that the person suffered until 1 week before death_Fracture","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xC101m11","The chronic disease that the person suffered until 1 week before death_ Arthriti","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xC101m12","The chronic disease that the person suffered until 1 week before death_Others","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xC101m13","The chronic disease that the person suffered until 1 week before death_None","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xC101m14","The chronic disease that the person suffered until 1 week before death_Refuse to","haven_labelled",438,100,1
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xC101m15","The chronic disease that the person suffered until 1 week before death_Don't kno","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC201","Whether or not had any memory problems as of one month before death","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC205","Memory function during one month before death","haven_labelled",438,100,5
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC206","Problem behavior as of 2 years before death_(1) He/she has ever got lost in a fa","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC207","Problem behavior as of 2 years before death_(2) He/she has ever wandered off the","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC208","Problem behavior as of 2 years before death_(3) He/she could not be left alone a","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC209","Problem behavior as of 2 years before death_(4) He/she has ever seen or heard th","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC210","Cognitive function problem as of 2 years before death_(1) He/she was confused ab","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC211","Cognitive function problem as of 2 years before death_(2) He/she was confused ab","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC212","Cognitive function problem as of 2 years before death_(3) He/she was not good at","haven_labelled",438,100,3
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC213","Cognitive function problem as of 2 years before death_(4) He/she couldn¡¯t remem","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC214","Cognitive function problem as of 2 years before death_(5) He/she couldn¡¯t recal","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC215","Cognitive function problem as of 2 years before death_(6) He/she could not use f","haven_labelled",438,100,3
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC216","Cognitive function problem as of 2 years before death_(7) It was impossible for","haven_labelled",438,100,3
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC217","Cognitive function problem as of 2 years before death_(8) He/she couldn¡¯t follo","haven_labelled",438,100,3
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC306","Whether or not suffered from any pain during the one year before death","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC310","Any change in the weight during the two years before death","haven_labelled",438,100,5
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC311","The condition during the one month before death_(1) difficulty in breathing","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC312","The condition during the one month before death_(2) no appetite","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC313","The condition during the one month before death_(3) frequent vomit","haven_labelled",438,100,3
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC314","The condition during the one month before death_(4) difficulty in controlling ar","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC315","The condition during the one month before death_(5) depression","haven_labelled",438,100,3
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC316","The condition during the one month before death_(6) periodic confusion","haven_labelled",438,100,3
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC317","The condition during the one month before death_(7) severe fatigue or exhaustion","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC318","The condition during the one month before death_(8) loss of consciousness","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC319","The condition during the one month before death_(9) persistent coughing","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC320","The condition during the one month before death_(10) difficulty in controlling f","haven_labelled",438,100,3
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC321","The condition during the one month before death_(11) loss of control of bowel or","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC402","The help required for everyday activities during the last 3 months before death_","haven_labelled",438,100,3
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC403","The help required for everyday activities during the last 3 months before death_","haven_labelled",438,100,3
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC404","The help required for everyday activities during the last 3 months before death_","haven_labelled",438,100,3
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC405","The help required for everyday activities during the last 3 months before death_","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC406","The help required for everyday activities during the last 3 months before death_","haven_labelled",438,100,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC407","The help required for everyday activities during the last 3 months before death_","haven_labelled",438,100,3
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC408","The help required for everyday activities during the last 3 months before death_","haven_labelled",438,100,3
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC506","The type of medical aid during the last 1 month before death","haven_labelled",40,9.13,3
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC519","The hours of hospitalization on the last day before death (unit: hours)","numeric",0,0,0
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC529","If not died in the elderly care facility, where to stay until death","haven_labelled",84,19.18,7
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05XC539","If not died in the elderly care facility, where to stay until death","haven_labelled",5,1.14,2
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xD002","(Unemployed in the previous interview) whether or not employed before death","haven_labelled",370,84.47,3
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xD025","(Unemployed in the previous interview) whether or not employed before death","haven_labelled",4,0.91,1
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xF023","Whether or not there is Inheritance_(4) Compensation upon death","haven_labelled",130,29.68,4
+"KLoSA","exit","KLOSA/w05_exit_e.dta","w05xF024","Whether or not there is Inheritance_(4) Compensation upon death (unit: 10,000 wo","haven_labelled",1,0.23,1
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","pid","Personal ID","haven_labelled",403,100,403
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","hhid","Household ID","numeric",403,100,386
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_A006","Expectancy of the person's death","haven_labelled",403,100,4
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_A007","The main cause of the person's death according to the death certificate","character",403,100,117
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_A008","The type of his/her death","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_A009","The type of his/her violent death","haven_labelled",35,8.68,5
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_A010Y","The date of his/her death (unit: yyyy)","haven_labelled",403,100,9
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_A010M","The date of his/her death (unit: mm)","haven_labelled",403,100,14
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_A010D","The date of his/her death (unit: day)","haven_labelled",403,100,33
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_A011","The place of the peron's death","haven_labelled",403,100,5
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C101a1","The chronic disease that the person suffered until 1 week before death_01","haven_labelled",403,100,14
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C101a2","The chronic disease that the person suffered until 1 week before death_02","haven_labelled",130,32.26,11
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C101a3","The chronic disease that the person suffered until 1 week before death_03","haven_labelled",60,14.89,9
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C101a4","The chronic disease that the person suffered until 1 week before death_04","haven_labelled",22,5.46,7
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C101a5","The chronic disease that the person suffered until 1 week before death_05","haven_labelled",6,1.49,5
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C101a6","The chronic disease that the person suffered until 1 week before death_06","haven_labelled",1,0.25,1
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C101a7","The chronic disease that the person suffered until 1 week before death_07","haven_labelled",0,0,0
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C101a8","The chronic disease that the person suffered until 1 week before death_08","haven_labelled",0,0,0
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C101a9","The chronic disease that the person suffered until 1 week before death_09","haven_labelled",0,0,0
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C101a10","The chronic disease that the person suffered until 1 week before death_10","haven_labelled",0,0,0
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C101a11","The chronic disease that the person suffered until 1 week before death_11","haven_labelled",0,0,0
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C101a12","The chronic disease that the person suffered until 1 week before death_Others","haven_labelled",0,0,0
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C101a13","The chronic disease that the person suffered until 1 week before death_None","haven_labelled",0,0,0
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C201","Whether or not had any memory problems as of one month before death","haven_labelled",403,100,2
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C205","Memory function during one month before death","haven_labelled",403,100,5
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C206","Problem behavior as of 2 years before death_(1) He/she has ever got lost in a fa","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C207","Problem behavior as of 2 years before death_(2) He/she has ever wandered off the","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C208","Problem behavior as of 2 years before death_(3) He/she could not be left alone a","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C209","Problem behavior as of 2 years before death_(4) He/she has ever seen or heard th","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C210","Cognitive function problem as of 2 years before death_(1) He/she was confused ab","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C211","Cognitive function problem as of 2 years before death_(2) He/she was confused ab","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C212","Cognitive function problem as of 2 years before death_(3) He/she was not good at","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C213","Cognitive function problem as of 2 years before death_(4) He/she couldn¡¯t remem","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C214","Cognitive function problem as of 2 years before death_(5) He/she couldn¡¯t recal","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C215","Cognitive function problem as of 2 years before death_(6) He/she could not use f","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C216","Cognitive function problem as of 2 years before death_(7) It was impossible for","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C217","Cognitive function problem as of 2 years before death_(8) He/she couldn¡¯t follo","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C306","Whether or not suffered from any pain during the one year before death","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C310","Any change in the weight during the two years before death","haven_labelled",403,100,4
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C311","The condition during the one month before death_(1) difficulty in breathing","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C312","The condition during the one month before death_(2) no appetite","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C313","The condition during the one month before death_(3) frequent vomit","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C314","The condition during the one month before death_(4) difficulty in controlling ar","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C315","The condition during the one month before death_(5) depression","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C316","The condition during the one month before death_(6) periodic confusion","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C317","The condition during the one month before death_(7) severe fatigue or exhaustion","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C318","The condition during the one month before death_(8) loss of consciousness","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C319","The condition during the one month before death_(9) persistent coughing","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C320","The condition during the one month before death_(10) difficulty in controlling f","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C321","The condition during the one month before death_(11) loss of control of bowel or","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C402","The help required for everyday activities during the last 3 months before death_","haven_labelled",403,100,2
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C403","The help required for everyday activities during the last 3 months before death_","haven_labelled",403,100,2
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C404","The help required for everyday activities during the last 3 months before death_","haven_labelled",403,100,2
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C405","The help required for everyday activities during the last 3 months before death_","haven_labelled",403,100,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C406","The help required for everyday activities during the last 3 months before death_","haven_labelled",403,100,2
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C407","The help required for everyday activities during the last 3 months before death_","haven_labelled",403,100,2
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C408","The help required for everyday activities during the last 3 months before death_","haven_labelled",403,100,2
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C506","The type of medical aid during the last 1 month before death","haven_labelled",32,7.94,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C519","The hours of hospitalization on the last day before death (unit: hours)","haven_labelled",4,0.99,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C529","If not died in the elderly care facility, where to stay until death","haven_labelled",92,22.83,5
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_C539","If not died in the elderly care facility, where to stay until death","haven_labelled",8,1.99,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_D002","(Unemployed in the previous interview) whether or not employed before death","haven_labelled",345,85.61,2
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_D025","(Unemployed in the previous interview) whether or not employed before death","haven_labelled",5,1.24,1
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_F023","Whether or not there is inheritance_(4) Compensation upon death","haven_labelled",119,29.53,3
+"KLoSA","exit","KLOSA/w06_Exit_e.dta","w06x_F024","The value of inheritance_(4) Compensation upon death (unit: 10,000 won)","haven_labelled",9,2.23,8
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","pid","Personal ID","haven_labelled",551,100,551
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","hhid","Household ID","numeric",551,100,503
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_a006","Expectancy of the person's death","haven_labelled",551,100,4
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_a007","The main cause of the person's death according to the death certificate","character",551,100,132
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_a008","The type of his/her death","haven_labelled",551,100,4
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_a009","The type of his/her violent death","haven_labelled",46,8.35,5
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_a010y","The date of his/her death (unit: yyyy)","haven_labelled",551,100,10
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_a010m","The date of his/her death (unit: mm)","haven_labelled",551,100,13
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_a010d","The date of his/her death (unit: day)","haven_labelled",551,100,32
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_a011","The place of the peron's death","haven_labelled",551,100,6
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c101a1","The chronic disease that the person suffered until 1 week before death_01","haven_labelled",551,100,2
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c101a2","The chronic disease that the person suffered until 1 week before death_02","haven_labelled",551,100,2
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c101a3","The chronic disease that the person suffered until 1 week before death_03","haven_labelled",551,100,2
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c101a4","The chronic disease that the person suffered until 1 week before death_04","haven_labelled",551,100,2
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c101a5","The chronic disease that the person suffered until 1 week before death_05","haven_labelled",551,100,2
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c101a6","The chronic disease that the person suffered until 1 week before death_06","haven_labelled",551,100,2
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c101a7","The chronic disease that the person suffered until 1 week before death_07","haven_labelled",551,100,2
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c101a8","The chronic disease that the person suffered until 1 week before death_08","haven_labelled",551,100,2
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c101a9","The chronic disease that the person suffered until 1 week before death_09","haven_labelled",551,100,2
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c101a10","The chronic disease that the person suffered until 1 week before death_10","haven_labelled",551,100,2
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c101a11","The chronic disease that the person suffered until 1 week before death_11","haven_labelled",551,100,2
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c101a12","The chronic disease that the person suffered until 1 week before death_Others","haven_labelled",551,100,2
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c101a13","The chronic disease that the person suffered until 1 week before death_None","haven_labelled",551,100,2
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c101a14","The chronic disease that the person suffered until 1 week before death_Refuse to","haven_labelled",551,100,1
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c101a15","The chronic disease that the person suffered until 1 week before death_Don't kno","haven_labelled",551,100,2
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c201","Whether or not had any memory problems as of one month before death","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c205","Memory function during one month before death","haven_labelled",551,100,6
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c206","Problem behavior as of 2 years before death_(1) He/she has ever got lost in a fa","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c207","Problem behavior as of 2 years before death_(2) He/she has ever wandered off the","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c208","Problem behavior as of 2 years before death_(3) He/she could not be left alone a","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c209","Problem behavior as of 2 years before death_(4) He/she has ever seen or heard th","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c210","Cognitive function problem as of 2 years before death_(1) He/she was confused ab","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c211","Cognitive function problem as of 2 years before death_(2) He/she was confused ab","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c212","Cognitive function problem as of 2 years before death_(3) He/she was not good at","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c213","Cognitive function problem as of 2 years before death_(4) He/she couldn’t rememb","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c214","Cognitive function problem as of 2 years before death_(5) He/she couldn’t recall","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c215","Cognitive function problem as of 2 years before death_(6) He/she could not use f","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c216","Cognitive function problem as of 2 years before death_(7) It was impossible for","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c217","Cognitive function problem as of 2 years before death_(8) He/she couldn’t follow","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c306","Whether or not suffered from any pain during the one year before death","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c310","Any change in the weight during the two years before death","haven_labelled",551,100,4
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c311","The condition during the one month before death_(1) difficulty in breathing","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c312","The condition during the one month before death_(2) no appetite","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c313","The condition during the one month before death_(3) frequent vomit","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c314","The condition during the one month before death_(4) difficulty in controlling ar","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c315","The condition during the one month before death_(5) depression","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c316","The condition during the one month before death_(6) periodic confusion","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c317","The condition during the one month before death_(7) severe fatigue or exhaustion","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c318","The condition during the one month before death_(8) loss of consciousness","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c319","The condition during the one month before death_(9) persistent coughing","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c320","The condition during the one month before death_(10) difficulty in controlling f","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c321","The condition during the one month before death_(11) loss of control of bowel or","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c402","The help required for everyday activities during the last 3 months before death_","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c403","The help required for everyday activities during the last 3 months before death_","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c404","The help required for everyday activities during the last 3 months before death_","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c405","The help required for everyday activities during the last 3 months before death_","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c406","The help required for everyday activities during the last 3 months before death_","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c407","The help required for everyday activities during the last 3 months before death_","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c408","The help required for everyday activities during the last 3 months before death_","haven_labelled",551,100,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c506","The type of medical aid during the last 1 month before death","haven_labelled",52,9.44,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c519","The hours of hospitalization on the last day before death (unit: hours)","haven_labelled",2,0.36,2
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c529","If not died in the elderly care facility, where to stay until death","haven_labelled",113,20.51,7
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_c539","If not died in the elderly care facility, where to stay until death","haven_labelled",9,1.63,4
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_d002","(Unemployed in the previous interview) whether or not employed before death","haven_labelled",468,84.94,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_d025","(Unemployed in the previous interview) whether or not employed before death","haven_labelled",10,1.81,1
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_f023","Whether or not there is inheritance_(4) Compensation upon death","haven_labelled",150,27.22,3
+"KLoSA","exit","KLOSA/2018 KLoSA 7 wave EXIT/w07_exit_e.dta","w07x_f024","The value of inheritance_(4) Compensation upon death (unit: 10,000 won)","haven_labelled",13,2.36,10
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","pid","Personal ID","haven_labelled",512,100,512
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","hhid","Household ID","numeric",0,0,0
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_a006","Expectancy of the person's death","haven_labelled",512,100,4
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_a007","The main cause of the person's death according to the death certificate","character",512,100,80
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_a008","The type of his/her death","haven_labelled",512,100,4
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_a009","The type of his/her violent death","haven_labelled",51,9.96,6
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_a010Y","The date of his/her death (unit: yyyy)","haven_labelled",512,100,10
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_a010M","The date of his/her death (unit: mm)","haven_labelled",512,100,13
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_a010D","The date of his/her death (unit: day)","haven_labelled",512,100,32
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_a011","The place of the peron's death","haven_labelled",512,100,6
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c101m01","The chronic disease that the person suffered until 1 week before death_01","haven_labelled",512,100,2
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c101m02","The chronic disease that the person suffered until 1 week before death_02","haven_labelled",512,100,2
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c101m03","The chronic disease that the person suffered until 1 week before death_03","haven_labelled",512,100,2
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c101m04","The chronic disease that the person suffered until 1 week before death_04","haven_labelled",512,100,2
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c101m05","The chronic disease that the person suffered until 1 week before death_05","haven_labelled",512,100,2
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c101m06","The chronic disease that the person suffered until 1 week before death_06","haven_labelled",512,100,2
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c101m07","The chronic disease that the person suffered until 1 week before death_07","haven_labelled",512,100,2
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c101m08","The chronic disease that the person suffered until 1 week before death_08","haven_labelled",512,100,2
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c101m09","The chronic disease that the person suffered until 1 week before death_09","haven_labelled",512,100,2
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c101m10","The chronic disease that the person suffered until 1 week before death_10","haven_labelled",512,100,2
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c101m11","The chronic disease that the person suffered until 1 week before death_11","haven_labelled",512,100,2
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c101m12","The chronic disease that the person suffered until 1 week before death_Others","haven_labelled",512,100,2
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c101m13","The chronic disease that the person suffered until 1 week before death_None","haven_labelled",512,100,2
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c101m14","The chronic disease that the person suffered until 1 week before death_Refuse to","haven_labelled",512,100,1
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c101m15","The chronic disease that the person suffered until 1 week before death_Don't kno","haven_labelled",512,100,2
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c201","Whether or not had any memory problems as of one month before death","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c205","Memory function during one month before death","haven_labelled",512,100,6
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c206","Problem behavior as of 2 years before death_(1) He/she has ever got lost in a fa","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c207","Problem behavior as of 2 years before death_(2) He/she has ever wandered off the","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c208","Problem behavior as of 2 years before death_(3) He/she could not be left alone a","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c209","Problem behavior as of 2 years before death_(4) He/she has ever seen or heard th","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c210","Cognitive function problem as of 2 years before death_(1) He/she was confused ab","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c211","Cognitive function problem as of 2 years before death_(2) He/she was confused ab","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c212","Cognitive function problem as of 2 years before death_(3) He/she was not good at","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c213","Cognitive function problem as of 2 years before death_(4) He/she couldn’t rememb","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c214","Cognitive function problem as of 2 years before death_(5) He/she couldn’t recall","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c215","Cognitive function problem as of 2 years before death_(6) He/she could not use f","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c216","Cognitive function problem as of 2 years before death_(7) It was impossible for","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c217","Cognitive function problem as of 2 years before death_(8) He/she couldn’t follow","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c306","Whether or not suffered from any pain during the one year before death","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c310","Any change in the weight during the two years before death","haven_labelled",512,100,4
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c311","The condition during the one month before death_(1) difficulty in breathing","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c312","The condition during the one month before death_(2) no appetite","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c313","The condition during the one month before death_(3) frequent vomit","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c314","The condition during the one month before death_(4) difficulty in controlling ar","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c315","The condition during the one month before death_(5) depression","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c316","The condition during the one month before death_(6) periodic confusion","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c317","The condition during the one month before death_(7) severe fatigue or exhaustion","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c318","The condition during the one month before death_(8) loss of consciousness","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c319","The condition during the one month before death_(9) persistent coughing","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c320","The condition during the one month before death_(10) difficulty in controlling f","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c321","The condition during the one month before death_(11) loss of control of bowel or","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c402","The help required for everyday activities during the last 3 months before death_","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c403","The help required for everyday activities during the last 3 months before death_","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c404","The help required for everyday activities during the last 3 months before death_","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c405","The help required for everyday activities during the last 3 months before death_","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c406","The help required for everyday activities during the last 3 months before death_","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c407","The help required for everyday activities during the last 3 months before death_","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c408","The help required for everyday activities during the last 3 months before death_","haven_labelled",512,100,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c506","The type of medical aid during the last 1 month before death","haven_labelled",48,9.38,2
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c519","The hours of hospitalization on the last day before death (unit: hours)","haven_labelled",5,0.98,5
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c529","If not died in the elderly care facility, where to stay until death","haven_labelled",95,18.55,7
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_c539","If not died in the elderly care facility, where to stay until death","haven_labelled",1,0.2,1
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_d002","(Unemployed in the previous interview) whether or not employed before death","haven_labelled",416,81.25,3
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_d025","(Unemployed in the previous interview) whether or not employed before death","haven_labelled",10,1.95,1
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_f023","Whether or not there is inheritance_(4) Compensation upon death","haven_labelled",147,28.71,2
+"KLoSA","exit","KLOSA/KLoSA 8th wave_EXIT/w08_exit_e.dta","w08x_f024","The value of inheritance_(4) Compensation upon death (unit: 10,000 won)","haven_labelled",10,1.95,8
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","pid","Personal ID","haven_labelled",535,100,535
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","hhid","Household ID","numeric",535,100,490
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_A006","Expectancy of the person's death","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_A007","The main cause of the person's death according to the death certificate","character",535,100,93
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_A008","The type of his/her death","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_A009","The type of his/her violent death","haven_labelled",39,7.29,5
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_A010Y","The date of his/her death (unit: yyyy)","haven_labelled",535,100,11
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_A010M","The date of his/her death (unit: mm)","haven_labelled",535,100,13
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_A010D","The date of his/her death (unit: day)","haven_labelled",535,100,32
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_A011","The place of the peron's death","haven_labelled",535,100,5
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w08x_c101m01","The chronic disease that the person suffered until 1 week before death_01","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w08x_c101m02","The chronic disease that the person suffered until 1 week before death_02","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w08x_c101m03","The chronic disease that the person suffered until 1 week before death_03","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w08x_c101m04","The chronic disease that the person suffered until 1 week before death_04","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w08x_c101m05","The chronic disease that the person suffered until 1 week before death_05","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w08x_c101m06","The chronic disease that the person suffered until 1 week before death_06","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w08x_c101m07","The chronic disease that the person suffered until 1 week before death_07","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w08x_c101m08","The chronic disease that the person suffered until 1 week before death_08","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w08x_c101m09","The chronic disease that the person suffered until 1 week before death_09","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w08x_c101m10","The chronic disease that the person suffered until 1 week before death_10","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w08x_c101m11","The chronic disease that the person suffered until 1 week before death_11","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w08x_c101m12","The chronic disease that the person suffered until 1 week before death_Others","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w08x_c101m13","The chronic disease that the person suffered until 1 week before death_None","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C201","Whether or not had any memory problems as of one month before death","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C205","Memory function during one month before death","haven_labelled",535,100,6
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C206","Problem behavior as of 2 years before death_(1) He/she has ever got lost in a fa","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C207","Problem behavior as of 2 years before death_(2) He/she has ever wandered off the","haven_labelled",535,100,2
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C208","Problem behavior as of 2 years before death_(3) He/she could not be left alone a","haven_labelled",535,100,2
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C209","Problem behavior as of 2 years before death_(4) He/she has ever seen or heard th","haven_labelled",535,100,2
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C210","Cognitive function problem as of 2 years before death_(1) He/she was confused ab","haven_labelled",535,100,2
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C211","Cognitive function problem as of 2 years before death_(2) He/she was confused ab","haven_labelled",535,100,2
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C212","Cognitive function problem as of 2 years before death_(3) He/she was not good at","haven_labelled",535,100,2
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C213","Cognitive function problem as of 2 years before death_(4) He/she couldn’t rememb","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C214","Cognitive function problem as of 2 years before death_(5) He/she couldn’t recall","haven_labelled",535,100,2
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C215","Cognitive function problem as of 2 years before death_(6) He/she could not use f","haven_labelled",535,100,2
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C216","Cognitive function problem as of 2 years before death_(7) It was impossible for","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C217","Cognitive function problem as of 2 years before death_(8) He/she couldn’t follow","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C306","Whether or not suffered from any pain during the one year before death","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C310","Any change in the weight during the two years before death","haven_labelled",535,100,4
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C311","The condition during the one month before death_(1) difficulty in breathing","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C312","The condition during the one month before death_(2) no appetite","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C313","The condition during the one month before death_(3) frequent vomit","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C314","The condition during the one month before death_(4) difficulty in controlling ar","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C315","The condition during the one month before death_(5) depression","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C316","The condition during the one month before death_(6) periodic confusion","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C317","The condition during the one month before death_(7) severe fatigue or exhaustion","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C318","The condition during the one month before death_(8) loss of consciousness","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C319","The condition during the one month before death_(9) persistent coughing","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C320","The condition during the one month before death_(10) difficulty in controlling f","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C321","The condition during the one month before death_(11) loss of control of bowel or","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C402","The help required for everyday activities during the last 3 months before death_","haven_labelled",535,100,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C403","The help required for everyday activities during the last 3 months before death_","haven_labelled",535,100,2
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C404","The help required for everyday activities during the last 3 months before death_","haven_labelled",535,100,2
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C405","The help required for everyday activities during the last 3 months before death_","haven_labelled",535,100,2
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C406","The help required for everyday activities during the last 3 months before death_","haven_labelled",535,100,2
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C407","The help required for everyday activities during the last 3 months before death_","haven_labelled",535,100,2
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C408","The help required for everyday activities during the last 3 months before death_","haven_labelled",535,100,2
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C506","The type of medical aid during the last 1 month before death","haven_labelled",46,8.6,2
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C519","The hours of hospitalization on the last day before death (unit: hours)","haven_labelled",4,0.75,4
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C529","If not died in the elderly care facility, where to stay until death","haven_labelled",94,17.57,5
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_C539","If not died in the elderly care facility, where to stay until death","haven_labelled",8,1.5,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_D002","(Unemployed in the previous interview) whether or not employed before death","haven_labelled",462,86.36,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_D025_01","(Unemployed in the previous interview) whether or not employed before death","haven_labelled",8,1.5,2
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_D025_02","(Unemployed in the previous interview) whether or not employed before death","haven_labelled",1,0.19,1
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_F023","Whether or not there is inheritance_(4) Compensation upon death","haven_labelled",135,25.23,3
+"KLoSA","exit","KLOSA/KLoSA 9 wave Exit/Exit09_e.dta","w09X_F024","The value of inheritance_(4) Compensation upon death (unit: 10,000 won)","haven_labelled",5,0.93,3
+"SHARE","end_of_life","share harmonised/GH_SHARE_EOL_g.dta","hhid","hhid: household id /6-char","character",21098,100,16923
+"SHARE","end_of_life","share harmonised/GH_SHARE_EOL_g.dta","mergeid","Person identifier (fix across modules and waves)","character",21098,100,21098
+"SHARE","end_of_life","share harmonised/GH_SHARE_EOL_g.dta","raxmonth","raxmonth: r death month in eol ivw","numeric",20666,97.95,12
+"SHARE","end_of_life","share harmonised/GH_SHARE_EOL_g.dta","raxyear","raxyear: r death year in eol ivw","numeric",20753,98.36,19
+"SHARE","end_of_life","share harmonised/GH_SHARE_EOL_g.dta","radage","radage: r age at death","numeric",21020,99.63,67
+"SHARE","end_of_life","share harmonised/GH_SHARE_EOL_g.dta","radagef","radagef: r flag age at death","haven_labelled",21020,99.63,3
+"SHARE","end_of_life","share harmonised/GH_SHARE_EOL_g.dta","radtoivwm","radtoivwm: r time between death and eol ivw, months","numeric",20722,98.22,115
+"SHARE","end_of_life","share harmonised/GH_SHARE_EOL_g.dta","radtoivwy","radtoivwy: r time between death and eol ivw, years","numeric",20722,98.22,115
+"SHARE","end_of_life","share harmonised/GH_SHARE_EOL_g.dta","radtoivwf","radtoivwf: r flag time between death and eol ivw","haven_labelled",20722,98.22,2
+"SHARE","end_of_life","share harmonised/GH_SHARE_EOL_g.dta","radloc_s","radloc_s: r specific death location","haven_labelled",20530,97.31,7
+"SHARE","end_of_life","share harmonised/GH_SHARE_EOL_g.dta","radloc","radloc: r death location","haven_labelled",20530,97.31,5
+"SHARE","end_of_life","share harmonised/GH_SHARE_EOL_g.dta","radlocs","radlocs: r death location, simplified","haven_labelled",20530,97.31,3
+"SHARE","end_of_life","share harmonised/GH_SHARE_EOL_g.dta","racod_s","racod_s: disease that caused r's death","haven_labelled",20476,97.05,25
+"SHARE","end_of_life","share harmonised/GH_SHARE_EOL_g.dta","ragcod","ragcod: grouped disease that caused r's death","haven_labelled",20476,97.05,3
+"SHARE","end_of_life","share harmonised/GH_SHARE_EOL_g.dta","raddur","raddur: r duration final illness/death","haven_labelled",20403,96.71,4
+"SHARE","end_of_life","share harmonised/GH_SHARE_EOL_g.dta","radmarr","radmarr: r married at death","haven_labelled",20258,96.02,2
+"SHARE","end_of_life","share harmonised/GH_SHARE_EOL_g.dta","radmarrp","radmarrp: r married/partnered at death","haven_labelled",20267,96.06,2
+"SHARE","end_of_life","share harmonised/GH_SHARE_EOL_g.dta","raxahown","raxahown: r owned home at death","haven_labelled",20332,96.37,2
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","idauniq","Unique individual serial number","numeric",983,100,983
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","idauniqc","unique individual serial number /6-char","character",983,100,983
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","raxseason","raxseason: r death season in eol ivw","haven_labelled",983,100,5
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","raxyear","raxyear: r death year in eol ivw","numeric",980,99.69,11
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","radage","radage: r age at death","numeric",983,100,62
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","radagef","radagef: r flag age at death","haven_labelled",983,100,2
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","radtoivwm","radtoivwm: r time between death and eol ivw, months","numeric",979,99.59,60
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","radtoivwy","radtoivwy: r time between death and eol ivw, years","numeric",979,99.59,7
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","radtoivwf","radtoivwf: r flag time between death and eol ivw","haven_labelled",983,100,3
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","radloc_e","radloc_e: r specific death location","haven_labelled",983,100,11
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","radloc","radloc: r death location","haven_labelled",983,100,5
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","radexpec","radexpec: r death expected","haven_labelled",983,100,5
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","racod_e","racod_e: disease that caused r's death","haven_labelled",983,100,5
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","ragcod","ragcod: grouped disease that caused r's death","haven_labelled",983,100,4
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","raddur","raddur: r duration final illness/death","haven_labelled",983,100,7
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","radmarrp","radmarrp: r married/partnered at death","haven_labelled",983,100,2
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","radlivnh","radlivnh: r whether lived in nursing home prior to death","haven_labelled",983,100,4
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","raxahown","raxahown: r owned home at death","haven_labelled",983,100,6
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","raxamort","raxamort: asset: value r's home mortgage","numeric",722,73.45,14
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","raxafmort","raxafmort: asset flag: value r's home mortgage","haven_labelled",983,100,8
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","raxwork","raxwork: r working up until time of death","haven_labelled",983,100,3
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","radexpense","radexpense: r death expense: total","numeric",983,100,278
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","radexpensef","radexpensef: r death expense flag: total","haven_labelled",983,100,3
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","rainscovr","rainscovr: r death expenses covered by insurance","haven_labelled",983,100,3
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","rainspaid","rainspaid: r death expense: insurance paid out","numeric",318,32.35,70
+"ELSA","end_of_life","ELSA/stata/stata13_se/h_elsa_eol_a2.dta","rainspaidf","rainspaidf: r death expense flag: insurance paid out","haven_labelled",983,100,4
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","codent01","Person identification code 2001 (=ps3)","haven_labelled",5316,94.54,2
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","codent03","Person identification code 2003 (=ent2)","haven_labelled",5340,94.97,4
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","ps3","Person identification code 2001 (=codent01)","numeric",5316,94.54,2
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","ent2","Person identification code 2003 (=codent03)","numeric",5340,94.97,4
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","unhhidnp","UNHHIDNP: Unique Person Identifier (HH ID + Person Number)/ Num","numeric",5623,100,5623
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","rahhidnp","RAHHIDNP: Unique Person Identifier (HH ID + Person Number)/ 7-Char","character",5623,100,5623
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","h1hhid","h1hhid: w1 Unique Household Identifier (HH ID + SubHH)/ Num","numeric",5623,100,4843
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","h2hhid","h2hhid: w2 Unique Household Identifier (HH ID + SubHH)/ Num","numeric",5623,100,4775
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","h3hhid","h3hhid: w3 Unique Household Identifier (HH ID + SubHH)/ Num","numeric",5623,100,5130
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","h4hhid","h4hhid: w4 Unique Household Identifier (HH ID + SubHH)/ Num","numeric",5623,100,5197
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","h5hhid","h5hhid: w5 Unique Household Identifier (HH ID + SubHH)/ Num","numeric",5623,100,5097
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","h1hhidc","h1hhidc: w1 Unique Household Identifier (HH ID + SubHH)/ 7-Char","character",5623,100,4843
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","h2hhidc","h2hhidc: w2 Unique Household Identifier (HH ID + SubHH)/ 7-Char","character",5623,100,4775
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","h3hhidc","h3hhidc: w3 Unique Household Identifier (HH ID + SubHH)/ 7-Char","character",5623,100,5130
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","h4hhidc","h4hhidc: w4 Unique Household Identifier (HH ID + SubHH)/ 7-Char","character",5623,100,5197
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","h5hhidc","h5hhidc: w5 Unique Household Identifier (HH ID + SubHH)/ 7-Char","character",5623,100,5097
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","raxmonth","raxmonth: r death month in nok ivw","numeric",5450,96.92,12
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","raxyear","raxyear: r death year in nok ivw","numeric",5554,98.77,18
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","radage","radage: r age at death","numeric",5616,99.88,70
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","radagef","radagef: r flag age at death","haven_labelled",5616,99.88,3
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","radtoivwm","radtoivwm: r time between death and nok ivw, months","numeric",5554,98.77,144
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","radtoivwy","radtoivwy: r time between death and nok ivw, years","numeric",5554,98.77,144
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","radtoivwf","radtoivwf: r flag time between death and nok ivw","haven_labelled",5554,98.77,2
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","radlocs","radlocs: r death location","haven_labelled",5354,95.22,3
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","racod_m","racod_m: disease that caused r's death","haven_labelled",5330,94.79,8
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","ragcod","ragcod: grouped disease that caused r's death","haven_labelled",5330,94.79,3
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","radmarrp","radmarrp: r married/partnered at death","haven_labelled",5619,99.93,2
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","raxahown","raxahown: r owned home at death","haven_labelled",4869,86.59,2
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","raxhomedis_m","raxhomedis_m: disposition of r's home after death","haven_labelled",3041,54.08,7
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","raxprsold","raxprsold: r sold assets before death","haven_labelled",4550,80.92,2
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","raxwork","raxwork: r working up until time of death","haven_labelled",5616,99.88,2
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","radexpense","radexpense: r death expense: total","numeric",3618,64.34,732
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","radexpensef","radexpensef: r death expense flag: total","haven_labelled",3622,64.41,5
+"MHAS","end_of_life","MHAS/H_MHAS_EOL_b.dta","rainscovr","rainscovr: r death expenses covered by insurance","haven_labelled",4926,87.6,2

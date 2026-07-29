@@ -1,0 +1,4 @@
+cohort,raw_baseline_n,age60_n,exit_source_rows,exit_duplicate_id_rows_before_dedup,matched_age60_death_dates,prebaseline_deaths_age60,event_primary_n,event_exact_4y_n,window,source,eol_source_rows,eol_duplicate_id_rows_before_dedup,age_valid_n
+KLoSA,7486,5289,2766.0,0.0,1447,1,585,510,death year 2012-2016; exact-date sensitivity <=1461 days,KLoSA w04-w09 EXIT death-date fields,,,
+SHARE,36604,36604,,,8272,9,3689,3204,death year 2011-2015; exact-date sensitivity <=1461 days,GH_SHARE_EOL_g raxyear/raxmonth,21098.0,0.0,
+MHAS,26839,10174,,,1942,21,1404,1246,death year 2012-2016; exact-date sensitivity <=1461 days,H_MHAS_EOL_b raxyear/raxmonth,5623.0,0.0,15716.0

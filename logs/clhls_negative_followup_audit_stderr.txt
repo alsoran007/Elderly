@@ -1,0 +1,16 @@
+[2026-07-28 19:12:46] INFO Reading raw SAV: D:/AI_project/sql/CLHLS/CLHLS_dataset_2008-2018_SPSS/clhls_2011_2018_longitudinal_dataset_released_version1.sav
+[2026-07-28 19:12:47] PASS Raw N == 9765
+[2026-07-28 19:12:47] PASS Selected fields match contract
+[2026-07-28 19:12:47] PASS Baseline dates are constructable
+[2026-07-28 19:12:47] PASS d14 death status count == 2879
+[2026-07-28 19:12:47] PASS d18 death status count == 1837
+[2026-07-28 19:12:47] PASS Death status total == 4716
+[2026-07-28 19:12:47] PASS Constructed death dates == 4650
+[2026-07-28 19:12:47] PASS Direct negative follow-up count == 45
+[2026-07-28 19:12:47] PASS Audit CSV rows == 45
+[2026-07-28 19:12:47] PASS Independent audit matches prior v2 negative-detail CSV
+[2026-07-28 19:12:47] INFO Negative range: -306 to -1 days
+[2026-07-28 19:12:47] INFO Negative records with imputed baseline day: 0
+[2026-07-28 19:12:47] INFO Negative records with imputed death day: 7
+[2026-07-28 19:12:47] INFO Negative records with adjusted death day: 3
+[2026-07-28 19:12:47] PASS Wrote report: D:/AI_project/project3/results/outcome_clhls/clhls_negative_followup_audit_2026-07-28.md

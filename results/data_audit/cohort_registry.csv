@@ -1,0 +1,8 @@
+"cohort","country","analysis_role","planned_baseline","planned_outcome_window","person_id_status","mortality_source_status","current_gate"
+"CHARLS","China","Aim 1 development; Aim 2 source","2011 wave 1","5 years; 8-year sensitivity","ID confirmed in exit files","2015/2018/2020 Sample_Infor linked by normalized ID; died status retained; 2020 Exit_Module dates linked; noncoverage candidates flagged","Date and censoring rule"
+"CLHLS","China","Aim 1 validation; Aim 2 source","2011 recommended","5 years; 8-year sensitivity","id confirmed in 2011-2018 longitudinal file","dth11_14/dth14_18 and validated death dates confirmed in 2011-2018 longitudinal file","Outcome linkage"
+"KLoSA","South Korea","Aim 2 LOCO target/source","2012 wave 4 recommended","5 years","pid confirmed","w01-w09 main coverage linked; w02/w03 EXIT sources linked by pid; date and wstat interpretation remain gated","Death-date and wstat rule"
+"SHARE","SHARE countries","Aim 3 external validation","2011 wave 4 recommended","5 years","mergeid confirmed","EOL file found","Baseline linkage"
+"HRS","United States","Aim 3 external validation","2012 recommended","5 years; 8-year sensitivity","hhidpn confirmed in H_HRS_d","2012/2014/2016/2018/2020 HRS Exit A_R parsed; death date precision retained; unresolved special values flagged","Death-date and administrative censoring rule"
+"ELSA","United Kingdom","Aim 3 external validation","2012 wave 6 recommended","5 years","idauniq confirmed","h_elsa_eol_a2 is Version A.2 (2004-2013); use h_elsa_g3 iwstat/interview dates for post-2012 follow-up","Wave-status outcome linkage"
+"MHAS","Mexico","Aim 3 external validation","2012 recommended","5 years","rahhidnp confirmed","EOL file found","Baseline linkage"

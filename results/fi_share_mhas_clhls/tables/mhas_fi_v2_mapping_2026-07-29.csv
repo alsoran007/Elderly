@@ -1,0 +1,42 @@
+"cohort","stem","domain","source_var","source_label","status","coding","review_note","n_nonmissing","deficit_rate"
+"MHAS","hibpe","comorbidity","r3hibpe","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",15687,0.507426531522917
+"MHAS","dyslipe","comorbidity","r3cholst","preventive cholesterol measure","cross_domain_substitute","1=deficit when coded abnormal; other codes checked in report","This is a care/measurement proxy, not a diagnosis; review before primary analysis.",14413,0.690348990494692
+"MHAS","diabe","comorbidity","r3diabe","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",15691,0.235931425658021
+"MHAS","cancre","comorbidity","r3cancre","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",15696,0.0304536187563711
+"MHAS","lunge","comorbidity","r3lunge","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",15697,0.0888704848060139
+"MHAS","livere","comorbidity","","No verified wave-3 field","unsupported","NA","Not filled from unrelated variables.",0,
+"MHAS","hearte","comorbidity","r3hearte","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",15700,0.0518471337579618
+"MHAS","stroke","comorbidity","r3stroke","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",15707,0.0338065830521424
+"MHAS","psyche","comorbidity","r3depres","CESD felt depressed","documented_substitute","1=depressed, 0=not depressed","Depression symptom is used because no harmonised psychiatric diagnosis field exists.",14427,0.347334858251889
+"MHAS","arthre","comorbidity","r3arthre","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",15698,0.235762517518155
+"MHAS","kidneye","comorbidity","","No verified wave-3 field","unsupported","NA","Not filled from unrelated variables.",0,
+"MHAS","digeste","comorbidity","","No verified wave-3 field","unsupported","NA","Not filled from unrelated variables.",0,
+"MHAS","asthmae","comorbidity","r3resplmt","respiratory problems limit activities","cross_domain_substitute","1=limitation, 0=none","No asthma-only field; respiratory limitation is a non-equivalent substitute.",842,0.410926365795724
+"MHAS","dressa","adl","r3dressa","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",14434,0.0922128308161286
+"MHAS","batha","adl","r3batha","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",15667,0.0471692091657624
+"MHAS","eata","adl","r3eata","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",15671,0.0331823112756046
+"MHAS","beda","adl","r3beda","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",15685,0.0800765062161301
+"MHAS","toilta","adl","r3toilta","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",15677,0.0595777253301014
+"MHAS","urina","adl","","No verified wave-3 field","unsupported","NA","Not filled from unrelated variables.",0,
+"MHAS","housewka","iadl","","No verified wave-3 field","unsupported","NA","Not filled from unrelated variables.",0,
+"MHAS","mealsa","iadl","r3mealsa","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",13805,0.0445490764215864
+"MHAS","shopa","iadl","r3shopa","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",14195,0.0895385699189856
+"MHAS","moneya","iadl","r3moneya","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",14399,0.0238210986874088
+"MHAS","medsa","iadl","r3medsa","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",14276,0.0232558139534884
+"MHAS","walk100a","mobility","r3walk100a","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",9903,0.118146016358679
+"MHAS","walk1kma","mobility","r3walk1kma","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",14374,0.270418811743426
+"MHAS","joga","mobility","r3joga","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",12489,0.549123228441028
+"MHAS","climsa","mobility","r3climsa","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",13259,0.435025265857154
+"MHAS","chaira","mobility","r3chaira","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",14428,0.300734682561686
+"MHAS","stoopa","mobility","r3stoopa","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",14365,0.41204316045945
+"MHAS","armsa","mobility","r3armsa","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",14441,0.135239941832283
+"MHAS","lifta","mobility","r3lifta","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",14230,0.238439915671117
+"MHAS","dimea","mobility","r3dimea","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",14437,0.0724527256355198
+"MHAS","dsight","sensory","r3dsight","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",14101,0.468732713991915
+"MHAS","nsight","sensory","","No verified wave-3 field","unsupported","NA","Not filled from unrelated variables.",0,
+"MHAS","hearing","sensory","r3hearing","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",164,0.486585365853659
+"MHAS","shlt","general","r3shlt","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",14445,0.532613361024576
+"MHAS","painfr","general","r3painfr","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",14443,0.381361213044381
+"MHAS","fall","general","r3fall","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",15715,0.39217308304168
+"MHAS","slfmem","cognition","r3slfmem","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",14154,0.506839056097216
+"MHAS","mbmi","anthropometry","r3mbmi","MHAS harmonised wave-3 field","direct","Binary 1=deficit; difficulty 0/1/2 -> 0/1; rating 1-6 -> 0-1; BMI WHO","",2048,0.3779296875

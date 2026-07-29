@@ -1,0 +1,8 @@
+"code","label","interpretation"
+0,"inapplicable","not in wave"
+1,"respondent alive","observed respondent"
+4,"nonresponse alive","not interviewed but alive"
+5,"nonresponse died this wave","mortality event"
+6,"nonresponse died previous wave","mortality event assigned to prior wave"
+7,"dropped from sample","not a mortality event"
+9,"unknown alive/dead","not a mortality event until resolved"

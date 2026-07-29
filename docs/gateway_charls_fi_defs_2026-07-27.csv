@@ -1,0 +1,45 @@
+﻿harmonized_var,domain,concept,found,source_line,raw_vars,missing_codes,recode_logic
+r{wave}hibpe,comorbidity,hypertension,OK,7405,da007_1_,.d;.m;.r,replace r`wv'hibpe = 1 if da007_1_==1 || replace r`wv'hibpe = 0 if da007_1_==2
+r{wave}diabe,comorbidity,diabetes,OK,7421,da007_3_,.d;.m;.r,replace r`wv'diabe = 1 if da007_3_==1 || replace r`wv'diabe = 0 if da007_3_==2
+r{wave}cancre,comorbidity,cancer,OK,7437,da007_4_,.d;.m;.r,replace r`wv'cancre = 1 if da007_4_==1 || replace r`wv'cancre = 0 if da007_4_==2
+r{wave}lunge,comorbidity,chronic lung disease,OK,7453,da007_5_,.d;.m;.r,replace r`wv'lunge = 1 if da007_5_==1 || replace r`wv'lunge = 0 if da007_5_==2
+r{wave}hearte,comorbidity,heart disease,OK,7469,da007_7_,.d;.m;.r,replace r`wv'hearte = 1 if da007_7_==1 || replace r`wv'hearte = 0 if da007_7_==2
+r{wave}stroke,comorbidity,stroke,OK,7485,da007_8_,.d;.m;.r,replace r`wv'stroke = 1 if da007_8_==1 || replace r`wv'stroke = 0 if da007_8_==2
+r{wave}psyche,comorbidity,psychiatric problem,OK,7501,da007_11_,.d;.m;.r,replace r`wv'psyche = 1 if da007_11_==1 || replace r`wv'psyche = 0 if da007_11_==2
+r{wave}arthre,comorbidity,arthritis,OK,7517,da007_13_,.d;.m;.r,replace r`wv'arthre = 1 if da007_13_==1 || replace r`wv'arthre = 0 if da007_13_==2
+r{wave}dyslipe,comorbidity,dyslipidemia,OK,7533,da007_2_,.d;.m;.r,replace r`wv'dyslipe = 1 if da007_2_==1 || replace r`wv'dyslipe = 0 if da007_2_==2
+r{wave}livere,comorbidity,liver disease,OK,7549,da007_6_,.d;.m;.r,replace r`wv'livere = 1 if da007_6_==1 || replace r`wv'livere = 0 if da007_6_==2
+r{wave}kidneye,comorbidity,kidney disease,OK,7565,da007_9_,.d;.m;.r,replace r`wv'kidneye = 1 if da007_9_==1 || replace r`wv'kidneye = 0 if da007_9_==2
+r{wave}digeste,comorbidity,digestive disease,OK,7581,da007_10_,.d;.m;.r,replace r`wv'digeste = 1 if da007_10_==1 || replace r`wv'digeste = 0 if da007_10_==2
+r{wave}asthmae,comorbidity,asthma,OK,7597,da007_14_,.d;.m;.r,replace r`wv'asthmae = 1 if da007_14_==1 || replace r`wv'asthmae = 0 if da007_14_==2
+r{wave}dressa,adl,dressing,OK,6479,db001;db004;db005;db006;db007;db008;db009;db010,.a;.d;.m;.r,"replace r`wv'dressa =0 if (db010==. & db001==1 & db004==1 & db005==1 & db006==1 & db007==1 & db008==1 & db009==1) | db010==1 || replace r`wv'dressa =1 if inlist(db010,2,3,4)"
+r{wave}batha,adl,bathing,OK,6496,db001;db004;db005;db006;db007;db008;db009;db011,.a;.d;.m;.r,"replace r`wv'batha =0 if (db011==. & db001==1 & db004==1 & db005==1 & db006==1 & db007==1 & db008==1 & db009==1) | db011==1 || replace r`wv'batha =1 if inlist(db011,2,3,4)"
+r{wave}eata,adl,eating,OK,6513,db001;db004;db005;db006;db007;db008;db009;db012,.a;.d;.m;.r,"replace r`wv'eata =0 if (db012==. & db001==1 & db004==1 & db005==1 & db006==1 & db007==1 & db008==1 & db009==1) | db012==1 || replace r`wv'eata =1 if inlist(db012,2,3,4)"
+r{wave}beda,adl,bed transfer,OK,6530,db001;db004;db005;db006;db007;db008;db009;db013,.a;.d;.m;.r,"replace r`wv'beda =0 if (db013==. & db001==1 & db004==1 & db005==1 & db006==1 & db007==1 & db008==1 & db009==1) | db013==1 || replace r`wv'beda =1 if inlist(db013,2,3,4)"
+r{wave}toilta,adl,toileting,OK,6547,db001;db004;db005;db006;db007;db008;db009;db014,.a;.d;.m;.r,"replace r`wv'toilta =0 if (db014==. & db001==1 & db004==1 & db005==1 & db006==1 & db007==1 & db008==1 & db009==1) | db014==1 || replace r`wv'toilta =1 if inlist(db014,2,3,4)"
+r{wave}urina,adl,continence,OK,6564,db001;db004;db005;db006;db007;db008;db009;db015,.a;.d;.m;.r,"replace r`wv'urina =0 if (db015==. & db001==1 & db004==1 & db005==1 & db006==1 & db007==1 & db008==1 & db009==1) | db015==1 || replace r`wv'urina =1 if inlist(db015,2,3,4)"
+r{wave}moneya,iadl,managing money,OK,6689,db019,.d;.m;.r,"replace r`wv'moneya = 0 if db019 ==1 || replace r`wv'moneya = 1 if inlist(db019,2,3,4)"
+r{wave}medsa,iadl,taking medication,OK,6705,db020,.d;.m;.r,"replace r`wv'medsa = 0 if db020 ==1 || replace r`wv'medsa = 1 if inlist(db020,2,3,4)"
+r{wave}shopa,iadl,shopping,OK,6721,db018,.d;.m;.r,"replace r`wv'shopa = 0 if db018 ==1 || replace r`wv'shopa = 1 if inlist(db018,2,3,4)"
+r{wave}mealsa,iadl,preparing meals,OK,6737,db017,.d;.m;.r,"replace r`wv'mealsa = 0 if db017==1 || replace r`wv'mealsa = 1 if inlist(db017,2,3,4)"
+r{wave}housewka,iadl,housework,OK,6753,db016,.d;.m;.r,"replace r`wv'housewka = 0 if db016== 1 || replace r`wv'housewka = 1 if inlist(db016,2,3,4)"
+r{wave}walk100a,mobility,walk 100m,OK,6356,db001;db002;db003,.a;.d;.m;.r,"replace r`wv'walk100a = 0 if (db003==. & (db001== 1 | db002==1)) | db003== 1 || replace r`wv'walk100a = 1 if inlist(db003,2,3,4)"
+r{wave}walk1kma,mobility,walk 1km,OK,6339,db001;db002,.a;.d;.m;.r,"replace r`wv'walk1kma = 0 if (db002==. & db001== 1) | db002== 1 || replace r`wv'walk1kma = 1 if inlist(db002,2,3,4)"
+r{wave}climsa,mobility,climb flights of stairs,OK,6390,db005,.a;.d;.m;.r,"replace r`wv'climsa = 0 if db005== 1 || replace r`wv'climsa = 1 if inlist(db005,2,3,4)"
+r{wave}chaira,mobility,chair rise,OK,6373,db004,.a;.d;.m;.r,"replace r`wv'chaira = 0 if db004== 1 || replace r`wv'chaira = 1 if inlist(db004,2,3,4)"
+r{wave}joga,mobility,jog 1km,OK,6322,db001,.a;.d;.m;.r,"replace r`wv'joga = 0 if db001== 1 || replace r`wv'joga = 1 if inlist(db001,2,3,4)"
+r{wave}stoopa,mobility,stoop/kneel/crouch,OK,6408,db006,.a;.d;.m;.r,"replace r`wv'stoopa = 0 if db006== 1 || replace r`wv'stoopa = 1 if inlist(db006,2,3,4)"
+r{wave}armsa,mobility,raise arms,OK,6459,db007,.a;.d;.m;.r,"replace r`wv'armsa = 0 if db007== 1 || replace r`wv'armsa = 1 if inlist(db007,2,3,4)"
+r{wave}lifta,mobility,lift 5kg,OK,6425,db008,.a;.d;.m;.r,"replace r`wv'lifta = 0 if db008== 1 || replace r`wv'lifta = 1 if inlist(db008,2,3,4)"
+r{wave}dimea,mobility,pick up coin,OK,6442,db009,.a;.d;.m;.r,"replace r`wv'dimea = 0 if db009== 1 || replace r`wv'dimea = 1 if inlist(db009,2,3,4)"
+r{wave}dsight,sensory,distance vision,OK,8719,da032;da033,.e;.p,"replace r`wv'dsight = da033 if inrange(da033,1,5) & inlist(da032,1,3) || replace r`wv'dsight = 6 if da032==2"
+r{wave}nsight,sensory,near vision,OK,8733,da032;da034,.e;.p,"replace r`wv'nsight = da034 if inrange(da034,1,5) & inlist(da032,1,3) || replace r`wv'nsight = 6 if da032==2"
+r{wave}hearing,sensory,hearing,OK,8764,da039,,"replace r`wv'hearing = da039 if inrange(da039,1,5)"
+r{wave}shlt,general,self-rated health,OK,6244,da001;da002;da079;da080,.a;.d;.m;.r,replace r`wv'shlt = 1 if da001==1 | da080==1 || replace r`wv'shlt = 2 if da001==2 | da080==2 || replace r`wv'shlt = 3 if da001==3 | da080==3 || replace r`wv'shlt = 4 if da001==4 | da080==4 || replace r`wv'shlt = 5 if da001==5 | da080==5
+r{wave}painfr,general,frequent pain,OK,8924,da041,.d;.m;.r,replace r`wv'painfr = 1 if da041==1 || replace r`wv'painfr = 0 if da041==2
+r{wave}fall,general,fall history,OK,8794,da023,.e;.p,replace r`wv'fall=0 if da023==2 || replace r`wv'fall=1 if da023==1
+r{wave}hlthlm_c,general,health limits activity,OK,8960,fa001;fa002;fa003;fa005;fc013;fd030;fh004,.d;.m;.r;.w,"replace r`wv'hlthlm_c=0 if (fc013==0 | fd030==0 | fh004==0) || replace r`wv'hlthlm_c=1 if inrange(fc013,1,365) | inrange(fd030,1,365) | inrange(fh004,1,365)"
+r{wave}slfmem,cognition,self-rated memory,OK,20727,db032;dc004,.d;.m;.p;.r,replace r`wv'slfmem = 1 if dc004 == 1 || replace r`wv'slfmem = 2 if dc004 == 2 || replace r`wv'slfmem = 3 if dc004 == 3 || replace r`wv'slfmem = 4 if dc004 == 4 || replace r`wv'slfmem = 5 if dc004 == 5
+r{wave}hearaid,general,wears hearing aid,OK,8777,da038,.m,replace r`wv'hearaid = 1 if da038==1 || replace r`wv'hearaid = 0 if da038==2
+r{wave}mbmi,general,measured BMI,OK,50485,,.d;.i;.m;.r;.s;.x,replace r`wv'mbmi=r`wv'mweight/(r`wv'mheight^2) if !mi(r`wv'mweight) & !mi(r`wv'mheight) & inw`wv'==1
+r{wave}mbmicata,general,BMI category,OK,50503,,.d;.i;.m;.r;.s;.x,"replace r`wv'mbmicata = 1 if inrange(r`wv'mbmi,1,18.49999) & inw`wv'==1 || replace r`wv'mbmicata = 2 if inrange(r`wv'mbmi,18.50,22.99999) & inw`wv'==1 || replace r`wv'mbmicata = 3 if inrange(r`wv'mbmi,23,24.99999) & inw`wv'==1 || replace r`wv'mbmicata = 4 if inrange(r`wv'mbmi,25,100) & inw`wv'==1"
