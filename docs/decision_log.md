@@ -874,3 +874,63 @@ CLHLS O:E = 1.25（模型低估25%死亡率），校准截距 +0.60，根本原�
 - `results/aim1/aim1_performance_table_2026-07-29.csv`
 - `results/aim1/model_b_charls_coefficients_2026-07-29.csv`
 - `code/04_model/run_aim1_charls_clhls_v2_2026-07-29.R`
+
+
+---
+
+## D-030 · Aim 2 完成（LOCO Round A/B/C + L1 重校准）
+
+**日期**：2026-07-29  
+**结局盲**：否（SAP 已冻结）
+
+### 数据确认
+| 队列 | N | 事件 | 事件率 |
+|---|---:|---:|---:|
+| CHARLS（从person-period重建） | 7,551 | 771 | 10.2% |
+| CLHLS | 7,095 | 3,282 | 46.3% |
+| KLoSA | 5,288 | 510 | 9.6% |
+
+**注**：died_2015 漏掉2013年退出访谈死亡（435事件），改从person-period重建CHARLS 4年二元结局（771事件），与D-029一致。
+
+### 模型规格
+`event ~ fi_full + age`（未含 female — KLoSA parquet 缺 sex 列，为跨队列一致性统一去除）
+
+### CHARLS-only 基线
+| 测试集 | C-index | O:E | Cal slope |
+|---|---|---|---|
+| CHARLS→CLHLS | 0.8334 | 1.276 | 0.990 |
+| CHARLS→KLoSA | 0.8023 | 0.971 | 1.179 |
+
+### LOCO 结果
+| 轮次 | 训练集 | 测试集 | 版本 | C-index | O:E | Cal slope |
+|---|---|---|---|---|---|---|
+| A | CLHLS+KLoSA | CHARLS | raw | 0.7588 | 0.669 | 0.851 |
+| A | CLHLS+KLoSA | CHARLS | **L1** | 0.7588 | **1.000** | 0.851 |
+| B | CHARLS+KLoSA | CLHLS  | raw | 0.8346 | 1.266 | 0.935 |
+| B | CHARLS+KLoSA | CLHLS  | **L1** | 0.8346 | **1.000** | 0.935 |
+| C | CHARLS+CLHLS | KLoSA  | raw | 0.8011 | 0.758 | 1.075 |
+| C | CHARLS+CLHLS | KLoSA  | **L1** | 0.8011 | **1.000** | 1.075 |
+
+### H3 判定：**未成立（NOT SUPPORTED）**
+
+降采样对照（200次bootstrap，降至CHARLS 7,551人）：
+- Round B（CHARLS+KLoSA→CLHLS）：full ΔC=+0.0012，downsampled ΔC=+0.0013 vs CHARLS-only
+- Round C（CHARLS+CLHLS→KLoSA）：full ΔC=−0.0012，downsampled ΔC=−0.0013 vs CHARLS-only
+
+**ΔC绝对值 < 0.002，远低于临床显著阈值0.02。加入第二个亚洲队列对判别力无实质改善。**
+
+### 科学解读
+1. **判别力跨队列稳健**：C=0.75–0.84，KLoSA 最高（0.80），CHARLS cross-val 最低（0.76，低事件率下预期）
+2. **校准失败模式可归因**：
+   - CLHLS O:E=1.27：训练事件率低（10%）→目标事件率高（46%），典型L1漂移
+   - KLoSA O:E=0.97：训练率与目标率相近（10% vs 10%），校准最佳
+   - Round A O:E=0.67：CLHLS+KLoSA高死亡率模型应用到低死亡率CHARLS，过度预测
+3. **L1重校准有效**：截距更新后O:E=1.000，斜率维持（0.85–1.08），说明主要问题是L1级事件率漂移，非L2斜率问题
+4. **H3科学含义**：多样性训练数据不提升可迁移性 → 瓶颈在测量不等价和人群差异，非训练集构成
+
+### 文件
+- `results/aim2/aim2_loco_performance_2026-07-29.csv`
+- `results/aim2/aim2_loco_report_2026-07-29.md`（自动生成）
+- `results/aim2/figures/` 4张校准图（rounds A/B/C × raw/L1）
+- `results/aim2/aim2_downsample_bootstrap_2026-07-29.csv`
+- `code/04_model/run_aim2_loco_2026-07-29.R`
