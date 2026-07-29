@@ -1059,3 +1059,86 @@ CLHLS O:E = 1.25（模型低估25%死亡率），校准截距 +0.60，根本原�
 - `results/ipcw/ipcw_clhls_metrics_2026-07-29.csv`
 - `results/ipcw/ipcw_clhls_report_2026-07-29.md`
 - `code/04_model/run_ipcw_clhls_2026-07-29.R`
+
+
+---
+
+## D-033 · H6 SHAP 分析完成
+
+**日期**：2026-07-29  
+**结局盲**：否（SAP 已冻结）
+
+### 方法
+- 特征：FI_core 19 items + age（20个特征），均值插补处理缺失项
+- 每个队列独立拟合 logistic 回归（`event ~ FI_core_items + age`，标准化特征）
+- 重要性：|β_standardised|（线性SHAP，GLM主效应模型的精确公式）
+- 跨队列比较：Spearman 秩相关矩阵
+
+### 样本量（均值插补后）
+| 队列 | N | 事件 |
+|---|---:|---:|
+| CHARLS | 7,551 | 771 |
+| CLHLS | 7,095 | 3,282 |
+| KLoSA | 5,288 | 510 |
+| HRS | 10,707 | 2,138 |
+| SHARE | 36,352 | 3,165 |
+| MHAS | 9,081 | 924 |
+
+### Top-3 重要特征（各队列）
+
+| 队列 | #1 | #2 | #3 | Age 排名 |
+|---|---|---|---|---|
+| CHARLS | **age** | shlt | arthre | 1 |
+| CLHLS | **age** | mealsa | mbmi | 1 |
+| KLoSA | **age** | mealsa | cancre | 1 |
+| HRS | **age** | shlt | batha | 1 |
+| SHARE | **age** | shlt | cancre | 1 |
+| MHAS | **age** | diabe | shlt | 1 |
+
+**Age 在所有6个队列中均排名第1** ✅
+
+### 跨队列 Spearman 秩相关矩阵
+
+| | CHARLS | CLHLS | KLoSA | HRS | SHARE | MHAS |
+|---|---|---|---|---|---|---|
+| CHARLS | 1.000 | 0.457 | **0.099** | 0.510 | 0.668 | 0.289 |
+| CLHLS | 0.457 | 1.000 | 0.355 | 0.439 | 0.441 | 0.411 |
+| KLoSA | 0.099 | 0.355 | 1.000 | **0.096** | 0.334 | 0.320 |
+| HRS | 0.510 | 0.439 | 0.096 | 1.000 | 0.666 | 0.411 |
+| SHARE | 0.668 | 0.441 | 0.334 | 0.666 | 1.000 | 0.662 |
+| MHAS | 0.289 | 0.411 | 0.320 | 0.411 | 0.662 | 1.000 |
+
+- **中位 Spearman = 0.41**（范围 0.10–0.67）
+- 最高：CHARLS↔SHARE (0.668)、HRS↔SHARE (0.666)、SHARE↔MHAS (0.662)
+- 最低：CHARLS↔KLoSA (0.099)、KLoSA↔HRS (0.096)
+
+### H6 判定：**PARTIAL（部分成立）**
+
+| 条件 | 结果 |
+|---|---|
+| Age 始终位居前3 | ✅ **成立**（6/6 队列排名第1） |
+| 中位 Spearman ≥ 0.70 | ❌ **不成立**（实测 0.41） |
+
+### 科学解读
+
+1. **年龄普遍主导**：age 在所有队列均为最重要特征，说明年龄效应的跨文化稳健性
+2. **shlt（自评健康）**：出现在 CHARLS、HRS、SHARE、MHAS 的前3名，是第二最稳健指标
+3. **KLoSA 与其他队列差异最大**：
+   - KLoSA↔CHARLS Spearman=0.099（几乎无相关）
+   - KLoSA↔HRS Spearman=0.096
+   - 可能原因：韩国60+社区人群相对年轻健康（中位年龄71岁），功能项目阳性率极低（2-7%），导致其他特征（cancre, mealsa）相对比例更高
+4. **SHARE↔HRS↔MHAS 相关性较高**（0.41–0.67）：西方/美洲队列呈现更相似的特征重要性模式
+5. **CLHLS 高死亡率（46%）导致 mealsa/mbmi 等功能-营养项目优先**（而非共病项目），这与 CHARLS 开发集呈现差异
+
+### 对SAP的影响
+
+H6 预注册阈值0.70未达到。Median Spearman=0.41的发现具有独立科学价值：说明FI内部各 deficit 的预测价值存在跨队列异质性，但年龄这个非FI特征的主导地位完全稳健。论文 Discussion 中须透明报告此结果。
+
+### 文件
+- `results/h6_shap/h6_importance_matrix_2026-07-29.csv`
+- `results/h6_shap/h6_rank_matrix_2026-07-29.csv`
+- `results/h6_shap/h6_spearman_matrix_2026-07-29.csv`
+- `results/h6_shap/h6_shap_report_2026-07-29.md`
+- `results/h6_shap/figures/h6_importance_heatmap_2026-07-29.png`
+- `results/h6_shap/figures/h6_spearman_heatmap_2026-07-29.png`
+- `code/04_model/run_h6_shap_2026-07-29.R`
