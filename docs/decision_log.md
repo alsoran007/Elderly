@@ -1008,3 +1008,54 @@ CLHLS O:E = 1.25（模型低估25%死亡率），校准截距 +0.60，根本原�
 - `results/aim3/aim3_report_2026-07-29.md`
 - `results/aim3/figures/` 6张图（HRS/SHARE/MHAS × L0/L1）
 - `code/04_model/run_aim3_asian_pool_2026-07-29.R`
+
+
+---
+
+## D-032 · IPCW 灵敏度分析（CLHLS 2,112 例 NA 结局）
+
+**日期**：2026-07-29  
+**类型**：SAP §12.3 要求（结局缺失 > 20% 须灵敏度分析）
+
+### 数据
+| 类别 | N | 占比 |
+|---|---:|---:|
+| CLHLS FI-eligible 60+ | 9,207 | 100% |
+| 已知结局（event_4y 不为 NA） | 7,095 | 77.1% |
+| 删失（event_4y = NA，含40例基线前死亡） | 2,112 | 22.9% |
+
+### 删失模型结果
+| 预测变量 | 系数 | p值 | 方向 |
+|---|---|---|---|
+| fi_full | +0.652 | **0.0004** | FI越高，越可能被观察到 |
+| age | +0.0115 | **<0.0001** | 年龄越大，越可能被观察到 |
+| female | −0.078 | 0.130 | 不显著 |
+
+**解释**：删失不完全随机（MCAR 不成立）。CLHLS 专注高龄老年人，高龄/衰弱者死亡记录更完善；较健康者在中长期随访中更容易失联。删失率按FI三分位：低FI=25.2%、中FI=24.1%、高FI=**19.6%**（高FI组删失更少）。
+
+### IPCW 权重
+- 权重均值：1.292，中位数：1.291，最大值：1.451（99%截断）
+- 权重范围窄，说明删失机制相对温和
+
+### Aim1 结果比较
+
+| 指标 | 无权重（完整案例） | IPCW 加权 | Δ |
+|---|---|---|---|
+| **C-index** | 0.8389 | **0.8397** | **+0.0008** |
+| O:E | 1.2473 | 1.2547 | +0.0074 |
+| 校准斜率 | 0.9393 | 0.9458 | +0.0065 |
+| Brier | 0.17509 | 0.17399 | −0.00110 |
+| IPA | 0.2957 | 0.2967 | +0.0010 |
+
+### 结论
+
+**IPCW ΔC = +0.0008（< 0.001），所有指标差异均可忽略。Aim1 完整案例分析对信息性删失稳健。**
+
+尽管删失有轻微信息性（FI/年龄可预测），权重范围窄（1.0–1.45）且加权前后结果近乎相同。在论文方法部分添加以下描述即满足 TRIPOD 要求：
+
+> "Among CLHLS FI-eligible participants, 22.9% (2,072/9,167) had missing 4-year outcomes. Censoring was mildly informative (higher FI and older age predicted complete outcome, p < 0.001). However, IPCW-weighted analyses yielded C-index = 0.8397 versus unweighted 0.8389 (ΔC = +0.0008), indicating that the complete-case results are robust to informative censoring."
+
+### 文件
+- `results/ipcw/ipcw_clhls_metrics_2026-07-29.csv`
+- `results/ipcw/ipcw_clhls_report_2026-07-29.md`
+- `code/04_model/run_ipcw_clhls_2026-07-29.R`
