@@ -1,0 +1,114 @@
+digraph participant_flow {
+
+  graph [rankdir = TB, splines = ortho, nodesep = 0.34, ranksep = 0.44,
+         fontname = "Arial", bgcolor = "white", compound = true]
+  node  [fontname = "Arial", fontsize = 9, shape = box, style = "filled,rounded",
+         penwidth = 0.9, margin = "0.14,0.09"]
+  edge  [fontname = "Arial", fontsize = 8, color = "gray40", penwidth = 0.85,
+         arrowsize = 0.6]
+
+  /* ── Source cohorts ── */
+  src [label = "Seven candidate cohorts screened\nfor 2011-2012 baseline + 4-year mortality ascertainment",
+       fillcolor = "#F0F0F0", color = "gray55", width = 4.2]
+
+  excl_coh [label = "Excluded 2 cohorts\l  JSTAR: follow-up incompatible with 4-year window (D-008)\l  ELSA: 0 deaths in 2012-2016; EOL file covers 2002-2012 only (D-013)\l",
+            fillcolor = "#FFF5F0", color = "#CB181D", width = 3.7]
+
+  /* ── Development cohort ── */
+  ch_base [label = "CHARLS 2011 (China, development cohort)\nBaseline n = 17,705",
+           fillcolor = "#DEEBF7", color = "#2166AC", width = 3.5]
+
+  ch_excl [label = "Excluded from development set\l  Aged < 60 years at baseline\l  FI not computable (< 33 of 41 items available)\l  Missing age, sex or period indicator\l",
+           fillcolor = "#FFF5F0", color = "#CB181D", width = 3.5]
+
+  ch_fi  [label = "FI-eligible, aged >= 60 y: n = 7,551\nMedian FI = 0.200",
+          fillcolor = "#C6DBEF", color = "#2166AC", width = 3.4]
+
+  ch_ana [label = "CHARLS development analytic sample\nn = 7,546 persons | 14,551 person-periods\n771 deaths (10.2%) | EPV = 193",
+          fillcolor = "#9ECAE1", color = "#08519C", penwidth = 1.5, width = 3.6]
+
+  /* ── Asian pool (Aims 1 and 2) ── */
+  cl [label = "CLHLS 2011/12 (China, oldest-old)\nFI-eligible >= 60 y: n = 9,207\n- 45 pre-baseline deaths excluded (D-019)\n- 2,067 outcome unascertainable\nAnalytic n = 7,095 | 3,282 deaths (46.3%)",
+      fillcolor = "#C6DBEF", color = "#2166AC", width = 3.5]
+
+  kl [label = "KLoSA 2012 (South Korea)\nFI-eligible >= 60 y: n = 5,289\nAnalytic n = 5,288 | 510 deaths (9.6%)",
+      fillcolor = "#C6DBEF", color = "#2166AC", width = 3.5]
+
+  pool [label = "Asian training pool (Aim 3 source)\nCHARLS + CLHLS + KLoSA\nn = 19,934 | 4,563 deaths (22.9%)",
+        fillcolor = "#6BAED6", color = "#08519C", penwidth = 1.3, width = 3.8]
+
+  /* ── External validation cohorts (Aim 3) ── */
+  hrs [label = "HRS 2012 (United States)\nFI-eligible >= 60 y: n = 10,707\nAnalytic n = 10,707 | 2,138 deaths (20.0%)",
+       fillcolor = "#FDD0A2", color = "#D94801", width = 3.3]
+
+  shr [label = "SHARE 2011 wave-4 (27 European countries)\nFI-eligible >= 60 y: n = 36,361\nAnalytic n = 36,352 | 3,165 deaths (8.7%)\n2011 interviews only (D-021)",
+       fillcolor = "#FDD0A2", color = "#D94801", width = 3.5]
+
+  mhs [label = "MHAS 2012 (Mexico)\nFI-eligible >= 60 y: n = 9,094\nAnalytic n = 9,081 | 924 deaths (10.2%)\n27/41 FI items available (D-027)",
+       fillcolor = "#FDD0A2", color = "#D94801", width = 3.3]
+
+  /* ── Analysis aim boxes ── */
+  aim1 [label = "AIM 1: Internal-to-China transfer\nCHARLS -> CLHLS\nFrozen coefficients, no refitting",
+        fillcolor = "#EFF3FF", color = "#3182BD", width = 3.2]
+
+  aim2 [label = "AIM 2: Leave-one-cohort-out within Asia\nRound A: CLHLS+KLoSA -> CHARLS\nRound B: CHARLS+KLoSA -> CLHLS\nRound C: CHARLS+CLHLS -> KLoSA\n+ down-sampling bootstrap (B=200)",
+        fillcolor = "#EFF3FF", color = "#3182BD", width = 3.5]
+
+  aim3 [label = "AIM 3: Cross-cultural external validation\nAsian pool -> HRS / SHARE / MHAS\nRecalibration ladder L0 -> L1 -> L2 -> L3",
+        fillcolor = "#FEE6CE", color = "#E6550D", width = 3.4]
+
+  /* ── Invisible rank-alignment spacers ── */
+  node [shape = point, width = 0.01, height = 0.01, style = invis, label = ""]
+  s1; s2
+
+  /* ── Edges ── */
+  src -> s1          [arrowhead = none]
+  s1  -> excl_coh    [minlen = 1]
+  s1  -> ch_base     [minlen = 1]
+  { rank = same; s1; excl_coh }
+
+  ch_base -> s2      [arrowhead = none]
+  s2 -> ch_excl      [minlen = 1]
+  s2 -> ch_fi        [minlen = 1]
+  { rank = same; s2; ch_excl }
+
+  ch_fi  -> ch_ana
+
+  /* Aim 1 */
+  ch_ana -> aim1     [label = " frozen model"]
+  cl     -> aim1     [style = dashed, color = "gray60"]
+  { rank = same; aim1; cl; kl }
+
+  /* Aim 2 */
+  ch_ana -> aim2     [style = dashed, color = "gray60", label = " LOCO rounds"]
+  cl     -> aim2     [style = dashed, color = "gray60"]
+  kl     -> aim2     [style = dashed, color = "gray60"]
+
+  /* Pool and Aim 3 */
+  ch_ana -> pool
+  cl     -> pool
+  kl     -> pool
+
+  pool   -> aim3
+  aim3   -> hrs
+  aim3   -> shr
+  aim3   -> mhs
+  { rank = same; hrs; shr; mhs }
+
+  /* ── Legend cluster ── */
+  subgraph cluster_legend {
+    label     = "Cohort role"
+    fontsize  = 8
+    fontname  = "Arial"
+    color     = "gray70"
+    penwidth  = 0.7
+    style     = rounded
+    node [shape = box, style = "filled,rounded", fontsize = 7.5,
+          width = 1.7, height = 0.22, margin = "0.05,0.02"]
+    lg1 [label = "Development / Asian pool", fillcolor = "#C6DBEF", color = "#2166AC"]
+    lg2 [label = "External validation",      fillcolor = "#FDD0A2", color = "#D94801"]
+    lg3 [label = "Excluded",                 fillcolor = "#FFF5F0", color = "#CB181D"]
+    lg1 -> lg2 [style = invis]
+    lg2 -> lg3 [style = invis]
+  }
+}
