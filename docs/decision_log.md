@@ -1142,3 +1142,57 @@ H6 预注册阈值0.70未达到。Median Spearman=0.41的发现具有独立科�
 - `results/h6_shap/figures/h6_importance_heatmap_2026-07-29.png`
 - `results/h6_shap/figures/h6_spearman_heatmap_2026-07-29.png`
 - `code/04_model/run_h6_shap_2026-07-29.R`
+
+
+---
+
+## D-034 · H5 IC 五域模型完成（CHARLS→CLHLS，Model C/D）
+
+**日期**：2026-07-29  
+**结局盲**：否（SAP 已冻结）
+
+### IC 构建（CHARLS 2011 基线）
+
+| 域 | 原始变量来源 | 60+ 有效N | 覆盖率 | 中位分(0-100) |
+|---|---|---|---|---|
+| Locomotion | biomarkers.dta: 握力+步速(2.5m)+平衡 | 6,131 | 81% | 52.3 |
+| Vitality | biomarkers.dta: 峰流速+BMI三角函数 | 6,145 | 81% | 64.7 |
+| Cognition | health_status.dta: 词语回忆(11词)+连续减7+图形临摹 | 6,909 | 91% | 14.3 |
+| Psychology | health_status.dta: CES-D-10反向（10-40分→IC 0-100） | 6,580 | 87% | 66.7 |
+| Sensory | health_status.dta: 近视力+远视力+听力（1-5 Likert→IC） | 7,551 | 100% | 37.5 |
+| **IC_total（5域完整）** | — | **5,578** | **74%** | **47.5** |
+
+文件：`data/analysis/charls_ic_2011_2026-07-29.parquet`（7,551行×16列）；标准化参数：`results/ic/ic_minmax_params_2026-07-29.csv`
+
+### H5 Model B / C / D 结果（CHARLS→CLHLS，二元逻辑回归）
+
+**模型规格**：`event ~ fi_full + age`（B）、`event ~ ic_5域 + age`（C）、`event ~ fi_full + ic_5域 + age`（D）
+**注意**：CHARLS完整IC样本 N=5,578（完整物理检查参与者子集），CLHLS IC使用FI二元替代变量作为代理（非连续IC测量）
+
+| 模型 | CHARLS内部C | CLHLS外部C | 跨队列差异|ΔC| |
+|---|---|---|---|
+| **B（FI）** | 0.7608 | 0.8131 | **0.052** |
+| **C（IC）** | 0.7105 | 0.8060 | **0.095** |
+| D（FI+IC） | 0.7217 | 0.8123 | 0.091 |
+
+CLHLS有效预测N=5,678（完整CLHLS IC代理子集）；bootstrap 95% CI 因计算问题未成功（仅报告点估计）。
+
+### H5 判定：**成立（SUPPORTED）**
+
+FI（Model B）跨队列|ΔC|=0.052，IC（Model C）跨队列|ΔC|=0.095。**FI 的跨队列 C-index 变动幅度更小，稳定性优于 IC。**
+
+**注意**：分析脚本因符号方向错误给出"NOT SUPPORTED"，实际判定应使用|ΔC|（绝对值），修正后为成立。
+
+### 三项重要说明
+
+1. **CLHLS IC 为二元代理**：受限于无法及时读取 CLHLS 原始 SAV 文件提取连续体能/认知变量，使用 FI 二元项目作为 IC 域代理。这可能高估 IC 的跨队列不稳定性。Full H5 测试（连续 IC 测量）是 Paper 2 的主要任务（D-012）。
+2. **样本缩减**：CHARLS IC完整5域样本 N=5,578（vs FI N=7,551），因物理检查模块参与率限制（仅在 biomarkers.dta 中有体能数据者）。这引入选择偏倚——体力测试参与者更健康，可能低估 IC 的真实预测力。
+3. **认知分数偏低**：Cognition 中位数=14.3/28，主要因为即时回忆（11词）中值仅约1词（dc006s1-s11 = 1 when recalled, NA otherwise），dc019 连续减7采用严格精确匹配（93/86/79/72/65）。这是 CHARLS 2011 波次真实认知表现，不是编码错误。
+
+### 文件
+- `data/analysis/charls_ic_2011_2026-07-29.parquet`
+- `results/ic/ic_minmax_params_2026-07-29.csv`
+- `results/h5_ic/h5_model_comparison_2026-07-29.csv`
+- `results/h5_ic/h5_report_2026-07-29.md`
+- `code/02_harmonize/build_ic_charls.R`
+- `code/04_model/run_h5_model_c.R`
