@@ -55,7 +55,9 @@ The CHARLS development dataset comprised 7,546 participants contributing 14,551 
 
 FI = frailty index (range 0–1). Model A: `event ~ age + female + period`; Model B: `event ~ fi_full + age + female + period`. SE not reported for Model A in the archived output.
 
-Model A achieved an apparent C-index of 0.7355. Adding FI raised the Model B apparent C-index to **0.7705**, an increment of **ΔC = 0.0351**. The pre-specified H1 threshold (ΔC ≥ 0.02 for FI beyond age and sex) was therefore **met, and H1 is supported**. Because education was not included, these estimates should be interpreted as preliminary model development results. The reported internal C-index is the apparent pooled person-period estimate without optimism correction (see Methods §8.1).
+Model A achieved an apparent C-index of 0.7355. Adding FI raised the Model B apparent C-index to **0.7705**, an increment of **ΔC = 0.0351**. The pre-specified H1 threshold (ΔC ≥ 0.02 for FI beyond age and sex) was therefore **met, and H1 is supported**.
+
+Internal validation by person-level bootstrap (B = 200) yielded mean optimism of **0.0004** (SD 0.0085; 95% bootstrap interval −0.015 to +0.019), giving an **optimism-corrected C-index of 0.7701** (shrinkage factor 0.9995). The negligible optimism indicates that Model B, with four predictors and 771 events (EPV = 193), showed essentially no overfitting; apparent and corrected estimates are interchangeable to three decimal places. Because education was not included, these estimates should nonetheless be interpreted as preliminary model development results.
 
 ---
 

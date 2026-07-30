@@ -34,7 +34,7 @@
 | 11 | **缺失数据** | 缺失比例、缺失处理方法（完整案例/插补） | 🔄 | Results §3.2 已述CLHLS 22.9%缺失；IPCW敏感性（D-032）；**需在Methods节系统说明**缺失处理策略：FI构建使用cohort-specific阈值，结局缺失采用完整案例+IPCW敏感性 |
 | 12 | **统计分析** | 模型规格（预测因子选择、功能形式、交互、时间处理）；模型拟合方法 | ✅ | Methods §6 pooled logistic + cloglog；`event ~ fi_full + age + female + period`；D-010离散时间框架说明 |
 | 13a | **模型开发细节** | 预测因子选择标准；模型规格确定方法（是否预注册） | ✅ | 预注册SAP冻结；预测因子由D-006 H1–H6假设驱动，非逐步选择 |
-| 13b | **内部验证** | 说明内部验证方法（bootstrap/交叉验证）；是否进行乐观性校正 | ✅ | Methods EN §8.1 末尾已加注：CHARLS 内部 C-index 为表观值（apparent），无乐观性校正；投稿前拟补充 bootstrap 校正版本 |
+| 13b | **内部验证** | 说明内部验证方法（bootstrap/交叉验证）；是否进行乐观性校正 | ✅ | Methods EN §8.1：person-level bootstrap B=200；optimism=0.0004；校正后C=0.7701 vs 表观0.7705；收缩因子0.9995。Results EN §3.3 已更新。脚本：`code/04_model/run_bootstrap_optimism_charls_2026-07-30.R` |
 | 14 | **外部验证** | 明确说明外部验证类型（时间/地点/完全外部）；不同模型版本（L0–L3） | ✅ | Methods 含Aim 2 LOCO（同队列集完全分离，D-005）和Aim 3（地理外部验证）；L0–L3阶梯说明 |
 | 15 | **模型更新** | 描述更新方法（截距更新/斜率/全重训练）；更新使用的数据 | ✅ | L1截距更新：目标队列事件率；L2斜率更新：slope recalibration；L3完全重训练 |
 | 16 | **偏倚风险评估** | 是否使用PROBAST-AI等工具评估开发和验证数据质量 | ✅ | Methods EN §10 末尾已加 PROBAST-AI 正式评估段落：开发集4域均 low risk；CLHLS 结局域 moderate concern；其余验证队列全部 low |

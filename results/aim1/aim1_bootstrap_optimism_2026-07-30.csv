@@ -1,0 +1,14 @@
+"metric","value"
+"n_persons",7546
+"n_person_periods",14551
+"n_events",771
+"B_requested",200
+"B_valid",200
+"C_apparent",0.770524727089957
+"optimism_mean",0.000382282313982517
+"optimism_sd",0.00847069522692461
+"optimism_q025",-0.0153973804127652
+"optimism_q975",0.0184854756174592
+"C_corrected",0.770142444775975
+"C_corrected_lo95",0.752039251472498
+"C_corrected_hi95",0.785922107502723

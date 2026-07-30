@@ -125,7 +125,7 @@ Four-year cumulative predicted probability for external cohorts was derived as:
 
 where *ĥ*ₜ = logistic(β̂′**x** + γ̂ₜ), with CHARLS-frozen coefficients applied directly without refitting in the validation set.
 
-*Internal discrimination note*: The C-index reported for CHARLS is the **apparent pooled person-period** estimate. No optimism correction (e.g., bootstrap shrinkage) was applied to the primary CHARLS internal estimate; this preliminary version will be updated with a bootstrap-corrected estimate prior to journal submission.
+*Internal validation note*: Optimism correction was applied using Harrell's person-level bootstrap (B = 200 replications; script `code/04_model/run_bootstrap_optimism_charls_2026-07-30.R`). Mean optimism was **0.0004** (SD 0.0085; 95% bootstrap interval −0.015 to +0.019), yielding an optimism-corrected C-index of **0.7701** versus an apparent value of 0.7705 (shrinkage factor 0.9995). The negligible optimism confirms minimal overfitting in this sample.
 
 ### 8.2 Validation Structure (Three Aims)
 
