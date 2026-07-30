@@ -132,8 +132,8 @@ drop_B <- c_B_charls - ci_B["c"]   # drop from apparent to external (B)
 drop_C <- c_C_charls - ci_C["c"]   # drop from apparent to external (C)
 cat(sprintf("\n  Model B drop (apparent→CLHLS): %.4f\n", drop_B))
 cat(sprintf("  Model C drop (apparent→CLHLS): %.4f\n", drop_C))
-h5_verdict <- ifelse(drop_B < drop_C, "SUPPORTED (FI more stable than IC)",
-               ifelse(drop_B > drop_C, "NOT SUPPORTED (IC more stable)", "INCONCLUSIVE"))
+h5_verdict <- ifelse(abs(drop_B) < abs(drop_C), "SUPPORTED (FI more stable than IC)",
+               ifelse(abs(drop_B) > abs(drop_C), "NOT SUPPORTED (IC more stable)", "INCONCLUSIVE"))
 cat(sprintf("\n=== H5 VERDICT: %s ===\n", h5_verdict))
 
 # ── 6. Save results ───────────────────────────────────────────────────────────
