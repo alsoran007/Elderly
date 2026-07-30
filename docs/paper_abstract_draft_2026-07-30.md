@@ -21,7 +21,7 @@ We developed a pooled logistic regression model predicting four-year all-cause m
 
 **Results**
 
-Adding FI to demographic predictors increased C-index by 0.035 (from 0.736 to 0.771; H1 supported). Across all external cohorts, C-indices ranged from 0.72 to 0.84 and changed by ≤0.003 after full recalibration, while L0 O:E ratios ranged from 0.60 to 1.25, indicating systematic calibration drift (H2 supported). Level-1 intercept recalibration (event-rate adjustment only) explained 95% (SHARE) and 89% (HRS) of the recoverable improvement in the Integrated Prediction Accuracy (IPA) index (H4 supported). Expanding the training set from one to two Asian cohorts produced no meaningful increase in C-index (|ΔC| ≤ 0.001; H3 not supported). In a supplementary analysis, FI showed smaller cross-cohort |ΔC| than the WHO intrinsic capacity five-domain framework (0.052 vs. 0.095; H5 supported, with caveats). Age ranked first in feature importance in all six cohorts; however, deficit-level importance concordance was moderate (median Spearman ρ = 0.41; H6 partially supported).
+Adding FI to demographic predictors increased C-index by 0.035 (from 0.736 to 0.771; H1 supported). Across all external cohorts, C-indices ranged from 0.72 to 0.84 and changed by ≤0.003 after full recalibration, while L0 O:E ratios ranged from 0.60 to 1.25, indicating systematic calibration drift (H2 supported). Level-1 intercept recalibration (event-rate adjustment only) explained 78–94% of the recoverable improvement in the Index of Prediction Accuracy (IPA) across the three validation cohorts (H4 supported). Expanding the training set from one to two Asian cohorts produced no meaningful increase in C-index (|ΔC| ≤ 0.001; H3 not supported). In a supplementary analysis, FI showed smaller cross-cohort |ΔC| than the WHO intrinsic capacity five-domain framework (0.052 vs. 0.095; H5 supported, with caveats). Age ranked first in feature importance in all six cohorts; however, deficit-level importance concordance was moderate (median Spearman ρ = 0.41; H6 partially supported).
 
 **Conclusions**
 
@@ -48,7 +48,7 @@ FI discrimination transfers across diverse cultural contexts without retraining.
 
 **结果**
 
-在人口学协变量基础上加入 FI 使 C-index 提升 0.035（0.736→0.771；H1 成立）。各外部队列 C-index 范围为 0.72–0.84，完全重校准后变化 ≤ 0.003，而 L0 时 O:E 比值范围为 0.60–1.25，提示系统性校准漂移（H2 成立）。仅 L1 截距更新（事件率调整）即解释了 SHARE 和 HRS 可改善预测准确性（IPA 指数）空间的 95% 和 89%（H4 成立）。将训练集从单一亚洲队列扩展至两个队列未带来有意义的 C-index 提升（|ΔC| ≤ 0.001；H3 不成立）。补充分析显示 FI 的跨队列 |ΔC| 小于 WHO 内在能力（IC）五域框架（0.052 vs. 0.095；H5 成立，附注意事项）。年龄在全部 6 个队列中均位居特征重要性第一，但缺陷条目重要性排序一致性中等（中位 Spearman ρ = 0.41；H6 部分成立）。
+在人口学协变量基础上加入 FI 使 C-index 提升 0.035（0.736→0.771；H1 成立）。各外部队列 C-index 范围为 0.72–0.84，完全重校准后变化 ≤ 0.003，而 L0 时 O:E 比值范围为 0.60–1.25，提示系统性校准漂移（H2 成立）。仅 L1 截距更新（事件率调整）即解释了三个验证队列中可改善预测准确性（IPA 指数）空间的 78–94%（H4 成立）。将训练集从单一亚洲队列扩展至两个队列未带来有意义的 C-index 提升（|ΔC| ≤ 0.001；H3 不成立）。补充分析显示 FI 的跨队列 |ΔC| 小于 WHO 内在能力（IC）五域框架（0.052 vs. 0.095；H5 成立，附注意事项）。年龄在全部 6 个队列中均位居特征重要性第一，但缺陷条目重要性排序一致性中等（中位 Spearman ρ = 0.41；H6 部分成立）。
 
 **结论**
 

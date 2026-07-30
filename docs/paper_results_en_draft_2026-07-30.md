@@ -110,7 +110,7 @@ In HRS, the frozen model achieved L0 C-index 0.7901, O:E 0.8205, slope 0.9671 an
 
 Discrimination changed minimally from L0 to L3 (HRS +0.0028, SHARE +0.0017, MHAS +0.0002), whereas intercept and slope updates markedly improved calibration in every cohort. **H2 (discrimination decay smaller than calibration decay) is therefore supported.**
 
-**H4 is also supported**: L1 intercept update alone — requiring only the target-cohort event rate — accounted for approximately 94% of the total recoverable IPA gain in SHARE ([0.1138 − 0.0276] / [0.1194 − 0.0276]) and approximately 88% in HRS ([0.2088 − 0.1927] / [0.2111 − 0.1927]). Event-rate drift was thus the dominant attributable source of calibration failure, exceeding the pre-specified 50% threshold.
+**H4 is also supported**: L1 intercept update alone — requiring only the target-cohort event rate — accounted for **87.5% of the total recoverable IPA gain in HRS** ([0.2088 − 0.1927] / [0.2111 − 0.1927]), **93.9% in SHARE** ([0.1138 − 0.0276] / [0.1194 − 0.0276]), and **78.2% in MHAS** ([0.0634 − (−0.0022)] / [0.0817 − (−0.0022)]). Event-rate drift was thus the dominant attributable source of calibration failure in all three validation cohorts, exceeding the pre-specified 50% threshold in each case. Percentages are computed against the full L0→L3 recoverable span.
 
 MHAS was the weakest validation cohort. Its L0 IPA of −0.0022 indicates a Brier score marginally worse than a null model, arising because the Asian pool's high mean event rate (22.9%, driven by CLHLS at 46.3%) systematically over-predicted risk in a 10.2% event-rate target. IPA rose to 0.0634 after L1 and 0.0816 after L2; the persistent post-L1 slope of 0.686 confirms that MHAS required slope recalibration in addition to intercept adjustment to achieve reliable absolute risk estimates.
 
@@ -151,7 +151,7 @@ FI showed the smallest cross-cohort C-index shift, and **H5 is supported**. Thre
 | **H1** | FI adds ΔC ≥ 0.02 beyond age + sex | ΔC = 0.0351 | **Supported** |
 | **H2** | Discrimination decay < calibration decay on transfer | ΔC(L0→L3) ≤ 0.003; O:E 0.60–1.25 → 1.00 | **Supported** |
 | **H3** | Multi-cohort training improves transfer (ΔC ≥ 0.02) | \|ΔC\| ≤ 0.0013 (down-sampled) | **Not supported** |
-| **H4** | Event-rate + case-mix drift explain ≥50% of loss | L1 alone explains 88% (HRS), 94% (SHARE) | **Supported** |
+| **H4** | Event-rate + case-mix drift explain ≥50% of loss | L1 alone explains 87.5% (HRS), 93.9% (SHARE), 78.2% (MHAS) | **Supported** |
 | **H5** | FI more stable across cohorts than IC | \|ΔC\| 0.052 (FI) vs. 0.095 (IC) | **Supported** (supplementary; exploratory) |
 | **H6** | Age in top 3 in all cohorts AND median ρ ≥ 0.70 | Age 1st in 6/6; median ρ = 0.4105 | **Partially supported** |
 
