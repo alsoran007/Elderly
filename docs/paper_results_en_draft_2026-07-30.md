@@ -32,7 +32,7 @@ FI construction followed the locked 41-item specification (decision D-020), with
 
 FI distributions showed marked cohort heterogeneity: KLoSA median 0.095, HRS 0.287, SHARE and CLHLS both 0.169. This heterogeneity reflects differences in case-mix, item availability and underlying event rates, and means that a single numeric FI threshold cannot serve as a universal frailty cut-point across cohorts without adjusting for cohort context.
 
-CLHLS required particular attention for outcome missingness. Of 9,207 FI-eligible participants, 7,095 had an observable four-year outcome; 2,112 (22.9%) had missing `event_4y`, comprising 45 pre-baseline deaths (flagged not-at-risk) and 2,067 participants with irrecoverable follow-up or death dates. Complete-case analysis did not assign survival status to participants with unknown outcomes. Education could not be reliably harmonised in the analytic files; the primary analysis is therefore unadjusted for education (see Limitations).
+CLHLS required particular attention for outcome missingness. Of 9,207 FI-eligible participants, 7,095 had an observable four-year outcome; 2,112 (22.9%) had missing `event_4y`, comprising 45 pre-baseline deaths (flagged not-at-risk) and 2,067 participants with irrecoverable follow-up or death dates. Complete-case analysis did not assign survival status to participants with unknown outcomes. Education was available in all six cohorts but was excluded from the primary model to preserve the pre-registered specification; its effect is quantified in post hoc sensitivity analysis SA-3 (§3.10).
 
 ---
 
@@ -57,7 +57,7 @@ FI = frailty index (range 0–1). Model A: `event ~ age + female + period`; Mode
 
 Model A achieved an apparent C-index of 0.7355. Adding FI raised the Model B apparent C-index to **0.7705**, an increment of **ΔC = 0.0351**. The pre-specified H1 threshold (ΔC ≥ 0.02 for FI beyond age and sex) was therefore **met, and H1 is supported**.
 
-Internal validation by person-level bootstrap (B = 200) yielded mean optimism of **0.0004** (SD 0.0085; 95% bootstrap interval −0.015 to +0.019), giving an **optimism-corrected C-index of 0.7701** (shrinkage factor 0.9995). The negligible optimism indicates that Model B, with four predictors and 771 events (EPV = 193), showed essentially no overfitting; apparent and corrected estimates are interchangeable to three decimal places. Because education was not included, these estimates should nonetheless be interpreted as preliminary model development results.
+Internal validation by person-level bootstrap (B = 200) yielded mean optimism of **0.0004** (SD 0.0085; 95% bootstrap interval −0.015 to +0.019), giving an **optimism-corrected C-index of 0.7701** (shrinkage factor 0.9995). The negligible optimism indicates that Model B, with four predictors and 771 events (EPV = 193), showed essentially no overfitting; apparent and corrected estimates are interchangeable to three decimal places.
 
 ---
 
@@ -144,7 +144,27 @@ FI showed the smallest cross-cohort C-index shift, and **H5 is supported**. Thre
 
 ---
 
-## 3.10 Summary of Pre-Registered Hypothesis Verdicts
+## 3.10 Post Hoc Sensitivity Analysis: Education Adjustment (SA-3)
+
+An audit conducted after the primary analyses (2026-07-30) established that education was in fact available in all six cohorts, with 100% ID linkage and 0.00–0.53% missingness — refuting an earlier project record stating that education could not be reliably linked. Because SAP v1.0 was already frozen and the outcome had been unblinded, education was not added to the primary model; instead, SAP amendment A-001 declared a post hoc sensitivity analysis (SA-3) restricted to Aim 1, with the ISCED mapping frozen before the analysis was run (Methods §8.5).
+
+Education was an independent predictor of mortality in the expected direction (`edu_isced` β = −0.4475, p = 0.0031; higher attainment associated with lower risk). Adding it to the model nevertheless left performance essentially unchanged (Table 4).
+
+**Table 4. SA-3 education-adjusted sensitivity analysis (Aim 1)**
+
+| Model | N | Events | C-index [95% CI] | O:E | Cal. slope | IPA |
+|---|---:|---:|---|---:|---:|---:|
+| Main model (full complete case, as §3.4) | 7,095 | 3,282 | 0.8389 [0.8302–0.8472] | 1.2457 | 0.9382 | 0.2962 |
+| Main model (education-complete subsample) | 7,069 | 3,268 | 0.8389 [0.8289–0.8477] | 1.2469 | 0.9379 | 0.2958 |
+| **SA-3 (+ education)** | 7,069 | 3,268 | **0.8380** [0.8281–0.8467] | **1.2402** | **0.9315** | **0.2958** |
+
+CHARLS internal C-index rose marginally from 0.7706 to 0.7725 (ΔC = +0.0020) on the education-complete development sample (7,534 persons, 770 events; 12 persons excluded for missing education). In CLHLS, ΔC was **−0.0009**, ΔO:E **−0.0067**, Δcalibration slope **−0.0064** and ΔIPA **0.0000** (26 persons excluded for missing education).
+
+All three pre-declared robustness criteria were met (|ΔC| < 0.02, |ΔO:E| < 0.05, |Δslope| < 0.05), so **the main model conclusions are robust to the absence of education adjustment**. The pattern — education significant on its own yet adding negligible predictive value alongside FI — indicates that the FI already captures most of the education-related mortality signal, consistent with deficit accumulation lying downstream of the socioeconomic gradient.
+
+---
+
+## 3.11 Summary of Pre-Registered Hypothesis Verdicts
 
 | Hypothesis | Pre-specified criterion | Observed | Verdict |
 |---|---|---|---|

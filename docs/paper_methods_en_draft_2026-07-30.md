@@ -92,7 +92,7 @@ For HRS, eight stems were unavailable in the harmonised Fat File; documented sub
 
 ## 6. Covariates
 
-All models included **age** (continuous, years) and **sex** (0 = female, 1 = male) as baseline covariates. Education was planned as a covariate but could not be reliably harmonised from the analytic parquet files across all cohorts; it was excluded from the primary analysis and this is noted as a limitation.
+All models included **age** (continuous, years) and **sex** (0 = female, 1 = male) as baseline covariates. Education was available in all six cohorts (join rate 100%, missingness 0.00–0.53%; post-hoc audit `results/education_availability_audit.md`, 2026-07-30). It was excluded from the primary model to preserve the pre-registered specification (SAP v1.0, commit 9bc7b85). Cross-cohort comparability requires mapping three survey-specific education scales (CHARLS 11-level, CLHLS years-of-schooling, KLoSA 4-level) to the Gateway-harmonised ISCED 3-level variable used by HRS, SHARE and MHAS; this mapping was made after outcome unblinding and is therefore post hoc. Education adjustment is examined in post hoc sensitivity analysis SA-3 (§8.5).
 
 For Aims 2 and 3 (multi-cohort analyses), sex was further omitted from the model specification because the KLoSA FI file did not include a harmonised sex variable. To ensure a common model form across all LOCO and Asian-pool analyses, the uniform specification `event ~ fi_full + age` (without sex) was used. Aim 1 (CHARLS → CLHLS) retained sex: `event ~ fi_full + age + sex`.
 
@@ -171,6 +171,9 @@ This ladder isolates the contribution of event-rate drift (L0→L1), slope drift
 |---|---|---|
 | SA-1 | FI_core (19 items) | Strict cross-cohort common item set; threshold = ⌈0.8 × 19⌉ = 16 |
 | SA-2 | IPCW (CLHLS) | Censoring model: P(observed \| fi_full, age, sex); weights truncated at 99th percentile |
+| SA-3† | Education adjustment (Aim 1) | Main model + `edu_isced` (ISCED 3-level ordered integer); complete-case |
+
+†**SA-3 is post hoc.** It was added by SAP amendment A-001 (2026-07-30), after outcome unblinding, following an audit that refuted an earlier record stating education could not be reliably linked. SA-1 and SA-2 were pre-specified in SAP v1.0. The education mapping used by SA-3 was frozen in A-001 before the analysis was run: CHARLS `bd001` 1–5→1, 6–7→2, 8–11→3; CLHLS `f1` (years) 0–9→1, 10–12→2, ≥13→3 (88/99 = missing); HRS, SHARE and MHAS use Gateway `raeducl` natively. SA-3 was restricted to Aim 1 because the Aim 2/3 specification omits sex (KLoSA lacks a harmonised sex variable), so adding education there would create a covariate structure not comparable with the primary analysis.
 
 ### 8.6 Feature Importance Analysis (H6)
 
