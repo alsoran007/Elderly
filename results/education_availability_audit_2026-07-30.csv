@@ -1,0 +1,7 @@
+"cohort","source_file","field_harmonized","field_raw","denominator_60plus","n_nonmissing","missing_pct","coding","join_rate_pct","verdict","note"
+"CHARLS","sql/CHARLS/2011/demographic_background.dta","— (raw survey item; Gateway raeducl not in local files)","bd001",7551,7539,0.16,"11-level ordinal (1=no formal … highest)",100,"RECOMMENDED","Raw CHARLS item; requires manual mapping to ISCED for cross-cohort use"
+"CLHLS","sql/CLHLS/.../clhls_2011_2018_longitudinal...sav","—","f1",9207,9170,0.4,"Years of schooling (continuous; 88/99 = missing codes)",100,"RECOMMENDED","Years-of-schooling metric; not directly comparable to ISCED categories"
+"KLoSA","sql/KLOSA/KLoSA 1-9th wave (STATA)/w04_e.dta","—","w04edu",5289,5289,0,"Korean education categories (survey-specific)",100,"RECOMMENDED","FI parquet lacks sex; education would need the same re-linkage step"
+"HRS","sql/HRS Products/harmonised HRS/H_HRS_d.dta","raeducl","raeducl",10707,10704,0.03,"Gateway harmonized raeducl (1=<upper sec, 2=upper sec, 3=tertiary)",100,"RECOMMENDED","Education is in the harmonized file, NOT the RAND Fat File used for FI; needs a second join"
+"SHARE","sql/share harmonised/GH_SHARE_g.dta","raeducl","raeducl",36361,36361,0,"Gateway harmonized ISCED-based (raeducl: 1=<upper sec, 2=upper sec, 3=tertiary)",100,"RECOMMENDED","Gateway harmonized — the cross-cohort comparability reference standard"
+"MHAS","sql/MHAS/H_MHAS_c2.dta","raeducl","raeducl",9094,9046,0.53,"Gateway harmonized (raeducl ISCED-based / raedyrs years)",100,"RECOMMENDED","Gateway harmonized; same standard as SHARE"
