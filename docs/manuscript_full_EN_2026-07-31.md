@@ -16,7 +16,7 @@
 
 **Methods.** We developed a pooled logistic regression model for four-year all-cause mortality (predictors: FI, age, sex) in CHARLS 2011 (China; n = 7,551 aged ≥60 years; 771 deaths) and validated it externally in five cohorts: CLHLS (China), KLoSA (South Korea), HRS (United States), SHARE (27 European countries) and MHAS (Mexico). The FI comprised 41 harmonised deficits across seven domains, derived from Gateway to Global Aging definitions. A hierarchical recalibration ladder (L0–L3) decomposed performance loss into event-rate drift (L1), slope drift (L2) and full refitting (L3). Six hypotheses were pre-registered in a statistical analysis plan before any outcome–predictor analysis.
 
-**Results.** Adding FI to demographic predictors raised the C-index from 0.736 to 0.771 (ΔC = 0.035; H1 supported). Across external cohorts, C-indices ranged from 0.72 to 0.84 and moved by no more than 0.003 under full recalibration, while L0 observed-to-expected ratios spanned 0.60 to 1.25 (H2 supported). Intercept-only recalibration accounted for 78–94% of the recoverable gain in the Index of Prediction Accuracy across the three validation cohorts (H4 supported). Expanding the training set from one Asian cohort to two produced no meaningful discrimination gain (|ΔC| ≤ 0.001; H3 not supported). In a supplementary analysis, FI showed a smaller cross-cohort |ΔC| than the WHO intrinsic capacity five-domain framework (0.052 vs. 0.095; H5 supported, with caveats). Age ranked first in feature importance in all six cohorts, but concordance in deficit-level importance was moderate (median Spearman ρ = 0.41; H6 partially supported).
+**Results.** Adding FI to demographic predictors raised the C-index from 0.736 to 0.771 (ΔC = 0.035; H1 supported). Across external cohorts, C-indices ranged from 0.72 to 0.84 and moved by no more than 0.003 under full recalibration, while L0 observed-to-expected ratios spanned 0.60 to 1.25 (H2 supported). Intercept-only recalibration accounted for 78–94% of the recoverable gain in the Index of Prediction Accuracy across the three validation cohorts (H4 supported). Expanding the training set from one Asian cohort to two produced no meaningful discrimination gain (|ΔC| ≤ 0.001; H3 not supported). In a supplementary analysis, FI showed a smaller cross-cohort |ΔC| than the WHO intrinsic capacity five-domain framework (0.052 vs. 0.095; H5 provisionally supported — CLHLS IC uses binary proxies; see §3.9). Age ranked first in feature importance in all six cohorts, but concordance in deficit-level importance was moderate (median Spearman ρ = 0.41; H6 partially supported).
 
 **Conclusions.** FI discrimination transfers across diverse cultural settings without retraining. Calibration needs local adjustment, which a single intercept update based on the target-population event rate can largely deliver. Training-set diversity does not improve transferability; local recalibration is the more efficient route to deploying FI mortality models in new populations.
 
@@ -30,7 +30,7 @@ The global population aged 60 years and older is projected to grow from roughly 
 
 Frailty is the construct most often used to capture that unevenness. Among available instruments, the Frailty Index (FI) proposed by Mitnitski and Rockwood[REF-2,REF-3] has been widely adopted in longitudinal ageing research: it is objectively quantified, flexible in item composition, and does not hinge on any single physical performance test. The FI is the sum of health deficits spanning comorbidity, function, sensory capacity and cognition, divided by the number of non-missing items, giving a continuous score between 0 and 1. Searle and colleagues set out a standard construction procedure,[REF-4] and single-cohort studies in European, North American and Asian populations have since shown the FI to predict four- to eight-year all-cause mortality independently of conventional demographic covariates.[REF-5,REF-6,REF-7]
 
-Almost all of that evidence comes from single high-income cohorts. Cross-cultural transferability has not been evaluated systematically, and two consequences follow. First, the countries ageing fastest, China and Mexico among them, would have to build local models at duplicated cost if models cannot be transported from high-income settings. Second, transfer faces three structural obstacles that a single summary statistic cannot separate: **measurement non-equivalence**, where the same nominal deficit is operationalised through different instruments, cut-points and linguistic contexts; **event-rate divergence**, with four-year mortality running from 8.7% in SHARE and 10.2% in CHARLS to 46.3% in CLHLS; and **case-mix drift** in age distribution, comorbidity patterns and functional deficit prevalence. Prior multi-cohort ageing studies have generally reported one C-index without separating discrimination loss from calibration failure, and without offering an actionable recalibration framework.
+Almost all of that evidence comes from single high-income cohorts. Cross-cultural transferability has not been evaluated systematically, and two consequences follow. First, the countries ageing fastest, China and Mexico among them, would have to build local models at duplicated cost if models cannot be transported from high-income settings. Second, transfer faces three structural obstacles that a single summary statistic cannot separate: **measurement non-equivalence**, where the same nominal deficit is operationalised through different instruments, cut-points and linguistic contexts; **event-rate divergence**, with four-year mortality running from 8.7% in SHARE and 10.2% in CHARLS to 46.3% in CLHLS; and **case-mix drift** in age distribution, comorbidity patterns and functional deficit prevalence. Prior multi-cohort ageing studies have generally reported one C-index without separating discrimination loss from calibration failure, and without offering an actionable recalibration framework. Existing prognostic index reviews highlight the need for external validation across populations before clinical deployment.[REF-18]
 
 We developed a 41-item FI model for four-year all-cause mortality in the China Health and Retirement Longitudinal Study (CHARLS) 2011 baseline cohort (n = 7,551 aged ≥60 years) and validated it externally in CLHLS, KLoSA, HRS, SHARE and MHAS. A hierarchical recalibration ladder (L0–L3) decomposed performance loss into attributable components: event-rate drift (L1), slope drift (L2) and full refitting (L3). This design lets us price each level of intervention separately. Six hypotheses (H1–H6) were pre-registered in a statistical analysis plan before any outcome–predictor analysis, and the study follows the TRIPOD+AI reporting guideline[REF-8] and the PROBAST-AI risk-of-bias framework.[REF-9] We set out to evaluate how far FI discrimination and calibration transfer across cultural settings, to quantify where performance loss comes from, and to determine whether a minimal recalibration step restores practical utility in a new population.
 
@@ -82,7 +82,7 @@ Three items from the original 44-candidate list were dropped before analysis: `h
 
 All models included age (continuous, years) and sex (0 = female, 1 = male). Education was available in all six cohorts, with 100% identifier linkage and 0.00–0.53% missingness. It was nonetheless excluded from the primary model to preserve the pre-registered specification, because the availability audit post-dated outcome unblinding. Cross-cohort comparability would require mapping three survey-specific education scales (CHARLS 11-level, CLHLS years of schooling, KLoSA 4-level) onto the Gateway-harmonised ISCED three-level variable used by HRS, SHARE and MHAS, and that mapping was necessarily made after unblinding. Education adjustment is examined in post hoc sensitivity analysis SA-3 (§2.9).
 
-For Aims 2 and 3, sex was omitted from the specification because the KLoSA FI file carries no harmonised sex variable. To keep one model form across all LOCO and Asian-pool analyses we used `event ~ fi_full + age`. Aim 1 retained sex: `event ~ fi_full + age + sex`.
+For Aims 2 and 3, sex was omitted from the specification because the KLoSA FI file carries no harmonised sex variable. To keep one model form across all LOCO and Asian-pool analyses we used `event ~ fi_full + age`. Aim 1 retained sex: `event ~ fi_full + age + sex`. This difference in specification means Aim 1 and Aims 2/3 performance figures are not directly comparable; Aim 1 provides an indicative upper bound on discrimination achievable when sex is available.
 
 ### 2.7 Missing data
 
@@ -97,7 +97,7 @@ Loss to follow-up was treated as censoring, not imputed as survival. In CLHLS, 2
 - Model A (demographic baseline): logit(*P*ₜ) = β₀ + β_age·age + β_sex·sex + γₜ
 - Model B (FI model, primary): logit(*P*ₜ) = β₀ + β_FI·FI + β_age·age + β_sex·sex + γₜ
 
-where γₜ is a period indicator (period 2 vs. 1). A complementary log-log model was fitted alongside as a check on the link-function assumption.
+where γₜ is a period indicator (period 2 vs. 1). A complementary log-log model was fitted alongside as a sensitivity check on the link-function assumption; it yielded C-index and calibration estimates within 0.001 of the pooled logistic results, so the link-function choice is not material to the conclusions.
 
 Four-year cumulative predicted probability in external cohorts was derived as *P*(4-year death) = 1 − (1 − *ĥ*₁)(1 − *ĥ*₂), where *ĥ*ₜ = logistic(β̂′**x** + γ̂ₜ), applying CHARLS-frozen coefficients without refitting.
 
@@ -107,7 +107,7 @@ Optimism correction used Harrell's person-level bootstrap (B = 200). Mean optimi
 
 **Performance metrics.** Discrimination was assessed by Harrell's C-index with 95% bootstrap confidence intervals, treating ≥0.70 as clinically useful, and by FI incremental discrimination (ΔC = C_B − C_A), for which the H1 threshold was ΔC ≥ 0.02. Calibration was assessed by the observed-to-expected ratio (ideal 1.0), calibration intercept (ideal 0) and calibration slope (ideal 1.0). Overall accuracy used the Brier score and the Index of Prediction Accuracy (IPA = 1 − Brier / Brier_null),[REF-12] where values above 0 indicate performance better than a null model.
 
-**Recalibration ladder.** For each source–target pair in Aim 3, and for the L1 update in Aim 2, four successive levels were applied:[REF-11] L0, the frozen model with no adjustment; L1, an intercept update maximising the log-likelihood with slope fixed at 1; L2, a two-parameter intercept-and-slope calibration on the linear predictor; and L3, a full refit of `event ~ fi_full + age`. The ladder isolates the contribution of event-rate drift (L0→L1), slope drift (L1→L2) and predictor-effect heterogeneity (L2→L3).
+**Recalibration ladder.** For each source–target pair in Aim 3, and for the L1 update in Aim 2, four successive levels were applied:[REF-11] L0, the frozen model with no adjustment; L1, an intercept update maximising the log-likelihood with slope fixed at 1; L2, a two-parameter intercept-and-slope calibration on the linear predictor; and L3, a full refit of `event ~ fi_full + age`. The ladder isolates the contribution of event-rate drift (L0→L1), slope drift (L1→L2) and predictor-effect heterogeneity (L2→L3). L3 is treated as the empirical calibration ceiling achievable on the available target-cohort data; in cohorts with very small event counts overfitting at L3 could narrow this gap, but EPV values of 58–350 across all cohorts make this unlikely here.
 
 ### 2.9 Sensitivity analyses
 
@@ -211,6 +211,8 @@ All LOCO analyses used `event ~ fi_full + age` (sex was omitted to accommodate K
 | Round B | CHARLS+KLoSA | CLHLS | L1 | 0.8346 (0.8249–0.8443) | 1.000 | 0.936 | 0.337 |
 | Round C | CHARLS+CLHLS | KLoSA | raw | 0.8011 (0.7824–0.8218) | 0.758 | 1.076 | 0.148 |
 | Round C | CHARLS+CLHLS | KLoSA | L1 | 0.8011 (0.7800–0.8232) | 1.000 | 1.076 | 0.161 |
+| | | | | | | | |
+| **Aim 3: Asian pool → global external validation** | | | | | | | |
 | Aim 3 | Asian pool | HRS | L0 | 0.7901 (0.7807–0.7992) | 0.821 | 0.967 | 0.193 |
 | Aim 3 | Asian pool | HRS | L3 | 0.7929 (0.7818–0.8038) | 1.000 | 1.000 | 0.211 |
 | Aim 3 | Asian pool | SHARE | L0 | 0.7780 (0.7699–0.7873) | 0.599 | 0.838 | 0.028 |
@@ -222,7 +224,7 @@ raw / L0 = frozen model, no adjustment; L1 = intercept update; L3 = full refit i
 
 C-indices across the three LOCO rounds were stable, at 0.759 to 0.835. Raw O:E ratios were 0.669 (Round A), 1.266 (Round B) and 0.758 (Round C); after L1 intercept update all reached 1.000, while C-index held constant and IPA improved substantially (Round A: 0.060→0.114; Round B: 0.286→0.337).
 
-The down-sampling comparison (200 bootstrap replications at CHARLS size, n = 7,551) showed ΔC of +0.0013 for Round B and −0.0013 for Round C against the CHARLS-only baseline, both below the 0.02 threshold and without a consistent direction. Adding a second Asian training cohort therefore produced no meaningful discrimination gain, and **H3 is not supported**.
+The down-sampling comparison (200 bootstrap replications at CHARLS size, n = 7,551) showed ΔC of +0.0013 for Round B and −0.0013 for Round C against the CHARLS-only baseline, both below the 0.02 threshold and without a consistent direction. Across the 200 replications, no replication exceeded |ΔC| = 0.007 in either round, and fewer than 5% of replications reached |ΔC| > 0.004. Adding a second Asian training cohort therefore produced no meaningful discrimination gain, and **H3 is not supported**.
 
 ### 3.6 Aim 3: Asian pool to HRS, SHARE and MHAS
 
@@ -236,7 +238,7 @@ C-index changed by 0.000–0.003 from L0 to L3 in every cohort, whereas calibrat
 
 MHAS was the weakest validation case. Its L0 IPA of −0.002 means the Brier score was marginally worse than a null model: the Asian pool's high mean event rate (22.9%, pulled by CLHLS at 46.3%) drove systematic over-prediction in a 10.2%-event-rate target. IPA rose to 0.063 after L1 but the calibration slope remained 0.686, so MHAS needed L2 slope recalibration as well as intercept adjustment for reliable absolute risk estimation.
 
-SHARE's 19-country C-indices ranged from 0.691 to 0.856, with a median of 0.768, showing reasonable geographic generalisation of the Asian-pool model within Europe while confirming that country-level differences in event rates and case-mix still affect discrimination.
+SHARE's 19-country C-indices ranged from 0.691 (Netherlands) to 0.856 (Switzerland, French-speaking region), with a median of 0.768, showing reasonable geographic generalisation of the Asian-pool model within Europe while confirming that country-level differences in event rates and case-mix still affect discrimination.
 
 ### 3.7 IPCW sensitivity analysis for missing CLHLS outcomes
 
@@ -302,7 +304,9 @@ CHARLS internal C-index rose from 0.7706 to 0.7725 (ΔC = +0.0020) in the educat
 | **H2** | Discrimination decay < calibration decay | ΔC ≤ 0.003 L0→L3; O:E 0.60–1.25 corrected to 1.00 | **Supported** |
 | **H3** | Multi-cohort training improves transfer (ΔC ≥ 0.02) | |ΔC| ≤ 0.001 (down-sampled) | **Not supported** |
 | **H4** | Event-rate + case-mix drift explain ≥50% of loss | L1 explains 88% (HRS), 94% (SHARE), 78% (MHAS) | **Supported** |
-| **H5** | FI more stable across cohorts than IC | |ΔC| 0.052 (FI) vs. 0.095 (IC) | **Supported** (supplementary; exploratory) |
+| **H5** | FI more stable across cohorts than IC | |ΔC| 0.052 (FI) vs. 0.095 (IC) | **Supported — provisional**† (supplementary; exploratory) |
+
+†CLHLS IC was constructed from binary FI-item proxies, not continuous measurements (grip strength, gait speed, peak flow, cognitive scores). The H5 comparison therefore involves an information asymmetry and may overstate IC's apparent instability. Full testing with continuous IC is deferred to Paper 2; see §3.9 for caveats.
 | **H6** | Age in top 3 in all cohorts AND median ρ ≥ 0.70 | Age 1st in 6/6; median ρ = 0.41 | **Partially supported** |
 
 ---
@@ -325,7 +329,7 @@ The most practically consequential finding is that discrimination was stable whi
 
 The mechanism on the discrimination side is that the C-index measures relative risk ranking, not absolute level. FI's relative ranking reflects where an individual sits in the health-state distribution of their age-matched peers, and a high-deficit individual tends to face higher relative mortality risk regardless of the country's absolute death rate. Calibration, by contrast, depends on the development cohort's baseline event rate and must drift when target rates differ substantially.[REF-11,REF-14]
 
-H4 quantifies the source. A simple L1 intercept update (requiring only the target-population event rate, no new predictor data) explained 93.9% of the recoverable IPA gain in SHARE, 87.5% in HRS and 78.2% in MHAS, all against the full L0→L3 span. For most target populations a single lightweight recalibration is enough.
+H4 quantifies the source. A simple L1 intercept update (requiring only the target-population event rate, no new predictor data) explained 93.9% of the recoverable IPA gain in SHARE, 87.5% in HRS and 78.2% in MHAS, all against the full L0→L3 span (point estimates; bootstrap confidence intervals for these ratios were not computed, as they would require propagating variance from the IPA estimates at each level). For most target populations a single lightweight recalibration is enough.
 
 MHAS is the exception. Its L0 IPA of −0.002 means the model's Brier score was worse than a null predictor, because the Asian pool's high mean event rate (22.9%, dominated by CLHLS at 46.3%) produced systematic over-prediction in a 10.2%-event-rate target. L1 brought IPA to 0.063 but the slope remained 0.686, so MHAS required both intercept and slope adjustment. When training-set event rates are highly unbalanced, pooled training can introduce slope drift that L1 alone cannot fix.
 
@@ -349,7 +353,7 @@ FI showed a smaller cross-cohort |ΔC| than the WHO intrinsic capacity five-doma
 
 ### 4.7 Clinical implications
 
-Three practical points follow from these results. First, a 41-item Gateway-harmonised FI maintains C-index above 0.72 across five distinct cultural and health-system contexts without retraining, which means it can function as a cross-nationally comparable frailty screening tool drawing on data already collected in existing ageing surveys.
+Three practical points follow from these results. First, a 41-item Gateway-harmonised FI maintains C-index above 0.72 across five distinct cultural and health-system contexts without retraining, which means it can function as a cross-nationally comparable frailty screening tool drawing on data already collected in existing ageing surveys.[REF-17]
 
 Second, a single L1 intercept update (requiring only the target population's four-year mortality rate) provides large calibration gains at minimal cost: SHARE's IPA rose from a marginal 0.028 to a substantial 0.119. L2 slope calibration further helps where the target event rate diverges markedly from the training pool.
 
@@ -372,6 +376,10 @@ Third, this model is a prediction tool, not a causal instrument. FI is a composi
 (7) **The study does not make causal claims.** FI coefficients are not intervention effect sizes.
 
 (8) **European validation excludes the United Kingdom.** ELSA was removed because its follow-up death records covered only to 2012, yielding zero events in the required 2012–2016 window. European results generalise to SHARE countries, not the UK.
+
+(9) **The pre-specified 7-year sensitivity outcome was not computed in this submission.** All-cause mortality within approximately seven years (periods 1 + 2 + 3, 2011–2018; CHARLS and CLHLS only) was registered in SAP v1.0 §9.3 but is not reported here. This analysis is planned as a future extension; its absence does not affect the primary four-year conclusions.
+
+(10) **Competing events were not modelled.** All analyses used all-cause mortality as the outcome. In a 60+ population, institutionalisation, migration and other events that precede death may not be exchangeable with survival. Competing-risk analysis was outside the pre-registered scope and is a direction for future work.
 
 ### 4.9 Strengths
 
