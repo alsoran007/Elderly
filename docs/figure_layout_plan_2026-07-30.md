@@ -120,6 +120,10 @@
 | Table 1 | 六队列基线特征 | N（60+）、年龄均值（SD）、女性%、FI中位数（IQR）、4年事件数/率 | FI parquet + outcome files |
 | Table 2 | CHARLS 开发集模型系数 | Model A/B的 β（SE）、OR（95%CI）、p值 | `model_b_charls_coefficients_2026-07-29.csv` |
 | Table 3 | 全队列性能汇总（L0–L3） | 六队列 C-index、O:E、Cal slope、Brier、IPA，按层次分列 | aim1/aim2/aim3 CSV |
+| **Table 4** | **SA-1：FI_core 19项 vs FI_full 41项** | 四队列 C-index 对比 + ΔC、O:E、IPA；证明条目削减不损判别力 | `results/sa1/sa1_fi_core_performance_2026-07-30.csv` |
+| **Table 5** | **SA-3：教育调整敏感性分析** | 主模型 / 教育完整子样本 / SA-3 三行对比（Aim 1） | `results/sa3/sa3_education_performance_2026-07-30.csv` |
+
+**表格编号变更记录（2026-07-30）**：新增两项敏感性分析后，主表由 3 张增至 5 张。编号按正文出现顺序分配——SA-1 在 Results §3.10 故为 Table 4，SA-3 在 §3.11 故为 Table 5。中英两版正文的表定义与引用已核验一致（各含 Table 1–5，节编号 3.1–3.12）。
 
 ## 补充表（Supplementary Tables）
 

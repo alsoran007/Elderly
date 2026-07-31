@@ -148,7 +148,7 @@ FI showed the smallest cross-cohort C-index shift, and **H5 is supported**. Thre
 
 Because the number of available FI items differed across cohorts (41/41 in CHARLS, CLHLS, KLoSA, HRS and SHARE with documented substitutions; 27/41 in MHAS), we repeated the analysis using **FI_core** — the 19 deficits available in all six cohorts under strict column-name matching (decision D-028) — with a unified computability threshold of 16 of 19 items. This tests directly whether conclusions depend on item availability rather than on frailty burden itself.
 
-**Table 5. SA-1: FI_core (19 items) versus FI_full (41 items)**
+**Table 4. SA-1: FI_core (19 items) versus FI_full (41 items)**
 
 | Cohort | Level | FI_core C-index | FI_full C-index | ΔC | FI_core O:E | FI_core IPA |
 |---|---|---:|---:|---:|---:|---:|
@@ -172,9 +172,9 @@ The L0→L1 pattern was also preserved: intercept recalibration moved O:E to exa
 
 An audit conducted after the primary analyses (2026-07-30) established that education was in fact available in all six cohorts, with 100% ID linkage and 0.00–0.53% missingness — refuting an earlier project record stating that education could not be reliably linked. Because SAP v1.0 was already frozen and the outcome had been unblinded, education was not added to the primary model; instead, SAP amendment A-001 declared a post hoc sensitivity analysis (SA-3) restricted to Aim 1, with the ISCED mapping frozen before the analysis was run (Methods §8.5).
 
-Education was an independent predictor of mortality in the expected direction (`edu_isced` β = −0.4475, p = 0.0031; higher attainment associated with lower risk). Adding it to the model nevertheless left performance essentially unchanged (Table 4).
+Education was an independent predictor of mortality in the expected direction (`edu_isced` β = −0.4475, p = 0.0031; higher attainment associated with lower risk). Adding it to the model nevertheless left performance essentially unchanged (Table 5).
 
-**Table 4. SA-3 education-adjusted sensitivity analysis (Aim 1)**
+**Table 5. SA-3 education-adjusted sensitivity analysis (Aim 1)**
 
 | Model | N | Events | C-index [95% CI] | O:E | Cal. slope | IPA |
 |---|---:|---:|---|---:|---:|---:|
