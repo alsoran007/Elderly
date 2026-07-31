@@ -42,3 +42,6 @@ Thumbs.db
 *.tmp
 *~
 desktop.ini
+
+# DOCX build intermediates (regenerable via code/06_build/)
+build/figures/
