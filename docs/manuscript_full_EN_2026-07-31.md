@@ -6,7 +6,7 @@
 
 **Corresponding author**: [Name, address, email]
 
-**Word count**: Abstract 312; main text ~6,800
+**Word count**: Abstract 331 (structured body, excluding keywords); main text 6,697 (Introduction 485, Methods 2,127, Results 2,302, Discussion 1,783; excludes tables, declarations, references and figure list)
 
 ---
 
@@ -105,7 +105,7 @@ Optimism correction used Harrell's person-level bootstrap (B = 200). Mean optimi
 
 **Validation structure.** Aim 1 froze CHARLS Model B coefficients and applied them to CLHLS, computing the full metric set. Aim 2 ran three leave-one-cohort-out rounds: CLHLS + KLoSA training with CHARLS as test (Round A); CHARLS + KLoSA training with CLHLS as test (Round B); and CHARLS + CLHLS training with KLoSA as test (Round C). To separate training-set diversity from sample size, a down-sampling bootstrap (200 replications, reduced to the CHARLS n = 7,551) served as the control comparison for H3. Aim 3 pooled CHARLS, CLHLS and KLoSA into an Asian training set (N = 19,934; 4,563 events; event rate 22.9%) and applied the frozen pool coefficients separately to HRS, SHARE and MHAS, with an additional analysis of country-level C-indices across SHARE's 19 participating countries and regions.
 
-**Performance metrics.** Discrimination was assessed by Harrell's C-index with 95% bootstrap confidence intervals, treating ≥0.70 as clinically useful, and by FI incremental discrimination (ΔC = C_B − C_A), for which the H1 threshold was ΔC ≥ 0.02. Calibration was assessed by the observed-to-expected ratio (ideal 1.0), calibration intercept (ideal 0) and calibration slope (ideal 1.0). Overall accuracy used the Brier score and the Index of Prediction Accuracy (IPA = 1 − Brier / Brier_null),[REF-12] where values above 0 indicate performance better than a null model.
+**Performance metrics.** Discrimination was assessed by Harrell's C-index[REF-13] with 95% bootstrap confidence intervals, treating ≥0.70 as clinically useful, and by FI incremental discrimination (ΔC = C_B − C_A), for which the H1 threshold was ΔC ≥ 0.02. Calibration was assessed by the observed-to-expected ratio (ideal 1.0), calibration intercept (ideal 0) and calibration slope (ideal 1.0). Overall accuracy used the Brier score and the Index of Prediction Accuracy (IPA = 1 − Brier / Brier_null),[REF-12] where values above 0 indicate performance better than a null model.
 
 **Recalibration ladder.** For each source–target pair in Aim 3, and for the L1 update in Aim 2, four successive levels were applied:[REF-11] L0, the frozen model with no adjustment; L1, an intercept update maximising the log-likelihood with slope fixed at 1; L2, a two-parameter intercept-and-slope calibration on the linear predictor; and L3, a full refit of `event ~ fi_full + age`. The ladder isolates the contribution of event-rate drift (L0→L1), slope drift (L1→L2) and predictor-effect heterogeneity (L2→L3). L3 is treated as the empirical calibration ceiling achievable on the available target-cohort data; in cohorts with very small event counts overfitting at L3 could narrow this gap, but EPV values of 58–350 across all cohorts make this unlikely here.
 
@@ -137,7 +137,7 @@ Under PROBAST-AI, risk of bias was judged low for the development cohort across 
 
 ### 3.1 Participants and cohort overview
 
-All six cohorts completed FI computability screening for participants aged ≥60 years. Table 1 summarises the analytic samples and their outcome distributions. CHARLS, CLHLS and KLoSA form the Asian development pool; HRS, SHARE and MHAS serve as external validation cohorts. FI-eligible counts denote participants meeting the computability threshold; the complete-case sample additionally requires an observed four-year outcome and non-missing covariates.
+All six cohorts completed FI computability screening for participants aged ≥60 years. Table 1 summarises the analytic samples and their outcome distributions, and Figure 1 shows the flow from source cohorts to analytic samples, including the two cohorts excluded at the screening stage. CHARLS, CLHLS and KLoSA form the Asian development pool; HRS, SHARE and MHAS serve as external validation cohorts. FI-eligible counts denote participants meeting the computability threshold; the complete-case sample additionally requires an observed four-year outcome and non-missing covariates.
 
 **Table 1. Baseline characteristics and four-year outcomes by cohort**
 
@@ -160,7 +160,7 @@ The FI median was lowest in KLoSA (0.095) and highest in HRS (0.287), with the r
 
 FI construction followed the locked 41-item specification, with ordinal health items rescaled to [0, 1] before inclusion. CHARLS, CLHLS, KLoSA, HRS and SHARE each reached 41 of 41 stems, HRS with validated substitutions; MHAS reached 27 of 41 under its cohort-specific threshold.
 
-Distributions differed markedly between cohorts: KLoSA at a median of 0.095, HRS at 0.287, SHARE and CLHLS both at 0.169. That spread reflects differences in case-mix, item availability and underlying event rates, which means no single numeric FI value can serve as a universal frailty cut-point without accounting for cohort context.
+Distributions differed markedly between cohorts (Figure 2): KLoSA at a median of 0.095, HRS at 0.287, SHARE and CLHLS both at 0.169. That spread reflects differences in case-mix, item availability and underlying event rates, which means no single numeric FI value can serve as a universal frailty cut-point without accounting for cohort context. Item-level positive rates across all six cohorts are given in Supplementary Table S2.
 
 CLHLS needed particular attention for outcome missingness. Of 9,207 FI-eligible participants, 7,095 had an observable four-year outcome and 2,112 (22.9%) did not: 45 pre-baseline deaths flagged as not-at-risk, and 2,067 with irrecoverable follow-up or death dates. Complete-case analysis did not assign survival status to participants with unknown outcomes. Education was available in all six cohorts but was excluded from the primary model to preserve the pre-registered specification; its effect is quantified in SA-3 (§3.11).
 
@@ -197,7 +197,7 @@ Calibration, however, was off: O:E ratio 1.2473, calibration intercept 0.5976, c
 
 The demographic-only Model A provides an instructive contrast on calibration. Model A was *better* calibrated in CLHLS than Model B (O:E 1.044 vs 1.247; mean predicted risk 0.443 vs 0.371 against an observed 0.463), while being clearly worse on discrimination (C 0.805 vs 0.839) and on overall accuracy (IPA 0.273 vs 0.296). The mechanism is transparent: CLHLS is an oldest-old cohort, so an age-and-sex model is pushed towards high predicted risk by the age distribution alone and lands near the observed rate almost incidentally. Adding FI improves ranking but pulls the absolute level down, because CLHLS has a *lower* median FI than the development cohort (0.169 vs 0.200) despite its far higher mortality. Discrimination and calibration are thus driven by different quantities and can move in opposite directions — the dissociation examined under H2 (§3.6, §4.3). Model B remains preferable on ranking and overall accuracy, and its calibration deficit is precisely what a single intercept update corrects.
 
-At the decile level, under-prediction was most pronounced in the middle of the risk distribution. Predicted versus observed mortality was 4.0% vs. 4.9% at decile 1, 23.8% vs. 40.3% at decile 5, and 47.2% vs. 65.9% at decile 7, with the two lines converging at the extremes. This pattern is what happens when a model calibrated on a low-event-rate cohort is applied to one with much higher mortality.
+At the decile level, under-prediction was most pronounced in the middle of the risk distribution (Figure 3B). Predicted versus observed mortality was 4.0% vs. 4.9% at decile 1, 23.8% vs. 40.3% at decile 5, and 47.2% vs. 65.9% at decile 7, with the two lines converging at the extremes. This pattern is what happens when a model calibrated on a low-event-rate cohort is applied to one with much higher mortality. The corresponding ROC curves for Models A and B in the development set appear in Figure 3A.
 
 ### 3.5 Aim 2: leave-one-cohort-out transfer within Asia
 
@@ -226,7 +226,7 @@ All LOCO analyses used `event ~ fi_full + age` (sex was omitted to accommodate K
 
 raw / L0 = frozen model, no adjustment; L1 = intercept update; L3 = full refit in target cohort. Asian pool = CHARLS + CLHLS + KLoSA (N = 19,934; 4,563 events; event rate 22.9%).
 
-C-indices across the three LOCO rounds were stable, at 0.759 to 0.835. Raw O:E ratios were 0.669 (Round A), 1.266 (Round B) and 0.758 (Round C); after L1 intercept update all reached 1.000, while C-index held constant and IPA improved substantially (Round A: 0.060→0.114; Round B: 0.286→0.337).
+C-indices across the three LOCO rounds were stable, at 0.759 to 0.835. Raw O:E ratios were 0.669 (Round A), 1.266 (Round B) and 0.758 (Round C); after L1 intercept update all reached 1.000, while C-index held constant and IPA improved substantially (Round A: 0.060→0.114; Round B: 0.286→0.337). Figure 4 shows the calibration plots for all three rounds before and after the L1 update.
 
 The down-sampling comparison (200 bootstrap replications at CHARLS size, n = 7,551) showed ΔC of +0.0013 for Round B and −0.0013 for Round C against the CHARLS-only baseline, both below the 0.02 threshold and without a consistent direction. Across the 200 replications, the maximum observed |ΔC| was 0.0023 in Round B and 0.0028 in Round C; the 95th percentile of |ΔC| was 0.0020 and 0.0022 respectively, and no replication in either round exceeded |ΔC| = 0.003. Adding a second Asian training cohort therefore produced no meaningful discrimination gain, and **H3 is not supported**.
 
@@ -242,25 +242,25 @@ C-index changed by 0.000–0.003 from L0 to L3 in every cohort, whereas calibrat
 
 MHAS was the weakest validation case. Its L0 IPA of −0.002 means the Brier score was marginally worse than a null model: the Asian pool's high mean event rate (22.9%, pulled by CLHLS at 46.3%) drove systematic over-prediction in a 10.2%-event-rate target. IPA rose to 0.063 after L1 but the calibration slope remained 0.686, so MHAS needed L2 slope recalibration as well as intercept adjustment for reliable absolute risk estimation.
 
-SHARE's 19-country C-indices ranged from 0.691 (Netherlands) to 0.856 (Switzerland, French-speaking region), with a median of 0.768, showing reasonable geographic generalisation of the Asian-pool model within Europe while confirming that country-level differences in event rates and case-mix still affect discrimination.
+SHARE's 19-country C-indices ranged from 0.691 (Netherlands) to 0.856 (Switzerland, French-speaking region), with a median of 0.768, showing reasonable geographic generalisation of the Asian-pool model within Europe while confirming that country-level differences in event rates and case-mix still affect discrimination. The full country-level distribution is shown in Supplementary Figure S2.
 
 ### 3.7 IPCW sensitivity analysis for missing CLHLS outcomes
 
 Of the 9,207 FI-eligible CLHLS participants, 22.9% had missing four-year outcomes. Higher FI (β = +0.652, p = 0.0004) and older age (β = +0.012, p < 0.0001) predicted complete outcome ascertainment, whereas sex was non-significant (β = −0.078, p = 0.130), indicating mild informative rather than completely random censoring. Censoring rates by FI tertile were 25.2% (low), 24.1% (middle) and 19.6% (high). IPCW weights were narrow: before truncation, mean 1.292, median 1.291, range 1.159–1.451; after truncation at the 99th percentile (cut-off 1.414) the maximum was 1.414 and the mean essentially unchanged at 1.292.
 
-IPCW-weighted analysis gave C-index 0.8397 versus 0.8389 unweighted (ΔC = +0.0008), with O:E moving from 1.2473 to 1.2547, calibration slope from 0.9393 to 0.9458, Brier score from 0.1751 to 0.1740 and IPA from 0.2957 to 0.2967. None of these shifts is meaningful. The complete-case Aim 1 results are therefore robust to the mild informative censoring in this cohort.
+IPCW-weighted analysis gave C-index 0.8397 versus 0.8389 unweighted (ΔC = +0.0008), with O:E moving from 1.2473 to 1.2547, calibration slope from 0.9393 to 0.9458, Brier score from 0.1751 to 0.1740 and IPA from 0.2957 to 0.2967. None of these shifts is meaningful. The complete-case Aim 1 results are therefore robust to the mild informative censoring in this cohort. Supplementary Figure S3 presents the censoring model and the weighted-versus-unweighted comparison.
 
 ### 3.8 H6: cross-cohort feature importance concordance
 
 Cohort-specific logistic models on FI_core (19 items) plus age placed **age first in all six cohorts**. Self-rated health (`shlt`) reached the top three in CHARLS, HRS, SHARE and MHAS; meal-preparation difficulty (`mealsa`) ranked second in both CLHLS and KLoSA.
 
-Median pairwise Spearman rank correlation across the six cohorts was 0.4105 (range 0.0962–0.6677). The lowest concordance was KLoSA–HRS (0.096), followed by KLoSA–CHARLS (0.099). The highest were CHARLS–SHARE (0.668), HRS–SHARE (0.666) and SHARE–MHAS (0.662).
+Median pairwise Spearman rank correlation across the six cohorts was 0.4105 (range 0.0962–0.6677). The lowest concordance was KLoSA–HRS (0.096), followed by KLoSA–CHARLS (0.099). The highest were CHARLS–SHARE (0.668), HRS–SHARE (0.666) and SHARE–MHAS (0.662). Supplementary Figure S1 shows the full importance matrix and the pairwise concordance heat map.
 
 **H6 is partially supported.** The pre-registered criterion that age ranks in the top three was met in 6/6 cohorts. The criterion that median Spearman ρ ≥ 0.70 was not met (observed 0.41), indicating substantial cross-cohort heterogeneity in deficit-level importance.
 
 ### 3.9 Supplementary analysis: FI versus intrinsic capacity (H5)
 
-In the pre-specified supplementary analysis within the CHARLS → CLHLS framework, Model B (FI + age) achieved apparent CHARLS C-index 0.7608 and external CLHLS C-index 0.8131, a cross-cohort shift of |ΔC| = 0.052. Model C (IC five domains + age) achieved 0.7105 and 0.8060 respectively, a shift of |ΔC| = 0.095. FI's cross-cohort change was smaller, so **H5 is supported**.
+In the pre-specified supplementary analysis within the CHARLS → CLHLS framework, Model B (FI + age) achieved apparent CHARLS C-index 0.7608 and external CLHLS C-index 0.8131, a cross-cohort shift of |ΔC| = 0.052. Model C (IC five domains + age) achieved 0.7105 and 0.8060 respectively, a shift of |ΔC| = 0.095. FI's cross-cohort change was smaller, so **H5 is supported**. Supplementary Figure S4 plots the internal-to-external shift for both models.
 
 Three caveats apply. CLHLS IC domains were represented by binary FI-item proxies rather than continuous measurements, so the analysis likely overstates IC's apparent instability. The two models start from different CHARLS baselines (0.761 vs. 0.711), which complicates direct |ΔC| comparison. And both models' C-indices rose in CLHLS, partly because a high-event-rate cohort inflates C-statistics mechanically. Full H5 testing with continuous IC measurements is deferred to Paper 2.
 
@@ -437,6 +437,8 @@ Five aspects are worth noting. (1) *Scale and coverage:* 76,069 complete-case pa
 
 [REF-12] Steyerberg EW, Vickers AJ, Cook NR, et al. Assessing the performance of prediction models: a framework for traditional and novel measures. *Epidemiology.* 2010;21(1):128–138.
 
+[REF-13] Harrell FE, Califf RM, Pryor DB, Lee KL, Rosati RA. Evaluating the yield of medical tests. *JAMA.* 1982;247(18):2543–2546.
+
 [REF-14] Steyerberg EW. *Clinical Prediction Models: A Practical Approach to Development, Validation, and Updating.* 2nd ed. Springer; 2019.
 
 [REF-17] Beard JR, Officer A, de Carvalho IA, et al. The World report on ageing and health: a policy framework for healthy ageing. *Lancet.* 2016;387(10033):2145–2154.
@@ -498,5 +500,7 @@ Five aspects are worth noting. (1) *Scale and coverage:* 76,069 complete-case pa
 ---
 
 *Manuscript version: 2026-07-31 | Humanizer pass applied | All numbers verified against results CSVs*
-*Word count: Abstract 312 | Introduction ~530 | Methods ~1,200 | Results ~1,500 | Discussion ~1,100 | Total ~4,640 (excluding tables/figure lists)*
+*Word count: Abstract 331 | Introduction 485 | Methods 2,127 | Results 2,302 | Discussion 1,783 | main text total 6,697 (excluding tables, declarations, references and figure list)*
+
+*Note on abstract length: at 331 words the structured abstract exceeds the 250–300 word limit of several target journals (e.g. Lancet Healthy Longevity 300, Age and Ageing 250). Trimming will be needed once the target journal is fixed; the Results paragraph carries the most compressible detail.*
 
