@@ -290,9 +290,11 @@ Education independently predicted mortality in the expected direction (`edu_isce
 
 | Model | N | Events | C-index [95% CI] | O:E | Cal. slope | IPA |
 |---|---:|---:|---|---:|---:|---:|
-| Main model (full complete case, §3.4) | 7,095 | 3,282 | 0.8389 [0.8302–0.8472] | 1.246 | 0.938 | 0.296 |
+| Main model, applied to full complete-case CLHLS sample‡ | 7,095 | 3,282 | 0.8389 [0.8302–0.8472] | 1.246 | 0.938 | 0.296 |
 | Main model (education-complete subsample) | 7,069 | 3,268 | 0.8389 [0.8289–0.8477] | 1.247 | 0.938 | 0.296 |
 | SA-3 (+ education) | 7,069 | 3,268 | 0.8380 [0.8281–0.8467] | 1.240 | 0.932 | 0.296 |
+
+‡All three rows were recomputed within the SA-3 script, where the model is fitted on the 7,534 education-complete development participants so that the three rows are mutually comparable. This differs marginally from the §3.4 primary analysis, which fits on all 7,546 development participants: O:E 1.246 versus 1.247 and calibration slope 0.938 versus 0.939. The §3.4 values are authoritative for the primary analysis; the differences do not affect any conclusion.
 
 CHARLS internal C-index rose from 0.7706 to 0.7725 (ΔC = +0.0020) in the education-complete subsample (7,534 persons; 12 excluded for missing education). External CLHLS ΔC was −0.0009, ΔO:E −0.007 and ΔIPA 0.000 (26 persons excluded). All three pre-declared robustness criteria were met (|ΔC| < 0.02, |ΔO:E| < 0.05, |Δslope| < 0.05). **The main model conclusions are robust to the absence of education adjustment.** Education is a significant predictor on its own but adds negligible information alongside FI, consistent with deficit accumulation lying downstream of the socioeconomic gradient.
 
@@ -315,7 +317,7 @@ CHARLS internal C-index rose from 0.7706 to 0.7725 (ΔC = +0.0020) in the educat
 
 ### 4.1 Principal findings
 
-This study evaluated the cross-cultural transferability of a deficit-accumulation FI in six longitudinal ageing cohorts spanning China, South Korea, the United States, 27 European countries and Mexico — 76,074 complete-case participants aged ≥60 years and 10,790 four-year deaths. Results organise into two tiers. FI discrimination (C-index 0.72–0.84) held up across cultures without retraining, retaining clinically meaningful risk ranking. Calibration, by contrast, drifted systematically, driven mainly by differences in baseline mortality between the development and target cohorts, and was largely recoverable through intercept recalibration. H1, H2 and H4 were supported; H3 was not; H5 was provisionally supported in a supplementary analysis; H6 was partially supported. All analyses followed a pre-registered plan locked before any outcome–predictor analysis.
+This study evaluated the cross-cultural transferability of a deficit-accumulation FI in six longitudinal ageing cohorts spanning China, South Korea, the United States, 27 European countries and Mexico — 76,069 complete-case participants aged ≥60 years and 10,790 four-year deaths. Results organise into two tiers. FI discrimination (C-index 0.72–0.84) held up across cultures without retraining, retaining clinically meaningful risk ranking. Calibration, by contrast, drifted systematically, driven mainly by differences in baseline mortality between the development and target cohorts, and was largely recoverable through intercept recalibration. H1, H2 and H4 were supported; H3 was not; H5 was provisionally supported in a supplementary analysis; H6 was partially supported. All analyses followed a pre-registered plan locked before any outcome–predictor analysis.
 
 ### 4.2 Incremental predictive value of FI beyond demographics (H1)
 
@@ -383,7 +385,7 @@ Third, this model is a prediction tool, not a causal instrument. FI is a composi
 
 ### 4.9 Strengths
 
-Five aspects are worth noting. (1) *Scale and coverage:* 76,074 complete-case participants aged ≥60 years and 10,790 deaths across six countries and regions make this one of the largest cross-cultural FI mortality prediction studies to date. (2) *Pre-registration and outcome blinding:* all analytic decisions were locked before any outcome–predictor analysis (commit 9bc7b85), with a complete decision audit trail from D-001 to D-036 including SAP amendment A-001. (3) *Attribution-decomposition framework:* the L0–L3 ladder prices each recalibration level separately, giving a concrete operational reference for cross-cultural model transfer. (4) *Item-level auditability:* FI construction for CHARLS and KLoSA was re-implemented from official Gateway `.do` scripts with every item's source line number recorded (Supplementary Table S1), enabling item-by-item verification against the official source. (5) *Open data and reproducibility:* all six cohorts are available through official application and the full analytic codebase is archived on GitHub with version-controlled reproducibility.
+Five aspects are worth noting. (1) *Scale and coverage:* 76,069 complete-case participants aged ≥60 years and 10,790 deaths across six countries and regions make this one of the largest cross-cultural FI mortality prediction studies to date. (2) *Pre-registration and outcome blinding:* all analytic decisions were locked before any outcome–predictor analysis (commit 9bc7b85), with a complete decision audit trail from D-001 to D-036 including SAP amendment A-001. (3) *Attribution-decomposition framework:* the L0–L3 ladder prices each recalibration level separately, giving a concrete operational reference for cross-cultural model transfer. (4) *Item-level auditability:* FI construction for CHARLS and KLoSA was re-implemented from official Gateway `.do` scripts with every item's source line number recorded (Supplementary Table S1), enabling item-by-item verification against the official source. (5) *Open data and reproducibility:* all six cohorts are available through official application and the full analytic codebase is archived on GitHub with version-controlled reproducibility.
 
 ---
 
