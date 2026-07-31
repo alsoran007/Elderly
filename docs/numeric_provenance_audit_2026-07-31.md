@@ -304,7 +304,15 @@ Aggregate totals: 10,790 deaths (771+3,282+510+2,138+3,165+924) ✅ exact. Compl
 | `results/ipcw/ipcw_clhls_tertile_censoring_2026-07-29.csv` | Censoring rate by FI tertile: 0.2516 / 0.2406 / 0.1955 |
 | `results/aim1/aim1_performance_table_2026-07-29.csv` (extended) | Added `C_index_modelA` (0.735463 internal, 0.805073 CLHLS) and `event_rate_person_level` |
 
-A by-product worth noting: the Aim 1 rerun also surfaced Model A's external CLHLS C-index (0.8051), which had been computed in the script but never reported anywhere. It is not currently cited in the manuscript.
+A by-product worth noting: the Aim 1 rerun also surfaced Model A's external CLHLS C-index (0.8051), which had been computed in the script but never reported anywhere.
+
+**Now incorporated (2026-07-31).** This value turned out to be substantive rather than decorative. It shows the FI increment replicates in the validation cohort: Model A 0.8051 → Model B 0.8389 gives ΔC = 0.0339 in CLHLS against 0.0351 in development, a difference of 0.0012. H1 had previously rested on development-set evidence alone, which is precisely the weakness reviewers probe in incremental-value claims. Added to §3.4, §4.2 and the H1 verdict row in both manuscripts.
+
+| Manuscript value | Source | Status |
+|---|---|---|
+| Model A CLHLS C = 0.8051 | aim1_performance (C_index_modelA, CLHLS_external) | ✅ |
+| External ΔC = 0.0339 | 0.838938 − 0.805073 | ✅ derived |
+| Internal vs external gap 0.0012 | 0.035062 − 0.033866 | ✅ derived |
 
 ---
 

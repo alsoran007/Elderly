@@ -191,7 +191,9 @@ Person-level bootstrap internal validation (B = 200) gave mean optimism of 0.000
 
 CHARLS Model B coefficients were frozen and four-year cumulative risk was predicted in CLHLS. The 7,095 complete-case participants contributed 3,282 deaths, a 46.3% event rate compared with 10.2% in the development set.
 
-Discrimination was well preserved: C-index 0.8389 (bootstrap 95% CI 0.8301–0.8481). Calibration, however, was off: O:E ratio 1.2473, calibration intercept 0.5976, calibration slope 0.9393, indicating that the frozen model systematically under-predicted mortality while preserving risk ranking. Brier score was 0.1751 and IPA 0.2957.
+Discrimination was well preserved: C-index 0.8389 (bootstrap 95% CI 0.8301–0.8481). The FI increment also replicated externally: the demographic-only Model A reached C = 0.8051 in CLHLS, so FI added ΔC = 0.0339 in the validation cohort against ΔC = 0.0351 in development — a difference of 0.0012. The incremental value of FI is therefore not an artefact of the development sample.
+
+Calibration, however, was off: O:E ratio 1.2473, calibration intercept 0.5976, calibration slope 0.9393, indicating that the frozen model systematically under-predicted mortality while preserving risk ranking. Brier score was 0.1751 and IPA 0.2957.
 
 At the decile level, under-prediction was most pronounced in the middle of the risk distribution. Predicted versus observed mortality was 4.0% vs. 4.9% at decile 1, 23.8% vs. 40.3% at decile 5, and 47.2% vs. 65.9% at decile 7, with the two lines converging at the extremes. This pattern is what happens when a model calibrated on a low-event-rate cohort is applied to one with much higher mortality.
 
@@ -302,7 +304,7 @@ CHARLS internal C-index rose from 0.7706 to 0.7725 (ΔC = +0.0020) in the educat
 
 | Hypothesis | Pre-specified criterion | Observed | Verdict |
 |---|---|---|---|
-| **H1** | FI adds ΔC ≥ 0.02 beyond age + sex | ΔC = 0.035 | **Supported** |
+| **H1** | FI adds ΔC ≥ 0.02 beyond age + sex | ΔC = 0.035 (development); 0.034 replicated in CLHLS | **Supported** |
 | **H2** | Discrimination decay < calibration decay | ΔC ≤ 0.003 L0→L3; O:E 0.60–1.25 corrected to 1.00 | **Supported** |
 | **H3** | Multi-cohort training improves transfer (ΔC ≥ 0.02) | |ΔC| ≤ 0.001 (down-sampled) | **Not supported** |
 | **H4** | Event-rate + case-mix drift explain ≥50% of loss | L1 explains 88% (HRS), 94% (SHARE), 78% (MHAS) | **Supported** |
@@ -321,7 +323,7 @@ This study evaluated the cross-cultural transferability of a deficit-accumulatio
 
 ### 4.2 Incremental predictive value of FI beyond demographics (H1)
 
-Adding FI to the CHARLS demographic model raised C-index by 0.035, meeting the H1 threshold. This increment is in line with reports from European and North American cohorts[REF-5,REF-6] and extends that finding to rural community-dwelling older adults in China.
+Adding FI to the CHARLS demographic model raised C-index by 0.035, meeting the H1 threshold, and the same increment appeared in CLHLS (0.034). Replication of the increment in an external cohort matters because incremental-value claims that hold only in the development sample are a recognised weakness of prediction-model studies. This increment is in line with reports from European and North American cohorts[REF-5,REF-6] and extends that finding to rural community-dwelling older adults in China.
 
 The mechanism is straightforward. Chronological age captures the average trajectory of biological ageing; FI accumulates observed deficits across comorbidity, function, nutrition and cognition, encoding individual variation that is independent of calendar age. That multi-system comprehensiveness lets FI keep conceptual comparability across health systems and cultural settings, in contrast to instruments that hinge on a single performance protocol.
 
