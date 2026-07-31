@@ -242,7 +242,7 @@ SHARE's 19-country C-indices ranged from 0.691 (Netherlands) to 0.856 (Switzerla
 
 ### 3.7 IPCW sensitivity analysis for missing CLHLS outcomes
 
-Of the 9,207 FI-eligible CLHLS participants, 22.9% had missing four-year outcomes. Higher FI (β = +0.652, p = 0.0004) and older age (β = +0.012, p < 0.0001) predicted complete outcome ascertainment, whereas sex was non-significant (β = −0.078, p = 0.130), indicating mild informative rather than completely random censoring. Censoring rates by FI tertile were 25.2% (low), 24.1% (middle) and 19.6% (high). IPCW weights were narrow: mean 1.292, median 1.291, maximum 1.451 after 99th-percentile truncation.
+Of the 9,207 FI-eligible CLHLS participants, 22.9% had missing four-year outcomes. Higher FI (β = +0.652, p = 0.0004) and older age (β = +0.012, p < 0.0001) predicted complete outcome ascertainment, whereas sex was non-significant (β = −0.078, p = 0.130), indicating mild informative rather than completely random censoring. Censoring rates by FI tertile were 25.2% (low), 24.1% (middle) and 19.6% (high). IPCW weights were narrow: before truncation, mean 1.292, median 1.291, range 1.159–1.451; after truncation at the 99th percentile (cut-off 1.414) the maximum was 1.414 and the mean essentially unchanged at 1.292.
 
 IPCW-weighted analysis gave C-index 0.8397 versus 0.8389 unweighted (ΔC = +0.0008), with O:E moving from 1.2473 to 1.2547, calibration slope from 0.9393 to 0.9458, Brier score from 0.1751 to 0.1740 and IPA from 0.2957 to 0.2967. None of these shifts is meaningful. The complete-case Aim 1 results are therefore robust to the mild informative censoring in this cohort.
 

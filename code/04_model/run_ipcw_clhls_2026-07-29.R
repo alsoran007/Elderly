@@ -123,6 +123,45 @@ metrics_df <- data.frame(
 )
 write.csv(metrics_df, file.path(OUT,"ipcw_clhls_metrics_2026-07-29.csv"), row.names=FALSE)
 
+## Censoring-model coefficients, weight summary and tertile censoring rates were
+## previously only printed to console / embedded in the .md report, so the
+## manuscript's IPCW figures had no machine-readable source. Emitted as CSV here
+## (gap D3 from the 2026-07-31 numeric provenance audit).
+cens_coef <- as.data.frame(summary(cens_fit)$coefficients)
+names(cens_coef) <- c("estimate","std_error","z_value","p_value")
+cens_coef$term <- rownames(cens_coef)
+cens_coef <- cens_coef[, c("term","estimate","std_error","z_value","p_value")]
+write.csv(cens_coef, file.path(OUT,"ipcw_clhls_censoring_model_2026-07-29.csv"),
+          row.names=FALSE)
+
+wt_raw <- cc$ipcw[is.finite(cc$ipcw)]
+wt_tr  <- cc$ipcw_trunc[is.finite(cc$ipcw_trunc)]
+wt_summary <- data.frame(
+  statistic = c("n_complete_case",
+                "raw_mean","raw_median","raw_min","raw_max","raw_sd",
+                "trunc_p99_cutoff",
+                "trunc_mean","trunc_median","trunc_min","trunc_max","trunc_sd"),
+  value = c(length(wt_tr),
+            mean(wt_raw), median(wt_raw), min(wt_raw), max(wt_raw), sd(wt_raw),
+            w99,
+            mean(wt_tr), median(wt_tr), min(wt_tr), max(wt_tr), sd(wt_tr))
+)
+write.csv(wt_summary, file.path(OUT,"ipcw_clhls_weight_summary_2026-07-29.csv"),
+          row.names=FALSE)
+
+## Tertile censoring rates (reported in manuscript 3.7).
+## NB: aggregate() returns a matrix column per LHS variable; the censoring rate
+## lives in tert_tab$N[,"cens_rate"] because the FUN was applied to `observed`,
+## so mean(1-x) there is the censored proportion. tert_tab$censored[,"cens_rate"]
+## is its complement and must not be used.
+tert_out <- data.frame(
+  fi_tertile  = as.character(tert_tab$fi_tert),
+  n           = as.numeric(tert_tab$N[, "n"]),
+  censor_rate = as.numeric(tert_tab$N[, "cens_rate"])
+)
+write.csv(tert_out, file.path(OUT,"ipcw_clhls_tertile_censoring_2026-07-29.csv"),
+          row.names=FALSE)
+
 delta_c <- c_w - c_u
 report <- paste0(
 "# CLHLS IPCW Sensitivity Report (2026-07-29)\n\n",

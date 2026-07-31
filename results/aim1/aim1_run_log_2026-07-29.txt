@@ -1,5 +1,5 @@
 Aim 1 CHARLS development -> CLHLS external validation
-Run time: 2026-07-29 19:56:18 
+Run time: 2026-07-31 22:36:54 
 Project root: D:\AI_project\project3 
  package available
    arrow      TRUE
@@ -43,20 +43,22 @@ CHARLS FI median: 0.1964286
    period 14561       0   0.0000000
 
 === Final results ===
-                metric CHARLS_internal CLHLS_external
-             n_persons    7.546000e+03   7095.0000000
-              n_events    7.710000e+02   3282.0000000
-            event_rate    5.298605e-02      0.4625793
-               C_index    7.705247e-01      0.8389379
-       C_index_95CI_lo              NA      0.8301459
-       C_index_95CI_hi              NA      0.8480761
-              OE_ratio              NA      1.2472514
- calibration_intercept              NA      0.5976415
-     calibration_slope              NA      0.9392709
-           brier_score    4.640757e-02      0.1750866
-                   IPA              NA      0.2957087
-    delta_C_FI_vs_base    3.506200e-02             NA
-          edu_adjusted    0.000000e+00      0.0000000
+                  metric    CHARLS_internal    CLHLS_external
+               n_persons               7546              7095
+                n_events                771              3282
+              event_rate 0.0529860490687925 0.462579281183932
+ event_rate_person_level  0.102173336867214 0.462579281183932
+          C_index_modelA  0.735462728178021  0.80507282648459
+                 C_index  0.770524727089957  0.83893785700256
+         C_index_95CI_lo               <NA> 0.830145894380014
+         C_index_95CI_hi               <NA> 0.848076112190474
+                OE_ratio               <NA>    1.247251353797
+   calibration_intercept               <NA> 0.597641487116531
+       calibration_slope               <NA> 0.939270878996495
+             brier_score 0.0464075691457882 0.175086606308585
+                     IPA               <NA> 0.295708669439101
+      delta_C_FI_vs_base 0.0350619989119365              <NA>
+            edu_adjusted              FALSE             FALSE
 CLHLS predicted risk:
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 0.01463 0.10324 0.28303 0.37088 0.61901 0.99140 

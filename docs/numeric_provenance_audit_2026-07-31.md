@@ -13,9 +13,11 @@
 | Status | Count |
 |---|---|
 | ✅ Traced to source, exact match | 47 |
-| ⚠️ Traced, but requires derivation or carries a caveat | 2 (D1, D3 — both open, low severity) |
-| 🔧 Discrepancy found and corrected during this audit | 2 (D4 mislabelled model, D5 mixed-denominator total) |
+| ⚠️ Traced, but required derivation | 0 (D1, D3 both resolved by emitting the missing CSVs) |
+| 🔧 Discrepancy found and corrected | 4 (D4 mislabelled model, D5 mixed-denominator total, D6 weight truncation, plus one self-inflicted `edu_adjusted` coercion) |
 | ❌ Not traceable / fabricated | 0 (1 found in round-2 review and corrected — see §5) |
+
+**Every numeric claim in both manuscripts now resolves to a machine-readable source file.** Where a source field was missing, the analysis script was extended and rerun with a regression check confirming no pre-existing value changed.
 
 ---
 
@@ -284,12 +286,25 @@ Aggregate totals: 10,790 deaths (771+3,282+510+2,138+3,165+924) ✅ exact. Compl
 
 | ID | Issue | Severity | Action | Status |
 |---|---|---|---|---|
-| D1 | Model A C-index not stored in any CSV; recoverable only by subtraction | Low | Add to Aim 1 CSV output, or note derivation in manuscript | Open |
-| D2 | CHARLS event rate exists as both person-period (5.3%) and person-level (10.2%) | Info | No change; person-level is correct as reported | Closed |
-| D3 | IPCW censoring coefficients live in a report `.md`, not a CSV | Low | Consider emitting a censoring-model CSV | Open |
-| D4 | SA-3 Table 5 row 1 labelled as §3.4 model but uses a different fitting sample | **Medium** | Relabelled + footnote ‡ in both manuscripts | **Fixed this audit** |
-| D5 | Aggregate participant count 76,074 mixed CHARLS FI-eligible (7,551) with five cohorts' complete-case N | **Medium** | Corrected to 76,069 in both manuscripts, 4 locations | **Fixed this audit** |
+| D1 | Model A C-index not stored in any CSV; recoverable only by subtraction | Low | Aim 1 script now emits `C_index_modelA` and `event_rate_person_level`; rerun verified zero regression on all pre-existing fields | **Fixed 2026-07-31** |
+| D2 | CHARLS event rate exists as both person-period (5.3%) and person-level (10.2%) | Info | Both now stored explicitly as separate rows in the Aim 1 CSV | **Closed** |
+| D3 | IPCW censoring coefficients live in a report `.md`, not a CSV | Low | IPCW script now emits three CSVs: censoring model, weight summary, tertile censoring rates | **Fixed 2026-07-31** |
+| D4 | SA-3 Table 5 row 1 labelled as §3.4 model but uses a different fitting sample | **Medium** | Relabelled + footnote ‡ in both manuscripts | **Fixed** |
+| D5 | Aggregate participant count 76,074 mixed CHARLS FI-eligible (7,551) with five cohorts' complete-case N | **Medium** | Corrected to 76,069 in both manuscripts, 4 locations | **Fixed** |
+| D6 | IPCW weight maximum 1.451 described as "after 99th-percentile truncation"; 1.451 is the pre-truncation max, post-truncation max is 1.414 | **Medium** | Both manuscripts now report pre- and post-truncation values separately with the 1.414 cut-off | **Fixed 2026-07-31** |
 | — | Fabricated bootstrap spread figures | **Critical** | Replaced with verified values | Fixed (a8e27b2 / 3ee86a1) |
+| — | `edu_adjusted` coerced from `FALSE` to `0` by my D1 edit | Low | Assigned after the numeric `c()` calls; regression check now clean | Fixed same session |
+
+### Newly created machine-readable sources (2026-07-31)
+
+| File | Contents |
+|---|---|
+| `results/ipcw/ipcw_clhls_censoring_model_2026-07-29.csv` | Censoring-model coefficients: FI β 0.6515 (p 3.98e-04), age β 0.01152 (p 2.58e-05), sex β −0.0785 (p 0.1296), intercept 0.1558 |
+| `results/ipcw/ipcw_clhls_weight_summary_2026-07-29.csv` | Raw and truncated weight distributions incl. the 99th-percentile cut-off 1.41412 |
+| `results/ipcw/ipcw_clhls_tertile_censoring_2026-07-29.csv` | Censoring rate by FI tertile: 0.2516 / 0.2406 / 0.1955 |
+| `results/aim1/aim1_performance_table_2026-07-29.csv` (extended) | Added `C_index_modelA` (0.735463 internal, 0.805073 CLHLS) and `event_rate_person_level` |
+
+A by-product worth noting: the Aim 1 rerun also surfaced Model A's external CLHLS C-index (0.8051), which had been computed in the script but never reported anywhere. It is not currently cited in the manuscript.
 
 ---
 

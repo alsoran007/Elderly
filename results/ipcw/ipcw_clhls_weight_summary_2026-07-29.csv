@@ -1,0 +1,13 @@
+"statistic","value"
+"n_complete_case",7095
+"raw_mean",1.2920649352612
+"raw_median",1.29069164842337
+"raw_min",1.15897449710341
+"raw_max",1.45094363561974
+"raw_sd",0.0604493524167427
+"trunc_p99_cutoff",1.41411968929579
+"trunc_mean",1.291973661954
+"trunc_median",1.29069164842337
+"trunc_min",1.15897449710341
+"trunc_max",1.41411968929579
+"trunc_sd",0.0602527722449949

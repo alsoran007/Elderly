@@ -191,11 +191,25 @@ if (requireNamespace("dcurves", quietly = TRUE)) {
 } else dca_error <- "dcurves package unavailable"
 
 perf <- data.frame(
-  metric = c("n_persons", "n_events", "event_rate", "C_index", "C_index_95CI_lo", "C_index_95CI_hi", "OE_ratio", "calibration_intercept", "calibration_slope", "brier_score", "IPA", "delta_C_FI_vs_base", "edu_adjusted"),
-  CHARLS_internal = c(n_distinct(ch_cc$pid_key), sum(ch_cc$event == 1), mean(ch_cc$event), c_b, NA, NA, NA, NA, NA, mean((ch_cc$event - pb)^2), NA, delta_c, edu_adjusted),
-  CLHLS_external = c(n_distinct(cl$id_key), sum(cl$event_4y == 1), mean(cl$event_4y), c_cl["estimate"], c_cl["lo"], c_cl["hi"], oe, cal_intercept, cal_slope, brier, ipa, NA, edu_adjusted),
+  metric = c("n_persons", "n_events", "event_rate", "event_rate_person_level",
+             "C_index_modelA", "C_index", "C_index_95CI_lo", "C_index_95CI_hi",
+             "OE_ratio", "calibration_intercept", "calibration_slope",
+             "brier_score", "IPA", "delta_C_FI_vs_base", "edu_adjusted"),
+  CHARLS_internal = c(n_distinct(ch_cc$pid_key), sum(ch_cc$event == 1),
+                      mean(ch_cc$event),
+                      sum(ch_cc$event == 1) / n_distinct(ch_cc$pid_key),
+                      c_a, c_b, NA, NA, NA, NA, NA,
+                      mean((ch_cc$event - pb)^2), NA, delta_c, NA),
+  CLHLS_external = c(n_distinct(cl$id_key), sum(cl$event_4y == 1),
+                     mean(cl$event_4y), mean(cl$event_4y),
+                     c_cl_a, c_cl["estimate"], c_cl["lo"], c_cl["hi"],
+                     oe, cal_intercept, cal_slope, brier, ipa, NA, NA),
   stringsAsFactors = FALSE
 )
+## edu_adjusted is logical; assign after the numeric c() calls so it is not
+## coerced to 0/1 (regression caught by the 2026-07-31 provenance audit).
+perf$CHARLS_internal[perf$metric == "edu_adjusted"] <- as.character(edu_adjusted)
+perf$CLHLS_external[perf$metric == "edu_adjusted"] <- as.character(edu_adjusted)
 write.csv(perf, file.path(out_dir, paste0("aim1_performance_table_", stamp, ".csv")), row.names = FALSE)
 write.csv(ch_missing, file.path(out_dir, paste0("aim1_missingness_charls_", stamp, ".csv")), row.names = FALSE)
 write.csv(cl_missing, file.path(out_dir, paste0("aim1_missingness_clhls_", stamp, ".csv")), row.names = FALSE)
