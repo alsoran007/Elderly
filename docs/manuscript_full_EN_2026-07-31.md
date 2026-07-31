@@ -224,7 +224,7 @@ raw / L0 = frozen model, no adjustment; L1 = intercept update; L3 = full refit i
 
 C-indices across the three LOCO rounds were stable, at 0.759 to 0.835. Raw O:E ratios were 0.669 (Round A), 1.266 (Round B) and 0.758 (Round C); after L1 intercept update all reached 1.000, while C-index held constant and IPA improved substantially (Round A: 0.060→0.114; Round B: 0.286→0.337).
 
-The down-sampling comparison (200 bootstrap replications at CHARLS size, n = 7,551) showed ΔC of +0.0013 for Round B and −0.0013 for Round C against the CHARLS-only baseline, both below the 0.02 threshold and without a consistent direction. Across the 200 replications, no replication exceeded |ΔC| = 0.007 in either round, and fewer than 5% of replications reached |ΔC| > 0.004. Adding a second Asian training cohort therefore produced no meaningful discrimination gain, and **H3 is not supported**.
+The down-sampling comparison (200 bootstrap replications at CHARLS size, n = 7,551) showed ΔC of +0.0013 for Round B and −0.0013 for Round C against the CHARLS-only baseline, both below the 0.02 threshold and without a consistent direction. Across the 200 replications, the maximum observed |ΔC| was 0.0023 in Round B and 0.0028 in Round C; the 95th percentile of |ΔC| was 0.0020 and 0.0022 respectively, and no replication in either round exceeded |ΔC| = 0.003. Adding a second Asian training cohort therefore produced no meaningful discrimination gain, and **H3 is not supported**.
 
 ### 3.6 Aim 3: Asian pool to HRS, SHARE and MHAS
 
@@ -305,9 +305,9 @@ CHARLS internal C-index rose from 0.7706 to 0.7725 (ΔC = +0.0020) in the educat
 | **H3** | Multi-cohort training improves transfer (ΔC ≥ 0.02) | |ΔC| ≤ 0.001 (down-sampled) | **Not supported** |
 | **H4** | Event-rate + case-mix drift explain ≥50% of loss | L1 explains 88% (HRS), 94% (SHARE), 78% (MHAS) | **Supported** |
 | **H5** | FI more stable across cohorts than IC | |ΔC| 0.052 (FI) vs. 0.095 (IC) | **Supported — provisional**† (supplementary; exploratory) |
+| **H6** | Age in top 3 in all cohorts AND median ρ ≥ 0.70 | Age 1st in 6/6; median ρ = 0.41 | **Partially supported** |
 
 †CLHLS IC was constructed from binary FI-item proxies, not continuous measurements (grip strength, gait speed, peak flow, cognitive scores). The H5 comparison therefore involves an information asymmetry and may overstate IC's apparent instability. Full testing with continuous IC is deferred to Paper 2; see §3.9 for caveats.
-| **H6** | Age in top 3 in all cohorts AND median ρ ≥ 0.70 | Age 1st in 6/6; median ρ = 0.41 | **Partially supported** |
 
 ---
 
@@ -315,7 +315,7 @@ CHARLS internal C-index rose from 0.7706 to 0.7725 (ΔC = +0.0020) in the educat
 
 ### 4.1 Principal findings
 
-This study evaluated the cross-cultural transferability of a deficit-accumulation FI in six longitudinal ageing cohorts spanning China, South Korea, the United States, 27 European countries and Mexico — 76,074 complete-case participants aged ≥60 years and 10,790 four-year deaths. Results organise into two tiers. FI discrimination (C-index 0.72–0.84) held up across cultures without retraining, retaining clinically meaningful risk ranking. Calibration, by contrast, drifted systematically, driven mainly by differences in baseline mortality between the development and target cohorts, and was largely recoverable through intercept recalibration. H1, H2, H4 and H5 were supported; H3 was not; H6 was partially supported. All analyses followed a pre-registered plan locked before any outcome–predictor analysis.
+This study evaluated the cross-cultural transferability of a deficit-accumulation FI in six longitudinal ageing cohorts spanning China, South Korea, the United States, 27 European countries and Mexico — 76,074 complete-case participants aged ≥60 years and 10,790 four-year deaths. Results organise into two tiers. FI discrimination (C-index 0.72–0.84) held up across cultures without retraining, retaining clinically meaningful risk ranking. Calibration, by contrast, drifted systematically, driven mainly by differences in baseline mortality between the development and target cohorts, and was largely recoverable through intercept recalibration. H1, H2 and H4 were supported; H3 was not; H5 was provisionally supported in a supplementary analysis; H6 was partially supported. All analyses followed a pre-registered plan locked before any outcome–predictor analysis.
 
 ### 4.2 Incremental predictive value of FI beyond demographics (H1)
 
@@ -335,7 +335,7 @@ MHAS is the exception. Its L0 IPA of −0.002 means the model's Brier score was 
 
 ### 4.4 Adding training cohorts did not improve transfer (H3)
 
-The null H3 result is perhaps the most theoretically important finding. Down-sampling bootstrap showed |ΔC| ≤ 0.0013 after adding a second Asian training cohort, with no consistent direction. SA-1 converges on the same point from a different angle: restricting the index to the 19 items available in all six cohorts produced |ΔC| ≤ 0.012, leaving all conclusions intact. Together they say the same thing: the bottleneck is not how many training cohorts or items you have, but what the same nominal measure means in different questionnaire contexts.
+The null H3 result is perhaps the most theoretically important finding. Down-sampling bootstrap showed |ΔC| ≤ 0.0013 after adding a second Asian training cohort, with no consistent direction. SA-1 converges on the same point from a different angle: restricting the index to the 19 items available in all six cohorts produced |ΔC| ≤ 0.0124, leaving all conclusions intact. Together they say the same thing: the bottleneck is not how many training cohorts or items you have, but what the same nominal measure means in different questionnaire contexts.
 
 Two barriers define that bottleneck. Measurement non-equivalence means that `hibpe` (hypertension) has a positive rate of 0.067 in KLoSA but 0.682 in HRS, and `arthre` 0.025 versus 0.672, differences too large to attribute to true prevalence. And event-rate drift — documented by H4 — is a property of the target population, not the training set, so no training-set manipulation can remove it.
 
@@ -343,7 +343,7 @@ The practical upshot is direct: to deploy a model in a new population, collectin
 
 ### 4.5 Feature importance heterogeneity (H6)
 
-Age ranked first in all six cohorts, which is biologically unsurprising. The informative result is the heterogeneity below that: median pairwise Spearman ρ = 0.41 (range 0.10–0.67). KLoSA had the weakest concordance with any other cohort (KLoSA–HRS 0.096; KLoSA–CHARLS 0.099), which traces to that cohort's floor effects in ADL items (2–7% positive rates among a relatively young community sample) combined with an older age distribution placing greater weight on cancer and meal preparation. This cohort-level distribution difference, not individual-level outliers, is what drives importance heterogeneity and again reflects measurement non-equivalence as the structural barrier.
+Age ranked first in all six cohorts, which is biologically unsurprising. The informative result is the heterogeneity below that: median pairwise Spearman ρ = 0.41 (range 0.10–0.67). KLoSA had the weakest concordance with any other cohort (KLoSA–HRS 0.096; KLoSA–CHARLS 0.099). This traces to floor effects in that cohort's functional items: with a median age of 71 years and most participants community-dwelling and independent, ADL positive rates were only 2–7%, which compresses the variance available for those items to carry predictive weight. Meal-preparation difficulty (`mealsa`) and cancer (`cancre`) consequently occupied the second and third importance ranks, whereas self-rated health (`shlt`) entered the top three in four of the other five cohorts (second in CHARLS, HRS and SHARE; third in MHAS) but not in KLoSA. This is a cohort-level distribution difference rather than an individual-level outlier effect, and it again points to measurement non-equivalence as the binding constraint.
 
 The analysis used |β_standardised| as an importance proxy, which is exact for a main-effects GLM but insensitive to interactions and non-linearity. Results should be read as exploratory.
 
