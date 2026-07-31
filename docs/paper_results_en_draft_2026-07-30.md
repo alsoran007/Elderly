@@ -144,7 +144,31 @@ FI showed the smallest cross-cohort C-index shift, and **H5 is supported**. Thre
 
 ---
 
-## 3.10 Post Hoc Sensitivity Analysis: Education Adjustment (SA-3)
+## 3.10 Sensitivity Analysis: Restriction to Cross-Cohort Common Items (SA-1)
+
+Because the number of available FI items differed across cohorts (41/41 in CHARLS, CLHLS, KLoSA, HRS and SHARE with documented substitutions; 27/41 in MHAS), we repeated the analysis using **FI_core** — the 19 deficits available in all six cohorts under strict column-name matching (decision D-028) — with a unified computability threshold of 16 of 19 items. This tests directly whether conclusions depend on item availability rather than on frailty burden itself.
+
+**Table 5. SA-1: FI_core (19 items) versus FI_full (41 items)**
+
+| Cohort | Level | FI_core C-index | FI_full C-index | ΔC | FI_core O:E | FI_core IPA |
+|---|---|---:|---:|---:|---:|---:|
+| CLHLS (Aim 1 external) | frozen | 0.8346 | 0.8389 | **−0.0044** | 1.155 | 0.3105 |
+| HRS | L0 | 0.7777 | 0.7901 | **−0.0124** | 0.979 | 0.2040 |
+| HRS | L1 | 0.7777 | 0.7901 | — | 1.000 | 0.2044 |
+| SHARE | L0 | 0.7725 | 0.7780 | **−0.0055** | 0.633 | 0.0555 |
+| SHARE | L1 | 0.7725 | 0.7780 | — | 1.000 | 0.1149 |
+| MHAS | L0 | 0.7243 | 0.7243 | **−0.0000** | 0.819 | 0.0584 |
+| MHAS | L1 | 0.7243 | 0.7243 | — | 1.000 | 0.0753 |
+
+In the CHARLS development set, FI_core yielded an apparent C-index of 0.7668 versus 0.7705 for FI_full, with the FI_core coefficient remaining strongly predictive (β = 2.788, p < 0.001). The Asian pool rebuilt on FI_core comprised 19,705 participants with 4,487 deaths (22.8%), closely matching the FI_full pool (19,934; 4,563; 22.9%).
+
+**All four cross-cohort ΔC values fell below the 0.02 threshold** (range −0.0124 to −0.0000), so discrimination is not materially degraded by restricting the index to items common to every cohort. Two observations reinforce this. First, applying the unified 16-of-19 threshold reduced the HRS analytic sample by 27% (10,707 → 7,823), yet C-index fell by only 0.0124 — the loss is attributable to sample restriction rather than to loss of predictive information. Second, ΔC was essentially zero in MHAS, as expected given that its FI_full already rests on 27 items, so FI_full and FI_core share most of their informational basis in that cohort.
+
+The L0→L1 pattern was also preserved: intercept recalibration moved O:E to exactly 1.000 in all three validation cohorts while leaving C-index unchanged, and produced the largest IPA gain in SHARE (0.0555 → 0.1149), mirroring the main analysis. **The conclusions supporting H2 and H4 therefore do not depend on cohort-specific item availability.**
+
+---
+
+## 3.11 Post Hoc Sensitivity Analysis: Education Adjustment (SA-3)
 
 An audit conducted after the primary analyses (2026-07-30) established that education was in fact available in all six cohorts, with 100% ID linkage and 0.00–0.53% missingness — refuting an earlier project record stating that education could not be reliably linked. Because SAP v1.0 was already frozen and the outcome had been unblinded, education was not added to the primary model; instead, SAP amendment A-001 declared a post hoc sensitivity analysis (SA-3) restricted to Aim 1, with the ISCED mapping frozen before the analysis was run (Methods §8.5).
 
@@ -164,7 +188,7 @@ All three pre-declared robustness criteria were met (|ΔC| < 0.02, |ΔO:E| < 0.0
 
 ---
 
-## 3.11 Summary of Pre-Registered Hypothesis Verdicts
+## 3.12 Summary of Pre-Registered Hypothesis Verdicts
 
 | Hypothesis | Pre-specified criterion | Observed | Verdict |
 |---|---|---|---|

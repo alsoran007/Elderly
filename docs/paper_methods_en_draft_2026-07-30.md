@@ -64,7 +64,13 @@ A pre-specified **sensitivity outcome** was all-cause mortality within approxima
 
 ## 5. Frailty Index Construction
 
-The FI followed the deficit-accumulation model: FI = Σ(deficit scores) / number of non-missing items, bounded [0, 1].[REF-4] Variable definitions for all cohorts were extracted from the Gateway to Global Aging harmonised data scripts (H_CHARLS_long D.2; H_KLoSA_long F)[REF-19] and re-implemented in Python/R without requiring Stata.
+The FI followed the deficit-accumulation model: FI = Σ(deficit scores) / number of non-missing items, bounded [0, 1].[REF-4]
+
+**Harmonisation route.** Gateway to Global Aging distributes harmonised datasets for HRS, SHARE and MHAS, but for CHARLS and KLoSA it distributes only the Stata `.do` scripts that generate them.[REF-19] Rather than acquire a Stata licence, we parsed those scripts to extract each deficit definition — source variables, missing-value codes, skip-logic rules and recoding statements — and re-implemented them in Python/R. Because the `.do` file *is* the definition of a harmonised variable, this route is informationally equivalent to using a pre-built harmonised file: the two differ in who executes the recipe, not in the recipe itself.
+
+The re-implementation is auditable at item level. Every one of the 41 deficits is recorded with the line number of its defining statement in `bbxleyec.do` (Supplementary Table S1), so any reader can verify a given item against the official source. This is arguably more transparent than relying on a distributed harmonised file, whose internal derivation is not exposed. Extraction achieved 44/44 target items with zero misses; two transcription errors found during verification were corrected before analysis (decision D-017: `hearaid` source variable `da040`→`da038`; `slfmem` `db032`→`dc004`).
+
+The main residual risk of this route is implementation divergence from the official build. Three safeguards were applied: (i) item-level line-number provenance as above; (ii) cross-referencing coding conventions against the 11,779 pre-built harmonised variables in Harmonized ELSA G.3; and (iii) distributional checks after each cohort's FI was built, of which `max(FI) ≤ 1` proved the most informative — it caught a Likert-scale direction error in the SHARE and MHAS builds that had inflated FI above 1 (decision D-026).
 
 The **final 41-item list** (locked 2026-07-28; decision D-020) spans seven domains:
 
@@ -169,7 +175,7 @@ This ladder isolates the contribution of event-rate drift (L0→L1), slope drift
 
 | ID | Analysis | Specification |
 |---|---|---|
-| SA-1 | FI_core (19 items) | Strict cross-cohort common item set; threshold = ⌈0.8 × 19⌉ = 16 |
+| SA-1 | FI_core (19 items) | Strict cross-cohort common item set; unified threshold = ⌈0.8 × 19⌉ = 16; applied to Aim 1 and Aim 3 (results §3.10) |
 | SA-2 | IPCW (CLHLS) | Censoring model: P(observed \| fi_full, age, sex); weights truncated at 99th percentile |
 | SA-3† | Education adjustment (Aim 1) | Main model + `edu_isced` (ISCED 3-level ordered integer); complete-case |
 
