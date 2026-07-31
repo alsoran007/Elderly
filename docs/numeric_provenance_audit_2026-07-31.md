@@ -311,8 +311,23 @@ A by-product worth noting: the Aim 1 rerun also surfaced Model A's external CLHL
 | Manuscript value | Source | Status |
 |---|---|---|
 | Model A CLHLS C = 0.8051 | aim1_performance (C_index_modelA, CLHLS_external) | ✅ |
-| External ΔC = 0.0339 | 0.838938 − 0.805073 | ✅ derived |
-| Internal vs external gap 0.0012 | 0.035062 − 0.033866 | ✅ derived |
+| External ΔC = 0.0339 | aim1_performance (delta_C_FI_vs_base, CLHLS_external) = 0.033865 | ✅ now stored directly |
+| Internal vs external gap 0.0012 | 0.035062 − 0.033865 | ✅ derived |
+
+### Model A external calibration (added 2026-07-31)
+
+Model A's CLHLS predictions were computed for its C-index and then discarded, so the baseline model's calibration could not be reported. The script now stores it, and the result proved substantive rather than housekeeping:
+
+| Metric | Model A | Model B | Source field |
+|---|---|---|---|
+| C-index | 0.8051 | 0.8389 | `C_index_modelA` / `C_index` |
+| O:E | **1.0437** | 1.2473 | `OE_ratio_modelA` / `OE_ratio` |
+| Calibration slope | 0.9136 | 0.9393 | `calibration_slope_modelA` / `calibration_slope` |
+| Brier | 0.1807 | 0.1751 | `brier_score_modelA` / `brier_score` |
+| IPA | 0.2730 | 0.2957 | `IPA_modelA` / `IPA` |
+| Mean predicted risk | 0.4432 | 0.3709 | derived: observed 0.4626 ÷ O:E |
+
+**The demographic-only model is better calibrated than the FI model in CLHLS** (O:E 1.044 vs 1.247) while being worse on discrimination and overall accuracy. Mechanism: CLHLS is an oldest-old cohort, so age alone drives predicted risk close to the observed 0.463; adding FI lowers the absolute level because CLHLS has a *lower* median FI (0.169) than the development cohort (0.200) despite much higher mortality. This is direct evidence for the H2 dissociation — discrimination and calibration are driven by different quantities and can move in opposite directions. Reported in §3.4 of both manuscripts with the mechanism explained, since presenting the O:E comparison without it would invite the question of why Model B is preferred at all.
 
 ---
 

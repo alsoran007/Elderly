@@ -172,6 +172,19 @@ brier <- mean((cl$event_4y - cl$pred_4y)^2)
 null_brier <- mean((cl$event_4y - mean(cl$event_4y))^2)
 ipa <- 1 - brier / null_brier
 
+## Model A external calibration. The demographic-only predictions (pred_4y_a)
+## were already being computed for its C-index but discarded thereafter, leaving
+## no basis to answer "how does the baseline model calibrate?" if asked.
+## Zero marginal cost since the predictions exist.
+lp_a <- qlogis(cl$pred_4y_a)
+cal_intercept_a <- unname(coef(glm(event_4y ~ offset(lp_a), data = cl, family = binomial()))[1])
+cal_slope_a <- unname(coef(glm(event_4y ~ lp_a, data = cl, family = binomial()))[2])
+oe_a <- mean(cl$event_4y) / mean(cl$pred_4y_a)
+brier_a <- mean((cl$event_4y - cl$pred_4y_a)^2)
+ipa_a <- 1 - brier_a / null_brier
+cat(sprintf("Model A external: C=%.4f  O:E=%.4f  slope=%.4f  IPA=%.4f\n",
+            c_cl_a, oe_a, cal_slope_a, ipa_a))
+
 cl$decile <- ntile(cl$pred_4y, 10)
 cal <- cl %>% group_by(decile) %>% summarise(predicted = mean(pred_4y), observed = mean(event_4y), n = n(), .groups = "drop")
 write.csv(cal, file.path(out_dir, paste0("aim1_calibration_deciles_clhls_", stamp, ".csv")), row.names = FALSE)
@@ -193,17 +206,26 @@ if (requireNamespace("dcurves", quietly = TRUE)) {
 perf <- data.frame(
   metric = c("n_persons", "n_events", "event_rate", "event_rate_person_level",
              "C_index_modelA", "C_index", "C_index_95CI_lo", "C_index_95CI_hi",
-             "OE_ratio", "calibration_intercept", "calibration_slope",
-             "brier_score", "IPA", "delta_C_FI_vs_base", "edu_adjusted"),
+             "OE_ratio_modelA", "OE_ratio",
+             "calibration_intercept_modelA", "calibration_intercept",
+             "calibration_slope_modelA", "calibration_slope",
+             "brier_score_modelA", "brier_score",
+             "IPA_modelA", "IPA", "delta_C_FI_vs_base", "edu_adjusted"),
   CHARLS_internal = c(n_distinct(ch_cc$pid_key), sum(ch_cc$event == 1),
                       mean(ch_cc$event),
                       sum(ch_cc$event == 1) / n_distinct(ch_cc$pid_key),
-                      c_a, c_b, NA, NA, NA, NA, NA,
-                      mean((ch_cc$event - pb)^2), NA, delta_c, NA),
+                      c_a, c_b, NA, NA,
+                      NA, NA, NA, NA, NA, NA,
+                      mean((ch_cc$event - pa)^2), mean((ch_cc$event - pb)^2),
+                      NA, NA, delta_c, NA),
   CLHLS_external = c(n_distinct(cl$id_key), sum(cl$event_4y == 1),
                      mean(cl$event_4y), mean(cl$event_4y),
                      c_cl_a, c_cl["estimate"], c_cl["lo"], c_cl["hi"],
-                     oe, cal_intercept, cal_slope, brier, ipa, NA, NA),
+                     oe_a, oe,
+                     cal_intercept_a, cal_intercept,
+                     cal_slope_a, cal_slope,
+                     brier_a, brier,
+                     ipa_a, ipa, c_cl["estimate"] - c_cl_a, NA),
   stringsAsFactors = FALSE
 )
 ## edu_adjusted is logical; assign after the numeric c() calls so it is not
